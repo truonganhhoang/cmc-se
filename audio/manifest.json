@@ -1,0 +1,976 @@
+{
+ "voices": [
+  {
+   "id": "vi-mai",
+   "lang": "vi",
+   "name": "Mai",
+   "desc": "Nữ · miền Bắc"
+  },
+  {
+   "id": "vi-minh",
+   "lang": "vi",
+   "name": "Minh",
+   "desc": "Giọng trầm"
+  },
+  {
+   "id": "en-heart",
+   "lang": "en",
+   "name": "Heart",
+   "desc": "Female · US"
+  },
+  {
+   "id": "en-michael",
+   "lang": "en",
+   "name": "Michael",
+   "desc": "Male · US"
+  },
+  {
+   "id": "en-emma",
+   "lang": "en",
+   "name": "Emma",
+   "desc": "Female · UK"
+  }
+ ],
+ "slides": {
+  "vi-mai": [
+   {
+    "file": "audio/vi-mai/01.mp3",
+    "dur": 10.46,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Đừng chỉ học viết code."
+     },
+     {
+      "t": 1.69,
+      "text": "Hãy học cách xây những phần mềm mà hàng triệu người dùng mỗi ngày, và có sản phẩm chạy thật ngay từ năm nhất."
+     },
+     {
+      "t": 7.19,
+      "text": "Đây là ngành Kỹ thuật phần mềm, Trường Đại học CMC."
+     }
+    ]
+   },
+   {
+    "file": "audio/vi-mai/02.mp3",
+    "dur": 8.74,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Sáng nay bạn đã mở bao nhiêu ứng dụng?"
+     },
+     {
+      "t": 2.54,
+      "text": "Chuyển khoản, gọi xe, học trực tuyến, đặt lịch khám."
+     },
+     {
+      "t": 5.73,
+      "text": "Đằng sau mỗi ứng dụng là một đội kỹ sư phần mềm."
+     }
+    ]
+   },
+   {
+    "file": "audio/vi-mai/03.mp3",
+    "dur": 13.39,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Nghề lập trình đang đổi luật chơi."
+     },
+     {
+      "t": 2.21,
+      "text": "Tám mươi tư phần trăm lập trình viên đã hoặc sắp dùng AI, nhưng gần một nửa không tin vào độ chính xác của nó."
+     },
+     {
+      "t": 8.3,
+      "text": "Doanh nghiệp cần người làm ra sản phẩm và chịu trách nhiệm về chất lượng, chứ không chỉ người gõ code."
+     }
+    ]
+   },
+   {
+    "file": "audio/vi-mai/04.mp3",
+    "dur": 11.81,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Kỹ sư phần mềm thời AI làm việc cùng trợ lý AI ở mọi bước: phân tích yêu cầu, thiết kế, lập trình, kiểm tra chất lượng, triển khai và vận hành."
+     },
+     {
+      "t": 8.61,
+      "text": "AI làm nhanh, còn kỹ sư quyết định và chịu trách nhiệm."
+     }
+    ]
+   },
+   {
+    "file": "audio/vi-mai/05.mp3",
+    "dur": 21.07,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Vì vậy, chương trình Kỹ thuật phần mềm định hướng AI-native cho bạn làm ra sản phẩm thật ngay từ học kỳ một."
+     },
+     {
+      "t": 6.23,
+      "text": "Mỗi năm ba học kỳ, mỗi học kỳ mười tuần, nên chỉ ba năm là bạn ra trường."
+     },
+     {
+      "t": 10.56,
+      "text": "Năm nhất, ứng dụng của riêng bạn chạy trên Internet."
+     },
+     {
+      "t": 13.42,
+      "text": "Năm hai, làm nhóm, làm cho người dùng thật và cho doanh nghiệp."
+     },
+     {
+      "t": 17.06,
+      "text": "Năm ba, thực tập, chuyên sâu, và tốt nghiệp với hồ sơ chín sản phẩm."
+     }
+    ]
+   },
+   {
+    "file": "audio/vi-mai/06.mp3",
+    "dur": 12.98,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Bạn học bốn năng lực mà kỹ sư thời AI cần: viết đặc tả rõ ràng, điều phối trợ lý và tác tử AI, kiểm chứng mọi dòng mã, và chịu trách nhiệm về sản phẩm."
+     },
+     {
+      "t": 9.2,
+      "text": "Học cùng AI, nhưng vẫn thi cả không AI để chắc nền tảng."
+     }
+    ]
+   },
+   {
+    "file": "audio/vi-mai/07.mp3",
+    "dur": 10.1,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Ở CMC, bạn học trong lòng một tập đoàn công nghệ."
+     },
+     {
+      "t": 3.38,
+      "text": "Hệ sinh thái Viện, Trường, Doanh nghiệp giúp sinh viên học qua dự án thực tế và thực tập tại các công ty thành viên ngay khi còn đi học."
+     }
+    ]
+   },
+   {
+    "file": "audio/vi-mai/08.mp3",
+    "dur": 17.4,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Lứa tuyển sinh năm 2027 sẽ ra trường khoảng năm 2030."
+     },
+     {
+      "t": 5.2,
+      "text": "Những vai trò đang lớn lên gồm kỹ sư phần mềm làm việc cùng AI, kỹ sư ứng dụng AI, kỹ sư kiểm thử và đánh giá AI, kỹ sư nền tảng đám mây, và kỹ sư sản phẩm."
+     },
+     {
+      "t": 15.1,
+      "text": "Chạm vào từng vai trò để khám phá."
+     }
+    ]
+   },
+   {
+    "file": "audio/vi-mai/09.mp3",
+    "dur": 12.53,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Quỹ học bổng CMC, Vì bạn xứng đáng, trị giá chín mươi sáu tỷ đồng."
+     },
+     {
+      "t": 4.7,
+      "text": "Các mức ba mươi, năm mươi, bảy mươi và một trăm phần trăm học phí toàn khóa."
+     },
+     {
+      "t": 9.16,
+      "text": "Xét qua điểm thi, chứng chỉ IELTS hoặc giải học sinh giỏi."
+     }
+    ]
+   },
+   {
+    "file": "audio/vi-mai/10.mp3",
+    "dur": 12.6,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Có bốn cách để vào ngành: kỳ thi đánh giá năng lực CMC-TEST, xét học bạ, xét điểm thi tốt nghiệp trung học phổ thông, hoặc xét tuyển thẳng, ví dụ với IELTS từ 6.0."
+     },
+     {
+      "t": 9.89,
+      "text": "Tổ hợp là Toán nhân hai cộng hai môn bất kỳ."
+     }
+    ]
+   },
+   {
+    "file": "audio/vi-mai/11.mp3",
+    "dur": 8.4,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Hãy viết dòng lệnh đầu tiên cho tương lai của bạn."
+     },
+     {
+      "t": 2.82,
+      "text": "Quét mã trên màn hình để đăng ký xét tuyển, hoặc gọi đường dây nóng tuyển sinh của Trường Đại học CMC."
+     }
+    ]
+   }
+  ],
+  "vi-minh": [
+   {
+    "file": "audio/vi-minh/01.mp3",
+    "dur": 10.44,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Đừng chỉ học viết code."
+     },
+     {
+      "t": 1.67,
+      "text": "Hãy học cách xây những phần mềm mà hàng triệu người dùng mỗi ngày, và có sản phẩm chạy thật ngay từ năm nhất."
+     },
+     {
+      "t": 7.2,
+      "text": "Đây là ngành Kỹ thuật phần mềm, Trường Đại học CMC."
+     }
+    ]
+   },
+   {
+    "file": "audio/vi-minh/02.mp3",
+    "dur": 8.78,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Sáng nay bạn đã mở bao nhiêu ứng dụng?"
+     },
+     {
+      "t": 2.59,
+      "text": "Chuyển khoản, gọi xe, học trực tuyến, đặt lịch khám."
+     },
+     {
+      "t": 5.77,
+      "text": "Đằng sau mỗi ứng dụng là một đội kỹ sư phần mềm."
+     }
+    ]
+   },
+   {
+    "file": "audio/vi-minh/03.mp3",
+    "dur": 13.22,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Nghề lập trình đang đổi luật chơi."
+     },
+     {
+      "t": 2.11,
+      "text": "Tám mươi tư phần trăm lập trình viên đã hoặc sắp dùng AI, nhưng gần một nửa không tin vào độ chính xác của nó."
+     },
+     {
+      "t": 8.17,
+      "text": "Doanh nghiệp cần người làm ra sản phẩm và chịu trách nhiệm về chất lượng, chứ không chỉ người gõ code."
+     }
+    ]
+   },
+   {
+    "file": "audio/vi-minh/04.mp3",
+    "dur": 11.66,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Kỹ sư phần mềm thời AI làm việc cùng trợ lý AI ở mọi bước: phân tích yêu cầu, thiết kế, lập trình, kiểm tra chất lượng, triển khai và vận hành."
+     },
+     {
+      "t": 8.48,
+      "text": "AI làm nhanh, còn kỹ sư quyết định và chịu trách nhiệm."
+     }
+    ]
+   },
+   {
+    "file": "audio/vi-minh/05.mp3",
+    "dur": 20.9,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Vì vậy, chương trình Kỹ thuật phần mềm định hướng AI-native cho bạn làm ra sản phẩm thật ngay từ học kỳ một."
+     },
+     {
+      "t": 6.1,
+      "text": "Mỗi năm ba học kỳ, mỗi học kỳ mười tuần, nên chỉ ba năm là bạn ra trường."
+     },
+     {
+      "t": 10.54,
+      "text": "Năm nhất, ứng dụng của riêng bạn chạy trên Internet."
+     },
+     {
+      "t": 13.33,
+      "text": "Năm hai, làm nhóm, làm cho người dùng thật và cho doanh nghiệp."
+     },
+     {
+      "t": 16.87,
+      "text": "Năm ba, thực tập, chuyên sâu, và tốt nghiệp với hồ sơ chín sản phẩm."
+     }
+    ]
+   },
+   {
+    "file": "audio/vi-minh/06.mp3",
+    "dur": 12.94,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Bạn học bốn năng lực mà kỹ sư thời AI cần: viết đặc tả rõ ràng, điều phối trợ lý và tác tử AI, kiểm chứng mọi dòng mã, và chịu trách nhiệm về sản phẩm."
+     },
+     {
+      "t": 9.17,
+      "text": "Học cùng AI, nhưng vẫn thi cả không AI để chắc nền tảng."
+     }
+    ]
+   },
+   {
+    "file": "audio/vi-minh/07.mp3",
+    "dur": 10.06,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Ở CMC, bạn học trong lòng một tập đoàn công nghệ."
+     },
+     {
+      "t": 3.32,
+      "text": "Hệ sinh thái Viện, Trường, Doanh nghiệp giúp sinh viên học qua dự án thực tế và thực tập tại các công ty thành viên ngay khi còn đi học."
+     }
+    ]
+   },
+   {
+    "file": "audio/vi-minh/08.mp3",
+    "dur": 17.74,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Lứa tuyển sinh năm 2027 sẽ ra trường khoảng năm 2030."
+     },
+     {
+      "t": 5.26,
+      "text": "Những vai trò đang lớn lên gồm kỹ sư phần mềm làm việc cùng AI, kỹ sư ứng dụng AI, kỹ sư đảm bảo chất lượng và đánh giá AI, kỹ sư nền tảng đám mây, và kỹ sư sản phẩm."
+     },
+     {
+      "t": 15.38,
+      "text": "Chạm vào từng vai trò để khám phá."
+     }
+    ]
+   },
+   {
+    "file": "audio/vi-minh/09.mp3",
+    "dur": 12.65,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Quỹ học bổng CMC, Vì bạn xứng đáng, trị giá chín mươi sáu tỷ đồng."
+     },
+     {
+      "t": 4.75,
+      "text": "Các mức ba mươi, năm mươi, bảy mươi và một trăm phần trăm học phí toàn khóa."
+     },
+     {
+      "t": 9.18,
+      "text": "Xét qua điểm thi, chứng chỉ IELTS hoặc giải học sinh giỏi."
+     }
+    ]
+   },
+   {
+    "file": "audio/vi-minh/10.mp3",
+    "dur": 12.7,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Có bốn cách để vào ngành: kỳ thi đánh giá năng lực CMC-TEST, xét học bạ, xét điểm thi tốt nghiệp trung học phổ thông, hoặc xét tuyển thẳng, ví dụ với IELTS từ 6.0."
+     },
+     {
+      "t": 10.02,
+      "text": "Tổ hợp là Toán nhân hai cộng hai môn bất kỳ."
+     }
+    ]
+   },
+   {
+    "file": "audio/vi-minh/11.mp3",
+    "dur": 8.23,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Hãy viết dòng lệnh đầu tiên cho tương lai của bạn."
+     },
+     {
+      "t": 2.71,
+      "text": "Quét mã trên màn hình để đăng ký xét tuyển, hoặc gọi đường dây nóng tuyển sinh của Trường Đại học CMC."
+     }
+    ]
+   }
+  ],
+  "en-heart": [
+   {
+    "file": "audio/en-heart/01.mp3",
+    "dur": 12.17,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Don't just learn to write code."
+     },
+     {
+      "t": 2.18,
+      "text": "Learn to build software that millions of people use every day, and ship a real product in your very first year."
+     },
+     {
+      "t": 8.57,
+      "text": "This is Software Engineering at CMC University."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-heart/02.mp3",
+    "dur": 9.84,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "How many apps have you opened this morning?"
+     },
+     {
+      "t": 2.56,
+      "text": "Banking, ride-hailing, online classes, booking a doctor."
+     },
+     {
+      "t": 6.43,
+      "text": "Behind every app is a team of software engineers."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-heart/03.mp3",
+    "dur": 14.14,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "The rules of programming are changing."
+     },
+     {
+      "t": 2.65,
+      "text": "Eighty-four percent of developers use or plan to use AI, yet nearly half don't trust its accuracy."
+     },
+     {
+      "t": 8.77,
+      "text": "Companies need people who ship products and own their quality, not just people who type code."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-heart/04.mp3",
+    "dur": 14.06,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "In the age of AI, software engineers work with AI assistants at every step: requirements, design, coding, testing, deployment and operations."
+     },
+     {
+      "t": 9.6,
+      "text": "AI moves fast. Engineers decide, and take responsibility."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-heart/05.mp3",
+    "dur": 23.18,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "That's why our AI-native Software Engineering program has you shipping real products from your first semester."
+     },
+     {
+      "t": 6.5,
+      "text": "With three ten-week semesters a year, you graduate in just three years."
+     },
+     {
+      "t": 10.53,
+      "text": "Year one: your own apps, live on the internet."
+     },
+     {
+      "t": 13.39,
+      "text": "Year two: team products for real users and for industry."
+     },
+     {
+      "t": 17.08,
+      "text": "Year three: an internship, a specialization, and graduation with a portfolio of nine products."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-heart/06.mp3",
+    "dur": 15.55,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "You'll build the four skills AI-era engineers need: writing clear specifications, orchestrating AI assistants and agents, verifying every line of code, and owning the product."
+     },
+     {
+      "t": 10.82,
+      "text": "Learn with AI, but still pass exams without it, so your foundations are solid."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-heart/07.mp3",
+    "dur": 12.65,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "At CMC, you study inside a technology group."
+     },
+     {
+      "t": 3.63,
+      "text": "Our ecosystem of research institutes, university and member companies lets you learn through real projects and intern in industry while still in school."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-heart/08.mp3",
+    "dur": 17.28,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "The class of 2027 will graduate around 2030."
+     },
+     {
+      "t": 4.7,
+      "text": "Growing roles include AI-augmented software engineers, applied AI engineers, AI testing and evaluation engineers, cloud platform engineers, and product engineers."
+     },
+     {
+      "t": 15.21,
+      "text": "Tap any role to explore."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-heart/09.mp3",
+    "dur": 15.24,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "CMC's \"You Deserve It\" scholarship fund is worth ninety-six billion dong."
+     },
+     {
+      "t": 5.28,
+      "text": "Awards cover thirty, fifty, seventy, or one hundred percent of tuition for the whole program."
+     },
+     {
+      "t": 10.65,
+      "text": "They're based on exam scores, IELTS certificates, or academic awards."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-heart/10.mp3",
+    "dur": 16.56,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "There are four ways in: the CMC-TEST aptitude exam, your high school transcript, your national graduation exam scores, or direct admission, for example with IELTS six point zero or higher."
+     },
+     {
+      "t": 11.91,
+      "text": "The subject combination is Math counted twice, plus any two subjects."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-heart/11.mp3",
+    "dur": 7.8,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Make the first commit to your future."
+     },
+     {
+      "t": 2.38,
+      "text": "Scan the QR code to apply, or call the CMC University admissions hotline."
+     }
+    ]
+   }
+  ],
+  "en-michael": [
+   {
+    "file": "audio/en-michael/01.mp3",
+    "dur": 13.25,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Don't just learn to write code."
+     },
+     {
+      "t": 2.41,
+      "text": "Learn to build software that millions of people use every day, and ship a real product in your very first year."
+     },
+     {
+      "t": 9.28,
+      "text": "This is Software Engineering at CMC University."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-michael/02.mp3",
+    "dur": 10.44,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "How many apps have you opened this morning?"
+     },
+     {
+      "t": 3.02,
+      "text": "Banking, ride-hailing, online classes, booking a doctor."
+     },
+     {
+      "t": 6.97,
+      "text": "Behind every app is a team of software engineers."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-michael/03.mp3",
+    "dur": 15.6,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "The rules of programming are changing."
+     },
+     {
+      "t": 2.81,
+      "text": "Eighty-four percent of developers use or plan to use AI, yet nearly half don't trust its accuracy."
+     },
+     {
+      "t": 9.66,
+      "text": "Companies need people who ship products and own their quality, not just people who type code."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-michael/04.mp3",
+    "dur": 14.81,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "In the age of AI, software engineers work with AI assistants at every step: requirements, design, coding, testing, deployment and operations."
+     },
+     {
+      "t": 10.05,
+      "text": "AI moves fast. Engineers decide, and take responsibility."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-michael/05.mp3",
+    "dur": 25.1,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "That's why our AI-native Software Engineering program has you shipping real products from your first semester."
+     },
+     {
+      "t": 7.08,
+      "text": "With three ten-week semesters a year, you graduate in just three years."
+     },
+     {
+      "t": 11.53,
+      "text": "Year one: your own apps, live on the internet."
+     },
+     {
+      "t": 14.41,
+      "text": "Year two: team products for real users and for industry."
+     },
+     {
+      "t": 18.37,
+      "text": "Year three: an internship, a specialization, and graduation with a portfolio of nine products."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-michael/06.mp3",
+    "dur": 17.62,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "You'll build the four skills AI-era engineers need: writing clear specifications, orchestrating AI assistants and agents, verifying every line of code, and owning the product."
+     },
+     {
+      "t": 12.26,
+      "text": "Learn with AI, but still pass exams without it, so your foundations are solid."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-michael/07.mp3",
+    "dur": 14.14,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "At CMC, you study inside a technology group."
+     },
+     {
+      "t": 4.03,
+      "text": "Our ecosystem of research institutes, university and member companies lets you learn through real projects and intern in industry while still in school."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-michael/08.mp3",
+    "dur": 19.22,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "The class of 2027 will graduate around 2030."
+     },
+     {
+      "t": 5.18,
+      "text": "Growing roles include AI-augmented software engineers, applied AI engineers, AI testing and evaluation engineers, cloud platform engineers, and product engineers."
+     },
+     {
+      "t": 17.02,
+      "text": "Tap any role to explore."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-michael/09.mp3",
+    "dur": 16.7,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "CMC's \"You Deserve It\" scholarship fund is worth ninety-six billion dong."
+     },
+     {
+      "t": 5.68,
+      "text": "Awards cover thirty, fifty, seventy, or one hundred percent of tuition for the whole program."
+     },
+     {
+      "t": 11.61,
+      "text": "They're based on exam scores, IELTS certificates, or academic awards."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-michael/10.mp3",
+    "dur": 18.55,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "There are four ways in: the CMC-TEST aptitude exam, your high school transcript, your national graduation exam scores, or direct admission, for example with IELTS six point zero or higher."
+     },
+     {
+      "t": 13.61,
+      "text": "The subject combination is Math counted twice, plus any two subjects."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-michael/11.mp3",
+    "dur": 8.38,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Make the first commit to your future."
+     },
+     {
+      "t": 2.55,
+      "text": "Scan the QR code to apply, or call the CMC University admissions hotline."
+     }
+    ]
+   }
+  ],
+  "en-emma": [
+   {
+    "file": "audio/en-emma/01.mp3",
+    "dur": 12.0,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Don't just learn to write code."
+     },
+     {
+      "t": 2.4,
+      "text": "Learn to build software that millions of people use every day, and ship a real product in your very first year."
+     },
+     {
+      "t": 8.4,
+      "text": "This is Software Engineering at CMC University."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-emma/02.mp3",
+    "dur": 9.62,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "How many apps have you opened this morning?"
+     },
+     {
+      "t": 2.73,
+      "text": "Banking, ride-hailing, online classes, booking a doctor."
+     },
+     {
+      "t": 6.3,
+      "text": "Behind every app is a team of software engineers."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-emma/03.mp3",
+    "dur": 13.7,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "The rules of programming are changing."
+     },
+     {
+      "t": 2.64,
+      "text": "Eighty-four percent of developers use or plan to use AI, yet nearly half don't trust its accuracy."
+     },
+     {
+      "t": 8.42,
+      "text": "Companies need people who ship products and own their quality, not just people who type code."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-emma/04.mp3",
+    "dur": 13.49,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "In the age of AI, software engineers work with AI assistants at every step: requirements, design, coding, testing, deployment and operations."
+     },
+     {
+      "t": 8.85,
+      "text": "AI moves fast. Engineers decide, and take responsibility."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-emma/05.mp3",
+    "dur": 22.58,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "That's why our AI-native Software Engineering program has you shipping real products from your first semester."
+     },
+     {
+      "t": 6.12,
+      "text": "With three ten-week semesters a year, you graduate in just three years."
+     },
+     {
+      "t": 10.2,
+      "text": "Year one: your own apps, live on the internet."
+     },
+     {
+      "t": 13.03,
+      "text": "Year two: team products for real users and for industry."
+     },
+     {
+      "t": 16.63,
+      "text": "Year three: an internship, a specialization, and graduation with a portfolio of nine products."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-emma/06.mp3",
+    "dur": 15.19,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "You'll build the four skills AI-era engineers need: writing clear specifications, orchestrating AI assistants and agents, verifying every line of code, and owning the product."
+     },
+     {
+      "t": 10.33,
+      "text": "Learn with AI, but still pass exams without it, so your foundations are solid."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-emma/07.mp3",
+    "dur": 12.12,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "At CMC, you study inside a technology group."
+     },
+     {
+      "t": 3.72,
+      "text": "Our ecosystem of research institutes, university and member companies lets you learn through real projects and intern in industry while still in school."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-emma/08.mp3",
+    "dur": 16.92,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "The class of 2027 will graduate around 2030."
+     },
+     {
+      "t": 4.71,
+      "text": "Growing roles include AI-augmented software engineers, applied AI engineers, AI testing and evaluation engineers, cloud platform engineers, and product engineers."
+     },
+     {
+      "t": 14.7,
+      "text": "Tap any role to explore."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-emma/09.mp3",
+    "dur": 15.07,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "CMC's \"You Deserve It\" scholarship fund is worth ninety-six billion dong."
+     },
+     {
+      "t": 5.03,
+      "text": "Awards cover thirty, fifty, seventy, or one hundred percent of tuition for the whole program."
+     },
+     {
+      "t": 10.63,
+      "text": "They're based on exam scores, IELTS certificates, or academic awards."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-emma/10.mp3",
+    "dur": 15.58,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "There are four ways in: the CMC-TEST aptitude exam, your high school transcript, your national graduation exam scores, or direct admission, for example with IELTS six point zero or higher."
+     },
+     {
+      "t": 10.97,
+      "text": "The subject combination is Math counted twice, plus any two subjects."
+     }
+    ]
+   },
+   {
+    "file": "audio/en-emma/11.mp3",
+    "dur": 7.73,
+    "segs": [
+     {
+      "t": 0.25,
+      "text": "Make the first commit to your future."
+     },
+     {
+      "t": 2.56,
+      "text": "Scan the QR code to apply, or call the CMC University admissions hotline."
+     }
+    ]
+   }
+  ]
+ }
+}

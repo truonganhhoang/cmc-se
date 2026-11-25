@@ -1,0 +1,17 @@
+# Ngành Kỹ thuật phần mềm – Trường Đại học CMC
+
+> Thông tin tuyển sinh và chương trình đào tạo ngành Kỹ thuật phần mềm (mã xét tuyển SE, mã trường CMC), chương trình 3 năm, 9 học kỳ (mỗi học kỳ 10 tuần), định hướng AI-native: học cùng AI, mỗi học kỳ một sản phẩm chạy thật. Số liệu tuyển sinh là của mùa 2026.
+
+## Tài liệu
+
+- [Hồ sơ đầy đủ ngành Kỹ thuật phần mềm (Markdown)](/ky-thuat-phan-mem-cmc.md): thông tin nhanh, khung chương trình 9 học kỳ, hướng chuyên sâu, năng lực sau từng năm, hệ thống học tập có AI, nghề nghiệp, xét tuyển, hỏi đáp
+- [Hồ sơ ngành (trang web)](/ky-thuat-phan-mem/ho-so.html): tra cứu tuyển sinh, học bổng, chương trình, hỏi đáp
+- [Trang giới thiệu tương tác](/ky-thuat-phan-mem/): video, trắc nghiệm hướng nghiệp, tính điểm xét tuyển
+- [Chương trình đào tạo chi tiết (Markdown)](/ky-thuat-phan-mem/ctdt/ctdt.md): chuẩn đầu ra, 44 học phần, kế hoạch 10 tuần, đánh giá và mức dùng AI
+
+## Nguồn chính thức
+
+- [Website Trường Đại học CMC](https://cmcu.edu.vn)
+- [Đăng ký xét tuyển](https://xettuyen.cmcu.edu.vn)
+- [Đăng ký thi CMC-TEST](https://thituyen.cmcu.edu.vn)
+- Hotline tuyển sinh: 024 7102 9999

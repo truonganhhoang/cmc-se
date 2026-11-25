@@ -1,0 +1,1864 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kỹ thuật phần mềm CMC</title>
+<meta name="description" content="Ngành Kỹ thuật phần mềm – Trường Đại học CMC. Xem video, làm trắc nghiệm hướng nghiệp, tự tính điểm xét tuyển và nhận thông tin học bổng.">
+<meta property="og:title" content="Kỹ thuật phần mềm – Trường Đại học CMC">
+<meta property="og:description" content="Đừng chỉ học viết code. Hãy học xây phần mềm. Xem video 80 giây, làm trắc nghiệm, tính điểm xét tuyển.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0A1433">
+<!--LD-START-->
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "EducationalOccupationalProgram", "name": "Kỹ thuật phần mềm (Software Engineering) – định hướng AI-native", "alternateName": ["Ngành Kỹ thuật phần mềm CMC", "Software Engineering CMC University", "Mã ngành SE"], "identifier": "SE", "programType": "Đại học chính quy", "educationalProgramMode": "full-time", "timeToComplete": "P3Y", "inLanguage": "vi", "numberOfCredits": 123, "description": "Chương trình Kỹ thuật phần mềm định hướng AI-native của Trường Đại học CMC: học cùng AI, 3 năm, 9 học kỳ (mỗi học kỳ 10 tuần), mỗi học kỳ làm ra một sản phẩm chạy thật, ra trường với hồ sơ 9 sản phẩm, thực tập OJT tại Tập đoàn Công nghệ CMC.", "occupationalCategory": ["15-1252.00 Software Developers", "15-1253.00 Software Quality Assurance Analysts and Testers"], "educationalCredentialAwarded": "Bằng tốt nghiệp đại học ngành Kỹ thuật phần mềm", "programPrerequisites": "Tốt nghiệp THPT; tổ hợp xét tuyển Toán ×2 + 2 môn bất kỳ (mùa 2026)", "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC", "alternateName": "CMC University", "url": "https://cmcu.edu.vn", "telephone": "+84-24-7102-9999", "parentOrganization": {"@type": "Organization", "name": "Tập đoàn Công nghệ CMC"}}, "hasCourse": [{"@type": "Course", "name": "SOFT1001 Nhập môn Kỹ thuật phần mềm AI-native", "inLanguage": "vi", "numberOfCredits": 3, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "PROG2005 Cơ sở lập trình (Python, có trợ lý AI)", "inLanguage": "vi", "numberOfCredits": 4, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "MATH2005 Toán rời rạc và logic cho lập trình", "inLanguage": "vi", "numberOfCredits": 2, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "SOFT1101 Studio 1: Sản phẩm số đầu tiên", "inLanguage": "vi", "numberOfCredits": 2, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "INFO2002 Cấu trúc dữ liệu và giải thuật", "inLanguage": "vi", "numberOfCredits": 3, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "INFO2007 Cơ sở dữ liệu", "inLanguage": "vi", "numberOfCredits": 3, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "PROG2101 Phát triển web full-stack", "inLanguage": "vi", "numberOfCredits": 3, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "SOFT1102 Studio 2: Ứng dụng dữ liệu", "inLanguage": "vi", "numberOfCredits": 2, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "PROG2006 Lập trình hướng đối tượng và mã sạch", "inLanguage": "vi", "numberOfCredits": 3, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "MATH2101 Toán cho AI: Đại số tuyến tính và Xác suất thống kê", "inLanguage": "vi", "numberOfCredits": 3, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "ENGL2002 Tiếng Anh kỹ thuật cho kỹ sư phần mềm", "inLanguage": "vi", "numberOfCredits": 2, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "SOFT3003 Thiết kế trải nghiệm người dùng", "inLanguage": "vi", "numberOfCredits": 2, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "SOFT1103 Studio 3: Sản phẩm có người dùng", "inLanguage": "vi", "numberOfCredits": 2, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "SOFT2001 Kỹ nghệ yêu cầu và đặc tả cho người và AI agent", "inLanguage": "vi", "numberOfCredits": 3, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "SOFT2002 Kiến trúc phần mềm: ra quyết định cùng AI", "inLanguage": "vi", "numberOfCredits": 3, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "PROG3002 Phát triển ứng dụng di động", "inLanguage": "vi", "numberOfCredits": 3, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "SOFT2003 Hệ thống máy tính và mạng cho kỹ sư phần mềm", "inLanguage": "vi", "numberOfCredits": 2, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "SOFT1201 Studio 4: Ứng dụng di động nhóm", "inLanguage": "vi", "numberOfCredits": 2, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "INFO2011 Công nghệ phần mềm: sản phẩm và Agile", "inLanguage": "vi", "numberOfCredits": 2, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "SOFT4003 Kiểm thử và đảm bảo chất lượng phần mềm với AI", "inLanguage": "vi", "numberOfCredits": 3, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "INFO3008 DevOps, CI/CD và điện toán đám mây", "inLanguage": "vi", "numberOfCredits": 3, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "SOFT2004 Kỹ nghệ phần mềm với AI agent", "inLanguage": "vi", "numberOfCredits": 3, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "SOFT1202 Studio 5: Sản phẩm cho cộng đồng trường", "inLanguage": "vi", "numberOfCredits": 2, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "SOFT3001 Học máy ứng dụng cho kỹ sư phần mềm", "inLanguage": "vi", "numberOfCredits": 3, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "SOFT3002 Bảo mật ứng dụng và an toàn mã do AI sinh", "inLanguage": "vi", "numberOfCredits": 3, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "SOFT3007 Chủ đề hiện đại trong Kỹ thuật phần mềm", "inLanguage": "vi", "numberOfCredits": 3, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "SOFT2101 Studio 6: Dự án doanh nghiệp", "inLanguage": "vi", "numberOfCredits": 3, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "SOFT3004 Phát triển ứng dụng mô hình ngôn ngữ lớn", "inLanguage": "vi", "numberOfCredits": 3, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "SOFT3005 Hệ thống phân tán, dữ liệu và vận hành", "inLanguage": "vi", "numberOfCredits": 3, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "INFO3001 Pháp lý, đạo đức nghề nghiệp và AI có trách nhiệm", "inLanguage": "vi", "numberOfCredits": 2, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "SOFT3008 Nghiên cứu và đổi mới trong Kỹ thuật phần mềm", "inLanguage": "vi", "numberOfCredits": 3, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "SOFT2102 Studio 7: Tính năng AI có đánh giá", "inLanguage": "vi", "numberOfCredits": 2, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "SOFT3901 Thực tập OJT tại doanh nghiệp", "inLanguage": "vi", "numberOfCredits": 6, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "Học phần chuyên sâu 1", "inLanguage": "vi", "numberOfCredits": 3, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "SOFT3006 Đổi mới sáng tạo và khởi nghiệp sản phẩm số", "inLanguage": "vi", "numberOfCredits": 2, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "Học phần chuyên sâu 2", "inLanguage": "vi", "numberOfCredits": 3, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "Học phần tự chọn liên ngành", "inLanguage": "vi", "numberOfCredits": 3, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}, {"@type": "Course", "name": "SOFT3902 Đồ án tốt nghiệp", "inLanguage": "vi", "numberOfCredits": 8, "provider": {"@type": "CollegeOrUniversity", "name": "Trường Đại học CMC"}}], "offers": {"@type": "Offer", "category": "Học bổng 30%–100% học phí (mùa 2026)", "url": "https://xettuyen.cmcu.edu.vn"}}</script>
+<!--LD-END-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Be+Vietnam+Pro:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap&subset=vietnamese" rel="stylesheet">
+<style>
+/* Layout idea: một "IDE" màu mực — sân khấu 16:9/9:16 phát như video, mỗi slide là một commit; bên dưới là khu khám phá và bộ phát hành đa kênh. */
+:root{
+  --ink:#0A1433;      /* nền */
+  --ink-2:#111D45;    /* bảng, thẻ */
+  --line:#243567;     /* viền */
+  --paper:#F2EFE6;    /* chữ chính */
+  --muted:#9DA8CB;    /* chữ phụ */
+  --amber:#FFB547;    /* điểm nhấn */
+  --cyan:#6FD6FF;     /* mã, liên kết */
+  --ok:#5EE0A0; --warn:#FFB547; --bad:#FF7A7A;
+  --f-display:"Bricolage Grotesque","Be Vietnam Pro",system-ui,sans-serif;
+  --f-body:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--ink);color:var(--paper);font-family:var(--f-body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--cyan)}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;letter-spacing:-.02em;margin:0}
+.mono{font-family:var(--f-mono)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+
+/* ---------- top nav ---------- */
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;max-width:1200px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;text-decoration:none;color:var(--paper)}
+.brand-mark{width:34px;height:34px;border-radius:8px;background:var(--amber);color:var(--ink);display:grid;place-items:center;font:800 13px/1 var(--f-mono)}
+.brand small{display:block;font-weight:500;color:var(--muted);font-size:12px;line-height:1.2}
+.nav-links{display:flex;gap:6px;flex-wrap:wrap}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:14px;padding:6px 10px;border-radius:999px}
+.nav-links a:hover{color:var(--paper);background:var(--ink-2)}
+.nav-cta{background:var(--amber)!important;color:var(--ink)!important;font-weight:700}
+.nav-links a.nav-hot{color:var(--amber);border:1px solid var(--amber)}
+
+/* ---------- player ---------- */
+.player{max-width:1240px;margin:0 auto;padding:0 20px 8px}
+.screen-wrap{display:flex;justify-content:center}
+.screen{position:relative;width:min(100%, calc((100dvh - 170px) * 16 / 9));aspect-ratio:16/9;min-width:280px;border-radius:18px;overflow:hidden;background:var(--ink);border:1px solid var(--line);box-shadow:0 30px 80px -30px rgba(0,0,0,.7)}
+.player.vert .screen{width:min(100%, calc((100dvh - 170px) * 9 / 16));aspect-ratio:9/16}
+.stage{position:absolute;left:0;top:0;width:1600px;height:900px;transform-origin:0 0;transform:scale(var(--s,.5));overflow:hidden;background:radial-gradient(1200px 700px at 85% -10%, #1B2B66 0%, transparent 60%),var(--ink)}
+.vert .stage{width:900px;height:1600px;background:radial-gradient(900px 900px at 100% 0%, #1B2B66 0%, transparent 60%),var(--ink)}
+#bg{position:absolute;inset:0;width:100%;height:100%;opacity:.55}
+
+.st-top{position:absolute;left:110px;right:110px;top:48px;display:flex;justify-content:space-between;align-items:center;font:500 22px/1 var(--f-mono);color:var(--muted);z-index:3}
+.vert .st-top{left:70px;right:70px;top:60px;font-size:24px}
+.st-top b{color:var(--paper);font-weight:700}
+.st-top .dot{display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--amber);margin-right:12px;vertical-align:-1px}
+
+.slide{position:absolute;inset:0;padding:110px 110px 190px;display:flex;flex-direction:column;justify-content:center;gap:30px;opacity:0;visibility:hidden;transition:opacity .55s ease,visibility .55s;z-index:2}
+.vert .slide{padding:140px 70px 320px;gap:32px}
+.slide.on{opacity:1;visibility:visible}
+.kick{font:500 26px/1.2 var(--f-mono);color:var(--cyan)}
+.kick .pr{color:var(--amber)}
+.h{font:800 112px/.96 var(--f-display);letter-spacing:-.035em;margin:0}
+.h2{font:800 78px/1 var(--f-display);letter-spacing:-.03em;margin:0}
+.vert .h{font-size:104px}
+.vert .h2{font-size:76px}
+.hl{color:var(--amber)}
+.lead{font-size:34px;line-height:1.35;color:var(--muted);max-width:32ch;margin:0}
+.vert .lead{font-size:36px}
+.row{display:flex;gap:56px;align-items:center}
+.row>*{flex:1;min-width:0}
+.vert .row{flex-direction:column;align-items:stretch;gap:40px}
+.note{font:400 20px/1.4 var(--f-mono);color:var(--muted)}
+.vert .note{font-size:22px}
+
+/* entry animation (from a visible resting state in the first slide) */
+@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@keyframes pop{from{opacity:0;transform:scale(.9)}to{opacity:1;transform:none}}
+@keyframes glow{0%{border-color:var(--line);background:var(--ink-2)}35%{border-color:var(--amber);background:#2A2A3F}100%{border-color:var(--line);background:var(--ink-2)}}
+@keyframes blink{50%{opacity:0}}
+@keyframes flow{from{left:0}to{left:calc(100% - 22px)}}
+@keyframes flowv{from{top:0}to{top:calc(100% - 22px)}}
+@keyframes ring{from{stroke-dashoffset:var(--c)}}
+@keyframes type{from{width:0}}
+.slide.on .a{animation:rise .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--d,0) * 1ms)}
+.slide.on .p{animation:pop .6s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--d,0) * 1ms)}
+.player.paused .slide.on .packet,.player.paused .slide.on line,.player.paused .slide.on .caret{animation-play-state:paused!important}
+.player.first-frame .slide.on .a,.player.first-frame .slide.on .p{animation:none}
+
+/* caption */
+.cap{position:absolute;left:110px;right:110px;bottom:58px;z-index:4;display:flex;justify-content:center;pointer-events:none}
+.vert .cap{left:60px;right:60px;bottom:120px}
+.cap span{background:rgba(5,10,30,.82);border:1px solid var(--line);padding:14px 24px;border-radius:14px;font:500 28px/1.4 var(--f-body);text-align:center;max-width:1200px}
+.vert .cap span{font-size:32px}
+.cap:empty,.no-cc .cap{display:none}
+.hint{position:absolute;right:110px;top:92px;z-index:4;font:500 20px/1 var(--f-mono);color:var(--ink);background:var(--amber);padding:10px 16px;border-radius:999px;opacity:0;transition:opacity .3s}
+.vert .hint{right:70px;top:110px}
+.player.exploring .hint{opacity:1}
+
+/* big play overlay */
+.bigplay{position:absolute;inset:0;z-index:6;display:none;align-items:flex-end;justify-content:flex-end;padding:0 110px 60px 0;background:transparent;border:0;cursor:pointer}
+.vert .bigplay{padding:0 70px 120px 0}
+.player.ended .bigplay{background:rgba(5,10,30,.45);align-items:center;justify-content:center;padding:0}
+.player.ended .bigplay,.player.idle .bigplay{display:flex}
+.bigplay span{display:flex;align-items:center;gap:14px;background:var(--amber);color:var(--ink);padding:22px 34px;border-radius:999px;font:700 28px/1 var(--f-body);box-shadow:0 10px 40px rgba(0,0,0,.4)}
+.bigplay span svg{width:28px;height:28px}
+.player.idle .cap{display:none}
+
+/* controls */
+.ctrl{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:12px auto 0;max-width:1200px}
+.player.vert .ctrl{max-width:640px}
+.ibtn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-width:40px;height:40px;padding:0 10px;border-radius:10px;border:1px solid var(--line);background:var(--ink-2);color:var(--paper);cursor:pointer;font-size:13px;font-weight:600;white-space:nowrap}
+.ibtn:hover{border-color:var(--muted)}
+.ibtn[aria-pressed="true"]{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.ibtn.main{background:var(--amber);color:var(--ink);border-color:var(--amber);min-width:48px}
+.ibtn svg{width:18px;height:18px;fill:currentColor}
+.time{font:500 13px/1 var(--f-mono);color:var(--muted);font-variant-numeric:tabular-nums;min-width:96px}
+.segs{flex:1 1 260px;display:flex;gap:4px;height:40px;align-items:center;cursor:pointer;min-width:200px}
+.seg{flex:1;height:6px;border-radius:3px;background:var(--line);position:relative;overflow:hidden;border:0;padding:0;cursor:pointer}
+.seg:hover{height:10px}
+.seg i{position:absolute;inset:0;width:0;background:var(--amber);display:block}
+.seg.done i{width:100%}
+.chapters{display:flex;gap:6px;overflow-x:auto;margin:10px auto 0;max-width:1200px;padding-bottom:6px;scrollbar-width:thin}
+.player.vert .chapters{max-width:640px}
+.chap{flex:0 0 auto;border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:6px 12px;font-size:13px;cursor:pointer}
+.chap b{font-family:var(--f-mono);color:var(--cyan);font-weight:500;margin-right:6px}
+.chap.cur{color:var(--paper);border-color:var(--amber)}
+
+.ibtn.sel{appearance:none;-webkit-appearance:none;padding:0 28px 0 12px;background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);background-position:calc(100% - 15px) 17px,calc(100% - 10px) 17px;background-size:5px 5px;background-repeat:no-repeat;max-width:190px;text-overflow:ellipsis}
+.ibtn.sel option{background:var(--ink-2);color:var(--paper)}
+#bLang b{font-weight:700;color:var(--muted)} #bLang .sl{color:var(--line)}
+#bLang[data-lang="vi"] #langVi,#bLang[data-lang="en"] #langEn{color:var(--amber)}
+.unmute{position:absolute;right:110px;bottom:58px;z-index:5;display:none;align-items:center;gap:12px;border:0;border-radius:999px;background:var(--paper);color:var(--ink);padding:16px 26px;font:700 24px/1 var(--f-body);cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.unmute svg{width:28px;height:28px}
+.vert .unmute{right:70px;bottom:60px}
+.player.muted-hint .unmute{display:flex}
+.player.muted-hint .cap{justify-content:flex-start}
+.player.muted-hint .cap span{max-width:900px}
+.vert .player.muted-hint .cap,.player.vert.muted-hint .cap{bottom:150px;justify-content:center}
+
+/* studio */
+.studio{max-width:1200px;margin:14px auto 0;border:1px solid var(--line);border-radius:16px;background:var(--ink-2);padding:0 18px}
+.player.vert .studio{max-width:900px}
+.studio>summary{cursor:pointer;padding:14px 0;font-weight:600;list-style:none;display:flex;gap:10px;align-items:center}
+.studio>summary .mono{font-size:11px;background:var(--bad);color:var(--ink);padding:3px 7px;border-radius:6px;font-weight:700}
+.studio>summary::after{content:"+";margin-left:auto;font-family:var(--f-mono);color:var(--amber)}
+.studio[open]>summary::after{content:"−"}
+.studio-tabs{display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap}
+.studio-tabs button{border:1px solid var(--line);background:transparent;border-radius:999px;padding:7px 14px;cursor:pointer;font-size:14px}
+.studio-tabs button[aria-selected="true"]{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.studio-pane{padding-bottom:18px}
+.rec-list{display:flex;flex-direction:column;gap:6px}
+.rec-row{display:grid;grid-template-columns:34px 1fr auto;gap:12px;align-items:center;border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:var(--ink)}
+.rec-row.on{border-color:var(--bad)}
+.rec-row .n{font:600 13px/1 var(--f-mono);color:var(--cyan)}
+.rec-row .txt{font-size:14.5px;line-height:1.45}
+.rec-row .txt b{display:block;font-size:12px;color:var(--muted);font-weight:500;margin-bottom:2px}
+.rec-row .acts{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.rec-row .acts button,.rec-row .acts label{border:1px solid var(--line);background:transparent;border-radius:8px;padding:6px 10px;font-size:13px;cursor:pointer;white-space:nowrap;color:var(--paper)}
+.rec-row .acts .r{border-color:var(--bad);color:var(--bad)}
+.rec-row.on .acts .r{background:var(--bad);color:var(--ink)}
+.rec-row .ok{font:500 12px/1 var(--f-mono);color:var(--ok);align-self:center}
+@media (max-width:640px){.rec-row{grid-template-columns:28px 1fr}.rec-row .acts{grid-column:1/-1;justify-content:flex-start}}
+.sample-text{border-left:3px solid var(--amber);padding:6px 0 6px 14px;margin:0 0 12px;font-size:16px;line-height:1.6;max-width:75ch}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--muted);margin:12px 0;max-width:80ch}
+.consent input{margin-top:4px}
+
+/* embed + record modes */
+body.embed .nav,body.embed main>section:not(#xem),body.embed footer,body.embed .chapters{display:none}
+body.embed .player{padding:0;max-width:none}
+body.embed .screen{width:min(100vw, calc((100vh - 56px) * 16 / 9));border-radius:0;border:0}
+body.embed .player.vert .screen{width:min(100vw, calc((100vh - 56px) * 9 / 16))}
+body.embed .ctrl{margin-top:6px;padding:0 8px}
+body.rec .ctrl,body.rec .chapters,body.rec .nav{visibility:hidden}
+
+/* ---------- SLIDE CONTENT ---------- */
+/* s1 terminal */
+.term{background:#060C22;border:1px solid var(--line);border-radius:18px;overflow:hidden;font:400 24px/1.6 var(--f-mono)}
+.term-bar{display:flex;gap:10px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.term-bar i{width:14px;height:14px;border-radius:50%;background:var(--line)}
+.term-bar i:first-child{background:var(--amber)}
+.term-body{padding:22px 26px}
+.term-body .c{color:var(--paper)} .term-body .o{color:var(--muted)} .term-body .g{color:var(--ok)}
+.term-body .pr{color:var(--amber)}
+.caret{display:inline-block;width:.6em;height:1em;background:var(--amber);vertical-align:-3px;animation:blink 1s steps(1) infinite}
+.tag{display:inline-flex;align-items:center;gap:10px;align-self:flex-start;padding:10px 18px;border:1px solid var(--amber);color:var(--amber);border-radius:999px;font:600 24px/1 var(--f-mono)}
+
+/* s2 tiles */
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.vert .tiles{grid-template-columns:repeat(2,1fr)}
+.tile{border:1px solid var(--line);background:var(--ink-2);border-radius:20px;padding:26px;display:flex;flex-direction:column;gap:16px;min-height:170px}
+.slide.on .tile{animation:rise .6s both, glow 1.6s both;animation-delay:calc(var(--d) * 1ms), calc(var(--d) * 1ms + 400ms)}
+.tile svg{width:52px;height:52px;stroke:var(--cyan);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.tile b{font:600 28px/1.2 var(--f-body)}
+
+/* s3 stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.vert .stats{grid-template-columns:repeat(2,1fr)}
+.stat{border:1px solid var(--line);background:var(--ink-2);border-radius:20px;padding:22px 24px;display:flex;flex-direction:column;gap:12px}
+.stat b{font:800 72px/.9 var(--f-display);letter-spacing:-.04em;color:var(--amber)}
+.stat b.neg{color:var(--bad)}
+.stat span{font-size:22px;line-height:1.3}
+.stat i{font:400 17px/1.2 var(--f-mono);color:var(--muted);font-style:normal;margin-top:auto}
+.vert .stat span{font-size:26px}
+
+/* s3 pipeline */
+.pipe{position:relative;display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.pipe::before{content:"";position:absolute;left:4%;right:4%;top:44px;height:3px;background:var(--line)}
+.packet{position:absolute;top:34px;left:0;width:22px;height:22px;border-radius:6px;background:var(--amber);box-shadow:0 0 30px var(--amber);margin-left:4%;max-width:92%}
+.slide.on .packet{animation:flow 6s cubic-bezier(.6,0,.4,1) .6s infinite}
+.pipe .packet{left:0}
+.stagebtn{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:14px;background:none;border:0;cursor:pointer;color:var(--paper);text-align:center;padding:0}
+.stagebtn .n{width:90px;height:90px;border-radius:50%;display:grid;place-items:center;background:var(--ink-2);border:2px solid var(--line);font:700 26px/1 var(--f-mono);color:var(--cyan)}
+.stagebtn:hover .n,.stagebtn.sel .n{border-color:var(--amber);color:var(--amber)}
+.stagebtn>span:last-child{display:flex;flex-direction:column;gap:6px}
+.stagebtn b{font:700 28px/1.15 var(--f-body)}
+.stagebtn small{font-size:21px;color:var(--muted);line-height:1.35}
+.vert .pipe{grid-template-columns:1fr;gap:18px}
+.vert .pipe::before{left:44px;right:auto;top:30px;bottom:30px;width:3px;height:auto}
+.vert .packet{left:34px;top:0;margin:0}
+.vert .slide.on .packet{animation-name:flowv}
+.vert .stagebtn{flex-direction:row;text-align:left;gap:26px}
+.vert .stagebtn .n{flex:0 0 90px}
+.vert .stagebtn span{display:flex;flex-direction:column;gap:4px}
+.detail{min-height:64px;border-left:4px solid var(--amber);padding:8px 0 8px 22px;font-size:26px;color:var(--paper);max-width:60ch}
+.detail:empty{display:none}
+
+/* s4 ecosystem */
+.eco{position:relative;width:560px;height:560px;margin:0 auto}
+.vert .eco{width:620px;height:560px}
+.eco svg.lines{position:absolute;inset:0;width:100%;height:100%}
+.eco svg.lines line{stroke:var(--line);stroke-width:3;stroke-dasharray:8 10}
+.slide.on .eco svg.lines line{animation:dash 3s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-72}}
+.node{position:absolute;transform:translate(-50%,-50%);width:200px;padding:18px;border-radius:18px;background:var(--ink-2);border:1px solid var(--line);text-align:center;font:600 22px/1.25 var(--f-body)}
+.node small{display:block;font:400 17px/1.3 var(--f-body);color:var(--muted);margin-top:4px}
+.node.core{width:220px;height:220px;border-radius:50%;display:grid;place-items:center;background:var(--amber);color:var(--ink);border:0;font:800 34px/1.05 var(--f-display)}
+.node.core small{color:#3A2A08;font:600 18px/1.2 var(--f-body)}
+.blist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:22px}
+.blist li{display:flex;gap:18px;font-size:30px;line-height:1.35}
+.blist li::before{content:"+";font:700 30px/1.35 var(--f-mono);color:var(--ok);flex:0 0 auto}
+.vert .blist li{font-size:32px}
+
+/* s5 roadmap */
+.road{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.s-road{gap:20px!important;padding-top:120px!important}
+.s-road .yr{padding:20px 22px;gap:8px}
+.s-road .yr b{font-size:34px}
+.s-road .yr p{font-size:20px}
+.s-road .chip{font-size:21px;padding:8px 16px}
+.vert .road{grid-template-columns:1fr;gap:14px}
+.vert .yr b{font-size:32px}
+.vert .yr p{font-size:22px!important}
+.yr{border:1px solid var(--line);background:var(--ink-2);border-radius:20px;padding:26px;display:flex;flex-direction:column;gap:12px}
+.vert .yr{padding:18px 24px;gap:8px}
+.yr .v{font:700 22px/1 var(--f-mono);color:var(--amber)}
+.yr b{font:800 38px/1.05 var(--f-display)}
+.yr p{margin:0;font-size:22px;color:var(--muted);line-height:1.4}
+.vert .yr p{font-size:24px}
+
+/* s6 editor */
+.ed{background:#060C22;border:1px solid var(--line);border-radius:18px;font:400 23px/1.75 var(--f-mono);overflow:hidden}
+.ed-tab{padding:14px 22px;border-bottom:1px solid var(--line);color:var(--muted);font-size:19px}
+.ed-tab b{color:var(--paper);font-weight:500}
+.ed pre{margin:0;padding:20px 24px;white-space:pre-wrap;font:inherit}
+.k{color:#C79BFF}.s{color:var(--ok)}.cm{color:#6B78A3}.fn{color:var(--cyan)}.num{color:var(--amber)}
+.ai{display:block;margin-top:10px;padding:12px 16px;border-radius:12px;border:1px dashed var(--amber);color:var(--amber);background:rgba(255,181,71,.07)}
+
+/* s7 roles */
+.roles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.vert .roles{grid-template-columns:repeat(2,1fr)}
+.role{border:1px solid var(--line);background:var(--ink-2);color:var(--paper);border-radius:16px;padding:20px 22px;text-align:left;cursor:pointer;font:600 26px/1.2 var(--f-body);display:flex;align-items:center;gap:14px}
+.role i{font:500 18px/1 var(--f-mono);color:var(--cyan);font-style:normal}
+.role:hover,.role.sel{border-color:var(--amber)}
+.role.sel{background:#2A2A3F}
+
+/* s8 scholarship */
+.big{font:800 220px/.85 var(--f-display);letter-spacing:-.05em;color:var(--amber)}
+.big small{font-size:64px;letter-spacing:-.02em;color:var(--paper);margin-left:10px}
+.vert .big{font-size:230px}
+.rings{display:flex;gap:18px;flex-wrap:nowrap}
+.ringc{display:flex;flex-direction:column;align-items:center;gap:8px}
+.ringc svg{width:128px;height:128px;transform:rotate(-90deg)}
+.ringc circle{fill:none;stroke-width:14}
+.ringc .bg{stroke:var(--line)}
+.ringc .fg{stroke:var(--amber);stroke-linecap:round}
+.slide.on .ringc .fg{animation:ring 1.4s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--d) * 1ms)}
+.ringc b{font:800 34px/1 var(--f-display);margin-top:-90px;margin-bottom:54px}
+.ringc span{font-size:20px;color:var(--muted)}
+
+/* s9 doors */
+.doors{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.vert .doors{grid-template-columns:repeat(2,1fr)}
+.door{border:1px solid var(--line);background:var(--ink-2);border-radius:20px;padding:24px;text-align:left;cursor:pointer;color:var(--paper);display:flex;flex-direction:column;gap:10px;min-height:230px}
+.door:hover,.door.sel{border-color:var(--amber)}
+.door .code{font:500 19px/1 var(--f-mono);color:var(--cyan)}
+.door b{font:800 34px/1.05 var(--f-display)}
+.door small{font-size:21px;line-height:1.35;color:var(--muted)}
+.strip{display:flex;flex-wrap:wrap;gap:14px}
+.chip{border:1px solid var(--line);border-radius:999px;padding:10px 20px;font:500 24px/1.2 var(--f-mono)}
+.chip b{color:var(--amber);font-weight:700}
+
+/* s10 cta */
+.cta-grid{display:grid;grid-template-columns:1fr 280px;gap:56px;align-items:center}
+.vert .cta-grid{grid-template-columns:1fr;gap:40px}
+.qrbox{background:var(--paper);border-radius:22px;padding:22px;display:flex;flex-direction:column;align-items:center;gap:12px;color:var(--ink)}
+.vert .qrbox{flex-direction:row;justify-content:flex-start;gap:26px;align-self:flex-start}
+.qrbox .qr{width:236px;height:236px;display:grid;place-items:center}
+.qrbox .qr img,.qrbox .qr canvas{width:100%!important;height:100%!important}
+.qrbox span{font:600 18px/1.3 var(--f-body);text-align:center}
+.contacts{display:flex;flex-wrap:wrap;gap:12px 34px;font:500 28px/1.3 var(--f-mono)}
+.contacts span{color:var(--muted)}
+.contacts b{color:var(--paper);font-weight:700}
+.sbtns{display:flex;gap:16px;flex-wrap:wrap}
+.sbtn{border:0;border-radius:999px;padding:18px 30px;font:700 26px/1 var(--f-body);cursor:pointer;background:var(--paper);color:var(--ink);text-decoration:none}
+.sbtn.amb{background:var(--amber)}
+.sbtn.ghost{background:transparent;color:var(--paper);border:2px solid var(--line)}
+
+/* ---------- EXPLORE (page) ---------- */
+main>section{padding:56px 0}
+.sec-head{display:flex;flex-direction:column;gap:10px;margin-bottom:28px;max-width:760px}
+.eyebrow{font:500 13px/1 var(--f-mono);color:var(--cyan);letter-spacing:.04em}
+.sec-head h2{font-size:clamp(30px,4.2vw,48px);line-height:1.05}
+.sec-head p{margin:0;color:var(--muted);max-width:62ch}
+.grid2{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+@media (max-width:900px){.grid2{grid-template-columns:1fr}}
+.card{background:var(--ink-2);border:1px solid var(--line);border-radius:18px;padding:24px}
+.card h3{font-size:22px;margin-bottom:6px}
+.sub{color:var(--muted);font-size:15px;margin:0 0 16px}
+hr.sep{border:0;border-top:1px solid var(--line);margin:0}
+
+/* program */
+.evid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media (max-width:1000px){.evid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.evid{grid-template-columns:1fr}}
+.ev{display:flex;flex-direction:column;gap:8px;padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--ink-2);text-decoration:none;color:var(--paper)}
+.ev:hover{border-color:var(--cyan)}
+.ev b{font:800 40px/1 var(--f-display);letter-spacing:-.03em;color:var(--amber)}
+.ev b.neg{color:var(--bad)}
+.ev span{font-size:15px;line-height:1.45}
+.ev i{font:400 12px/1.3 var(--f-mono);color:var(--cyan);font-style:normal;margin-top:auto}
+.principles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0}
+@media (max-width:1000px){.principles{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.principles{grid-template-columns:1fr}}
+.pr-card{padding:18px;border-radius:16px;background:var(--paper);color:var(--ink);display:flex;flex-direction:column;gap:6px}
+.pr-card .mono{font-size:12px;color:#5A6390}
+.pr-card b{font:800 22px/1.1 var(--f-display)}
+.pr-card p{margin:0;font-size:15px;color:#2E3660}
+.sem-head{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:flex-end;margin-bottom:18px}
+.sem-tabs{display:flex;gap:4px;flex-wrap:wrap}
+.sem-tabs button{border:1px solid var(--line);background:transparent;border-radius:10px;padding:8px 12px;font:600 13px/1 var(--f-mono);cursor:pointer;color:var(--muted)}
+.sem-tabs button[aria-selected="true"]{background:var(--amber);color:var(--ink);border-color:var(--amber)}
+.sem-tabs button .y{display:block;font-size:10px;font-weight:400;margin-top:3px;opacity:.8}
+.sem-body{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:16px}
+@media (max-width:900px){.sem-body{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.sem-body{grid-template-columns:1fr}}
+.sem-body div{border-top:2px solid var(--line);padding-top:12px}
+.sem-body div:first-child{border-top-color:var(--amber)}
+.sem-body small{display:block;font:500 12px/1 var(--f-mono);color:var(--cyan);margin-bottom:8px}
+.sem-body p{margin:0;font-size:15.5px}
+.sem-body div:first-child p{font:700 20px/1.3 var(--f-display)}
+
+/* bug hunt */
+.bh-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:20px;align-items:start}
+@media (max-width:900px){.bh-grid{grid-template-columns:1fr}}
+.bh{position:relative;background:#060C22;border:1px solid var(--line);border-radius:18px;overflow:hidden;min-height:460px;display:flex;flex-direction:column}
+.bh-top{display:flex;align-items:center;gap:14px;padding:12px 16px;border-bottom:1px solid var(--line);font-size:13px;color:var(--muted);flex-wrap:wrap}
+.bh-score{margin-left:auto;font-variant-numeric:tabular-nums}
+.bh-score b{color:var(--amber);font-size:16px}
+.bh-lives{display:flex;gap:4px}
+.bh-lives svg{width:16px;height:16px}
+#bhCombo{color:var(--ok)}
+.bh-timer{height:4px;background:var(--line)}
+.bh-timer i{display:block;height:100%;width:100%;background:var(--amber);transition:width .1s linear}
+.bh-timer i.low{background:var(--bad)}
+.bh-body{padding:18px 18px 20px;display:flex;flex-direction:column;gap:12px;flex:1}
+.bh-ctx{display:flex;flex-direction:column;gap:4px}
+.bh-ctx small{font:500 12px/1 var(--f-mono);color:var(--cyan)}
+.bh-ctx b{font:700 20px/1.25 var(--f-display)}
+.bh-ctx span{font-size:14.5px;color:var(--muted)}
+.bh-code{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.bh-line{display:grid;grid-template-columns:34px 1fr;gap:10px;text-align:left;border:0;border-bottom:1px solid #141F47;background:transparent;padding:8px 12px;font:400 14px/1.55 var(--f-mono);color:var(--paper);cursor:pointer;white-space:pre-wrap;word-break:break-word}
+.bh-line:last-child{border-bottom:0}
+.bh-line .ln{color:#4A5A8C;text-align:right;user-select:none}
+.bh-line:hover:not(:disabled){background:rgba(255,181,71,.08)}
+.bh-line:disabled{cursor:default}
+.bh-line.hit{background:rgba(94,224,160,.16);box-shadow:inset 3px 0 0 var(--ok)}
+.bh-line.miss{background:rgba(255,122,122,.16);box-shadow:inset 3px 0 0 var(--bad)}
+.bh-line.ans{box-shadow:inset 3px 0 0 var(--ok)}
+.bh-fb{border-radius:12px;padding:12px 14px;font-size:15px;line-height:1.5}
+.bh-fb.ok{background:rgba(94,224,160,.1);border:1px solid rgba(94,224,160,.4)}
+.bh-fb.bad{background:rgba(255,122,122,.08);border:1px solid rgba(255,122,122,.4)}
+.bh-fb b{display:block;margin-bottom:4px}
+.bh-start,.bh-end{display:flex;flex-direction:column;gap:14px;align-items:flex-start;justify-content:center;flex:1}
+.bh-start h3{font-size:26px}
+.bh-start ul{margin:0;padding-left:18px;color:var(--muted);font-size:15px;display:flex;flex-direction:column;gap:4px}
+.bh-big{font:800 64px/1 var(--f-display);color:var(--amber);font-variant-numeric:tabular-nums}
+.bh-rank{font:700 22px/1.2 var(--f-display)}
+.bh-card{width:100%;max-width:320px;border-radius:12px;border:1px solid var(--line)}
+.bh-end-grid{display:grid;grid-template-columns:1fr 220px;gap:18px;width:100%;align-items:start}
+@media (max-width:640px){.bh-end-grid{grid-template-columns:1fr}}
+.bh-form{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%;margin-top:6px}
+.bh-form .full{grid-column:1/-1}
+.bh-form input,.bh-form select{background:var(--ink);border:1px solid var(--line);border-radius:10px;padding:9px 11px;font-size:15px;width:100%}
+.bh-form label{font-size:13px;color:var(--muted);display:flex;flex-direction:column;gap:4px}
+.bh-form .chk{flex-direction:row;align-items:flex-start;gap:8px}
+.bh-form .chk input{width:auto;margin-top:3px}
+#bhConfetti{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.bh-side h3{font-size:20px}
+.bh-steps{margin:12px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:10px}
+.bh-steps b{display:block}
+.bh-steps span{font-size:14.5px;color:var(--muted)}
+.bh-best{margin-top:14px;font:500 13px/1.4 var(--f-mono);color:var(--cyan)}
+.rules{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (max-width:900px){.rules{grid-template-columns:1fr}}
+.rule{border:1px solid var(--line);border-radius:14px;padding:18px;background:var(--ink-2)}
+.rule h3{font-size:18px;margin-bottom:8px}
+.rule p{margin:0 0 8px;font-size:15px;color:#D6D9E6}
+.rule:nth-child(4){grid-column:1/-1}
+table.kb-like{width:100%;border-collapse:collapse;font-size:14.5px;margin:6px 0 10px}
+table.kb-like th,table.kb-like td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+table.kb-like th{font:600 12px/1.3 var(--f-mono);color:var(--cyan)}
+
+/* quiz */
+.qprog{display:flex;gap:4px;margin-bottom:18px}
+.qprog i{flex:1;height:4px;border-radius:2px;background:var(--line)}
+.qprog i.on{background:var(--amber)}
+.qtext{font:700 22px/1.3 var(--f-display);margin:0 0 14px}
+.opts{display:flex;flex-direction:column;gap:8px}
+.opt{text-align:left;border:1px solid var(--line);background:transparent;border-radius:12px;padding:12px 14px;cursor:pointer;font-size:16px}
+.opt:hover{border-color:var(--amber);background:rgba(255,181,71,.06)}
+.result h4{font:800 30px/1.1 var(--f-display);color:var(--amber);margin:4px 0 10px}
+.result p{margin:0 0 10px}
+.btnrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--ink);color:var(--paper);padding:10px 16px;border-radius:999px;cursor:pointer;font-weight:600;font-size:15px;text-decoration:none}
+.btn:hover{border-color:var(--muted)}
+.btn.pri{background:var(--amber);color:var(--ink);border-color:var(--amber)}
+.bars{display:flex;flex-direction:column;gap:6px;margin:12px 0}
+.bar{display:grid;grid-template-columns:150px 1fr 34px;gap:10px;align-items:center;font-size:14px;color:var(--muted)}
+.bar div{height:8px;background:var(--line);border-radius:4px;overflow:hidden}
+.bar div i{display:block;height:100%;background:var(--cyan)}
+
+/* terminal widget */
+.cli{background:#060C22;border:1px solid var(--line);border-radius:18px;font:400 14.5px/1.6 var(--f-mono);display:flex;flex-direction:column;height:100%;min-height:420px}
+.cli-out{flex:1;overflow-y:auto;padding:16px 18px;max-height:440px;white-space:pre-wrap}
+.cli-out .pr{color:var(--amber)} .cli-out .o{color:var(--muted)} .cli-out .g{color:var(--ok)} .cli-out .c{color:var(--cyan)}
+.cli form{display:flex;align-items:center;gap:8px;border-top:1px solid var(--line);padding:12px 18px}
+.cli input{flex:1;background:transparent;border:0;outline:none;font-family:var(--f-mono);font-size:15px;min-width:0}
+.cli-sug{display:flex;flex-wrap:wrap;gap:6px;padding:0 18px 14px}
+.cli-sug button{border:1px solid var(--line);background:transparent;border-radius:6px;padding:3px 8px;font:500 12.5px/1.4 var(--f-mono);color:var(--cyan);cursor:pointer}
+
+/* calc */
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media (max-width:900px){.calc{grid-template-columns:1fr}}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:flex;flex-direction:column;gap:6px}
+.field label{font-size:14px;color:var(--muted)}
+.field input,.field select{background:var(--ink);border:1px solid var(--line);border-radius:10px;padding:11px 12px;font-size:17px;font-variant-numeric:tabular-nums;width:100%}
+.seg-tabs{display:flex;gap:6px;grid-column:1/-1;flex-wrap:wrap}
+.seg-tabs button{border:1px solid var(--line);background:transparent;border-radius:999px;padding:8px 14px;cursor:pointer;font-size:14px}
+.seg-tabs button[aria-pressed="true"]{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.score{display:flex;flex-direction:column;gap:14px}
+.score .tot{font:800 72px/1 var(--f-display);font-variant-numeric:tabular-nums}
+.score .tot small{font-size:24px;color:var(--muted);font-weight:500}
+.gauge{position:relative;height:14px;background:var(--line);border-radius:7px}
+.gauge i{position:absolute;left:0;top:0;bottom:0;border-radius:7px;background:var(--cyan);transition:width .3s}
+.gauge b{position:absolute;top:-6px;bottom:-6px;width:3px;background:var(--amber)}
+.gauge-l{display:flex;justify-content:space-between;font:500 12px/1 var(--f-mono);color:var(--muted)}
+.pill{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;border-radius:999px;padding:6px 12px;font-weight:700;font-size:14px}
+.pill.ok{background:rgba(94,224,160,.15);color:var(--ok)}
+.pill.warn{background:rgba(255,181,71,.15);color:var(--warn)}
+.pill.bad{background:rgba(255,122,122,.15);color:var(--bad)}
+.fine{font-size:13px;color:var(--muted);margin:0}
+
+/* knowledge base */
+.kb-layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:36px;align-items:start}
+@media (max-width:900px){.kb-layout{grid-template-columns:1fr}.kb-toc{position:static!important;max-height:none!important}}
+.kb-toc{position:sticky;top:16px;display:flex;flex-direction:column;gap:2px;max-height:calc(100vh - 32px);overflow:auto;padding:16px;border:1px solid var(--line);border-radius:14px;background:var(--ink-2);font-size:14px}
+.kb-toc b{font:600 12px/1 var(--f-mono);color:var(--cyan);margin-bottom:8px}
+.kb-toc a{color:var(--muted);text-decoration:none;padding:5px 6px;border-radius:6px;display:flex;gap:8px}
+.kb-toc a span{font-family:var(--f-mono);font-size:11px;color:var(--line);padding-top:2px}
+.kb-toc a:hover{color:var(--paper);background:var(--ink)}
+.kb{min-width:0}
+.kb h3{font-size:clamp(24px,3vw,32px);margin:44px 0 14px;scroll-margin-top:16px;padding-top:18px;border-top:1px solid var(--line)}
+.kb h3:first-child{margin-top:0;border-top:0;padding-top:0}
+.kb h4{font:700 18px/1.3 var(--f-display);margin:22px 0 8px;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.kb h4 .tc{font:500 12px/1 var(--f-mono);color:var(--ink);background:var(--amber);padding:4px 8px;border-radius:999px}
+.kb p{max-width:72ch;margin:0 0 12px}
+.kb table{width:100%;border-collapse:collapse;font-size:15px;margin:6px 0 14px;display:block;overflow-x:auto}
+.kb table tbody,.kb table thead{display:table;width:100%;table-layout:auto}
+.kb th,.kb td{text-align:left;vertical-align:top;padding:9px 12px;border-bottom:1px solid var(--line)}
+.kb thead th{font:600 12px/1.3 var(--f-mono);color:var(--cyan);text-transform:none}
+.kb td.mono{font-variant-numeric:tabular-nums;width:56px;color:var(--amber)}
+.kb table.kv th{width:34%;color:var(--muted);font-weight:500}
+.kb-note{font-size:14px;color:var(--muted);border-left:3px solid var(--amber);padding-left:12px}
+.kb-prod{background:var(--ink-2);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:15px;max-width:none!important}
+.kb-prod b{color:var(--amber)}
+.kb-ol,.kb-ul{margin:0 0 12px;padding-left:22px;display:flex;flex-direction:column;gap:8px;max-width:76ch}
+.kb-src{font-size:14px}
+.kb-years{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media (max-width:700px){.kb-years{grid-template-columns:1fr}}
+.kb-year{border:1px solid var(--line);border-radius:14px;padding:16px;background:var(--ink-2)}
+.kb-year .mono{font-size:12px;color:var(--amber)}
+.kb-year>b{display:block;font:700 19px/1.25 var(--f-display);margin:4px 0 8px}
+.kb-year dl{margin:0;font-size:14.5px}
+.kb-year dt{font:500 11.5px/1 var(--f-mono);color:var(--cyan);margin-top:10px}
+.kb-year dd{margin:4px 0 0}
+.kb-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}
+.kb-grid div{border:1px solid var(--line);border-radius:12px;padding:14px;background:var(--ink-2)}
+.kb-grid b{display:block;margin-bottom:4px}
+.kb-grid p{font-size:14.5px;color:var(--muted);margin:0}
+.kb-lights{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+@media (max-width:800px){.kb-lights{grid-template-columns:1fr}}
+.kb-lights div{border-radius:12px;padding:14px;border:1px solid var(--line);border-top:4px solid}
+.kb-lights .l0{border-top-color:var(--ok)} .kb-lights .l1{border-top-color:var(--warn)} .kb-lights .l2{border-top-color:var(--bad)}
+.kb-lights p{font-size:14.5px;margin:6px 0 0}
+.kb code{font-family:var(--f-mono);font-size:13px;color:var(--cyan)}
+
+/* faq */
+.faq{display:flex;flex-direction:column;gap:10px}
+.faq details{background:var(--ink-2);border:1px solid var(--line);border-radius:14px;padding:4px 18px}
+.faq summary{cursor:pointer;padding:14px 0;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::after{content:"+";font-family:var(--f-mono);color:var(--amber)}
+.faq details[open] summary::after{content:"−"}
+.faq details p{margin:0 0 16px;color:var(--muted);max-width:70ch}
+
+/* share kit */
+.kit{display:grid;grid-template-columns:1fr 300px;gap:24px}
+@media (max-width:900px){.kit{grid-template-columns:1fr}}
+.urlrow{display:flex;gap:8px;flex-wrap:wrap}
+.urlrow input{flex:1 1 260px;background:var(--ink);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-family:var(--f-mono);font-size:14px;min-width:0}
+.shares{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+textarea.code{width:100%;min-height:96px;background:#060C22;border:1px solid var(--line);border-radius:12px;padding:12px;font:400 13px/1.5 var(--f-mono);color:var(--cyan);resize:vertical}
+.opts-inline{display:flex;flex-wrap:wrap;gap:14px;margin:10px 0;font-size:14px;color:var(--muted)}
+.opts-inline label{display:inline-flex;gap:6px;align-items:center;cursor:pointer}
+.qrcard{background:var(--paper);color:var(--ink);border-radius:18px;padding:18px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
+.qrcard .qr{width:220px;height:220px;display:grid;place-items:center}
+.qrcard .qr img,.qrcard .qr canvas{width:100%!important;height:100%!important}
+.qrcard small{font-size:13px;color:#3B4366}
+.channels{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin-top:24px}
+.ch{border:1px solid var(--line);border-radius:14px;padding:16px;background:var(--ink-2)}
+.ch b{display:block;margin-bottom:4px}
+.ch p{margin:0;color:var(--muted);font-size:14.5px}
+.ch code{font-family:var(--f-mono);font-size:12.5px;color:var(--cyan)}
+
+footer{border-top:1px solid var(--line);padding:30px 0 50px;color:var(--muted);font-size:14px}
+footer .cols{display:grid;grid-template-columns:1.2fr 1fr;gap:24px}
+@media (max-width:800px){footer .cols{grid-template-columns:1fr}}
+footer b{color:var(--paper)}
+
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);background:var(--paper);color:var(--ink);padding:12px 18px;border-radius:12px;font-weight:600;font-size:14.5px;opacity:0;pointer-events:none;transition:all .25s;z-index:50;max-width:min(92vw,560px);text-align:center}
+.toast.show{opacity:1;transform:translateX(-50%)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+@media (max-width:640px){
+  .nav-links a:not(.nav-cta){display:none}
+  .time{min-width:auto}
+  .ctrl .opt-hide{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#xem" aria-label="Kỹ thuật phần mềm, Trường Đại học CMC">
+    <span class="brand-mark">SE</span>
+    <span>Kỹ thuật phần mềm<small>Trường Đại học CMC · Mã trường CMC</small></span>
+  </a>
+  <nav class="nav-links" aria-label="Mục lục trang">
+    <a href="#xem">Xem video</a>
+    <a href="#san-bug" class="nav-hot">Săn Bug có thưởng</a>
+    <a href="#chuong-trinh">Chương trình</a>
+    <a href="#trac-nghiem">Trắc nghiệm</a>
+    <a href="#tinh-diem">Tính điểm</a>
+    <a href="ho-so.html">Hồ sơ ngành</a>
+    <a href="#chia-se">Chia sẻ</a>
+    <a class="nav-cta" id="navReg" href="https://xettuyen.cmcu.edu.vn">Đăng ký xét tuyển</a>
+  </nav>
+</header>
+
+<main>
+<section id="xem" style="padding:6px 0 30px">
+<div class="player idle first-frame" id="player">
+  <div class="screen-wrap">
+  <div class="screen" id="screen">
+    <div class="stage" id="stage" role="region" aria-roledescription="trình chiếu" aria-label="Video giới thiệu ngành Kỹ thuật phần mềm">
+      <canvas id="bg" aria-hidden="true"></canvas>
+      <div class="st-top"><span><span class="dot"></span><b>CMC UNIVERSITY</b> · Kỹ thuật phần mềm</span><span id="stCount">01 / 10</span></div>
+      <div class="hint" id="hint">Đang khám phá · bấm ▶ để xem tiếp</div>
+
+      <!-- 1 -->
+      <section class="slide on" data-title="Khởi tạo" data-dur="8"
+        data-narr="Đừng chỉ học viết code. Hãy học cách xây những phần mềm mà hàng triệu người dùng mỗi ngày, và có sản phẩm chạy thật ngay từ năm nhất. Đây là ngành Kỹ thuật phần mềm, Trường Đại học CMC.">
+        <div class="row" style="align-items:center">
+          <div style="display:flex;flex-direction:column;gap:30px;flex:1.25">
+            <span class="tag a" style="--d:0">Tuyển sinh 2027 · Mã ngành SE · AI-native</span>
+            <h1 class="h a" style="--d:120">Đừng chỉ học viết code.<br><span class="hl">Hãy học xây phần mềm.</span></h1>
+            <p class="lead a" style="--d:300">Học cùng AI, có sản phẩm chạy thật từ học kỳ đầu tiên, ra trường sau 3 năm, tại trường đại học của Tập đoàn Công nghệ CMC.</p>
+          </div>
+          <div class="term p" style="--d:500">
+            <div class="term-bar"><i></i><i></i><i></i></div>
+            <div class="term-body">
+              <div class="c"><span class="pr">$</span> git init tuong-lai</div>
+              <div class="o">Initialized empty repository in ~/tuong-lai/</div>
+              <div class="c"><span class="pr">$</span> git checkout -b ky-thuat-phan-mem</div>
+              <div class="g">Switched to a new branch 'ky-thuat-phan-mem'</div>
+              <div class="c"><span class="pr">$</span> npm run nhap-hoc -- --truong CMC <span class="caret"></span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2 -->
+      <section class="slide" data-title="Ở khắp nơi" data-dur="8"
+        data-narr="Sáng nay bạn đã mở bao nhiêu ứng dụng? Chuyển khoản, gọi xe, học trực tuyến, đặt lịch khám. Đằng sau mỗi ứng dụng là một đội kỹ sư phần mềm.">
+        <span class="kick a" style="--d:0"><span class="pr">01</span> // phần mềm ở khắp nơi</span>
+        <h2 class="h2 a" style="--d:100">Sáng nay bạn đã mở<br>bao nhiêu ứng dụng?</h2>
+        <div class="tiles">
+          <div class="tile" style="--d:200"><svg viewBox="0 0 48 48"><rect x="6" y="12" width="36" height="24" rx="4"/><path d="M6 20h36M13 29h8"/></svg><b>Ngân hàng số</b></div>
+          <div class="tile" style="--d:350"><svg viewBox="0 0 48 48"><path d="M24 42s14-12 14-23a14 14 0 0 0-28 0c0 11 14 23 14 23z"/><circle cx="24" cy="19" r="5"/></svg><b>Gọi xe, bản đồ</b></div>
+          <div class="tile" style="--d:500"><svg viewBox="0 0 48 48"><path d="M4 16l20-9 20 9-20 9z"/><path d="M12 20v10c0 3 6 6 12 6s12-3 12-6V20"/></svg><b>Học trực tuyến</b></div>
+          <div class="tile" style="--d:650"><svg viewBox="0 0 48 48"><rect x="8" y="8" width="32" height="32" rx="6"/><path d="M24 16v16M16 24h16"/></svg><b>Đặt lịch khám</b></div>
+          <div class="tile" style="--d:800"><svg viewBox="0 0 48 48"><path d="M8 10h5l5 22h18l4-15H16"/><circle cx="20" cy="38" r="2.5"/><circle cx="34" cy="38" r="2.5"/></svg><b>Mua sắm</b></div>
+          <div class="tile" style="--d:950"><svg viewBox="0 0 48 48"><path d="M8 10h32v22H20l-8 7v-7H8z"/></svg><b>Nhắn tin, mạng xã hội</b></div>
+          <div class="tile" style="--d:1100"><svg viewBox="0 0 48 48"><rect x="4" y="14" width="40" height="22" rx="11"/><path d="M14 21v8M10 25h8"/><circle cx="32" cy="23" r="1.8"/><circle cx="36" cy="28" r="1.8"/></svg><b>Trò chơi</b></div>
+          <div class="tile" style="--d:1250"><svg viewBox="0 0 48 48"><path d="M6 40h36M10 40V20M20 40V20M28 40V20M38 40V20M4 20h40L24 8z"/></svg><b>Dịch vụ công</b></div>
+        </div>
+        <p class="lead a" style="--d:1500;max-width:none">Đằng sau mỗi ứng dụng là một <span style="color:var(--paper)">đội kỹ sư phần mềm</span>.</p>
+      </section>
+
+      <!-- 3 -->
+      <section class="slide" data-title="Nghề đang đổi" data-dur="11"
+        data-narr="Nghề lập trình đang đổi luật chơi. Tám mươi tư phần trăm lập trình viên đã hoặc sắp dùng AI, nhưng gần một nửa không tin vào độ chính xác của nó. Doanh nghiệp cần người làm ra sản phẩm và chịu trách nhiệm về chất lượng, chứ không chỉ người gõ code.">
+        <span class="kick a" style="--d:0"><span class="pr">02</span> // nghề đang đổi luật chơi</span>
+        <h2 class="h2 a" style="--d:100">AI viết code nhanh.<br>Ai <span class="hl">chịu trách nhiệm</span> sản phẩm?</h2>
+        <div class="stats">
+          <div class="stat a" style="--d:300"><b>84%</b><span>lập trình viên đã hoặc sắp dùng AI khi làm phần mềm</span><i>Stack Overflow 2025</i></div>
+          <div class="stat a" style="--d:500"><b>46%</b><span>không tin độ chính xác của kết quả AI tạo ra</span><i>Stack Overflow 2025</i></div>
+          <div class="stat a" style="--d:700"><b class="neg">−16%</b><span>việc làm người 22–25 tuổi ở nhóm nghề chịu tác động AI cao nhất (Mỹ)</span><i>Stanford Digital Economy Lab</i></div>
+          <div class="stat a" style="--d:900"><b>Top 4</b><span>lập trình viên phần mềm trong nhóm nghề tăng nhanh nhất đến 2030</span><i>WEF Future of Jobs 2025</i></div>
+        </div>
+        <p class="lead a" style="--d:1200;max-width:none">Cần người <span style="color:var(--paper)">làm ra sản phẩm và kiểm chứng được AI</span>.</p>
+      </section>
+
+      <!-- 4 -->
+      <section class="slide" data-title="Nghề làm gì" data-dur="10"
+        data-narr="Kỹ sư phần mềm thời AI làm việc cùng trợ lý AI ở mọi bước: phân tích yêu cầu, thiết kế, lập trình, kiểm thử, triển khai và vận hành. AI làm nhanh, còn kỹ sư quyết định và chịu trách nhiệm.">
+        <span class="kick a" style="--d:0"><span class="pr">03</span> // vòng đời phần mềm · bạn + AI</span>
+        <h2 class="h2 a" style="--d:100">AI làm nhanh.<br><span class="hl">Kỹ sư quyết định.</span></h2>
+        <div class="pipe a" style="--d:250" id="pipe">
+          <div class="packet" aria-hidden="true"></div>
+          <button class="stagebtn" data-explore data-info="Bạn gặp người dùng và chốt phần mềm cần làm gì. AI giúp tóm tắt phỏng vấn, gợi ý trường hợp bị bỏ sót; bạn quyết định yêu cầu nào là đúng."><span class="n">01</span><span><b>Yêu cầu</b><small>AI tóm tắt · bạn chốt</small></span></button>
+          <button class="stagebtn" data-explore data-info="Bạn chọn kiến trúc và viết đặc tả đủ rõ để cả người lẫn AI agent làm theo được. AI đưa phương án; bạn cân đánh đổi."><span class="n">02</span><span><b>Thiết kế</b><small>đặc tả cho người và agent</small></span></button>
+          <button class="stagebtn" data-explore data-info="Agent viết phần lớn code theo đặc tả; bạn chia việc, đọc và hiểu từng thay đổi trước khi chấp nhận."><span class="n">03</span><span><b>Lập trình</b><small>agent viết · bạn review</small></span></button>
+          <button class="stagebtn" data-explore data-info="Kiểm thử tự động là hàng rào chặn code sai, kể cả code do AI sinh. Đây là kỹ năng được doanh nghiệp săn đón."><span class="n">04</span><span><b>Kiểm thử</b><small>kiểm chứng mọi dòng code</small></span></button>
+          <button class="stagebtn" data-explore data-info="Đưa sản phẩm lên cloud, lên kho ứng dụng bằng CI/CD; quét bảo mật trước mỗi lần phát hành."><span class="n">05</span><span><b>Triển khai</b><small>CI/CD, quét bảo mật</small></span></button>
+          <button class="stagebtn" data-explore data-info="Theo dõi hệ thống, đọc phản hồi người dùng, ra phiên bản tốt hơn. Sản phẩm là thứ sống, không phải bài tập nộp xong là thôi."><span class="n">06</span><span><b>Vận hành</b><small>đo, học, cải tiến</small></span></button>
+        </div>
+        <div class="detail" id="pipeDetail" aria-live="polite"></div>
+      </section>
+
+      <!-- 5 -->
+      <section class="slide s-road" data-title="3 năm, 9 sản phẩm" data-dur="12"
+        data-narr="Mỗi năm 3 học kỳ, mỗi học kỳ 10 tuần, ra trường sau 3 năm.">
+        <span class="kick a" style="--d:0"><span class="pr">04</span> // chương trình AI-native · 3 học kỳ/năm</span>
+        <h2 class="h2 a" style="--d:100"><span class="hl">9 học kỳ, 9 sản phẩm,</span><br>3 năm ra trường</h2>
+        <div class="road">
+          <div class="yr a" style="--d:300"><span class="v">v1 · Năm 1 · HK1–3 · Build</span><b>App của riêng bạn</b><p>Portfolio, ứng dụng có cơ sở dữ liệu, web có đăng nhập và người dùng thật</p></div>
+          <div class="yr a" style="--d:500"><span class="v">v2 · Năm 2 · HK4–6 · Team</span><b>Làm nhóm, làm cho doanh nghiệp</b><p>App di động, sản phẩm nhóm có CI/CD và test tự động, dự án đề bài từ Tập đoàn CMC</p></div>
+          <div class="yr a" style="--d:700"><span class="v">v3 · Năm 3 · HK7–9 · Launch</span><b>Thực tập và tốt nghiệp</b><p>Tính năng AI trong sản phẩm, thực tập OJT, hướng chuyên sâu, đồ án có người dùng thật</p></div>
+        </div>
+        <div class="strip a" style="--d:900"><span class="chip">Mỗi năm <b>3 học kỳ</b></span><span class="chip">Mỗi học kỳ <b>10 tuần</b></span><span class="chip">Mỗi học kỳ <b>1 sản phẩm</b></span></div>
+        <p class="note a" style="--d:1100" id="progNote">* Định hướng chương trình đổi mới. Học phần cụ thể theo chương trình đào tạo được Trường phê duyệt.</p>
+      </section>
+
+      <!-- 6 -->
+      <section class="slide" data-title="4 năng lực mới" data-dur="11"
+        data-narr="Bạn học bốn năng lực mà kỹ sư thời AI cần: viết đặc tả rõ ràng, điều phối trợ lý và tác tử AI, kiểm chứng mọi dòng code bằng kiểm thử và review, và chịu trách nhiệm về sản phẩm. Học cùng AI, nhưng vẫn thi cả không AI để chắc nền tảng.">
+        <span class="kick a" style="--d:0"><span class="pr">05</span> // học cùng AI, thi cả không AI</span>
+        <div class="row">
+          <div class="ed p" style="--d:200">
+            <div class="ed-tab"><b>SPEC.md</b> → <b>tinh_diem.js</b> · agent đang làm</div>
+<pre><span class="cm">## Đặc tả: Toán ×2 + 2 môn bất kỳ, thang 40</span>
+<span class="k">function</span> <span class="fn">tinhDiem</span>(toan, mon2, mon3) {
+  <span class="k">return</span> toan * <span class="num">2</span> + mon2 + mon3;
+}
+<span class="ai a" style="--d:1400">Review: thiếu kiểm tra điểm ngoài 0–10. Yêu cầu agent bổ sung test.</span><span class="a" style="--d:2200;display:block"><span class="fn">test</span>(<span class="s">'điểm không hợp lệ'</span>, () =&gt; …) <span class="s">✓ pass</span></span></pre>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:26px">
+            <h2 class="h2 a" style="--d:100">Bốn năng lực<br>của <span class="hl">kỹ sư thời AI</span></h2>
+            <ul class="blist">
+              <li class="a" style="--d:400"><span><b style="color:var(--paper)">Đặc tả</b> · viết yêu cầu đủ rõ cho người và AI</span></li>
+              <li class="a" style="--d:600"><span><b style="color:var(--paper)">Điều phối</b> · chia việc cho trợ lý và AI agent</span></li>
+              <li class="a" style="--d:800"><span><b style="color:var(--paper)">Kiểm chứng</b> · test, review, quét bảo mật</span></li>
+              <li class="a" style="--d:1000"><span><b style="color:var(--paper)">Trách nhiệm</b> · hiểu và đứng tên mọi dòng code</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- 7 -->
+      <section class="slide" data-title="Vì sao CMC" data-dur="10"
+        data-narr="Ở CMC, bạn học trong lòng một tập đoàn công nghệ. Hệ sinh thái Viện, Trường, Doanh nghiệp giúp sinh viên học qua dự án thực tế, trải nghiệm doanh nghiệp và thực tập tại các công ty thành viên ngay khi còn đi học.">
+        <span class="kick a" style="--d:0"><span class="pr">06</span> // vì sao chọn CMC</span>
+        <div class="row">
+          <div style="display:flex;flex-direction:column;gap:34px">
+            <h2 class="h2 a" style="--d:100">Học trong lòng<br>một <span class="hl">tập đoàn công nghệ</span></h2>
+            <ul class="blist">
+              <li class="a" style="--d:400">Hệ sinh thái Viện – Trường – Doanh nghiệp của Tập đoàn Công nghệ CMC</li>
+              <li class="a" style="--d:600">Học qua dự án thực tế, kết nối doanh nghiệp ngay trong quá trình học</li>
+              <li class="a" style="--d:800">Thực tập OJT tại các công ty thành viên của Tập đoàn</li>
+            </ul>
+          </div>
+          <div class="eco p" style="--d:300">
+            <svg class="lines" viewBox="0 0 560 560" preserveAspectRatio="none" aria-hidden="true">
+              <line x1="280" y1="280" x2="110" y2="90"/><line x1="280" y1="280" x2="450" y2="90"/>
+              <line x1="280" y1="280" x2="110" y2="470"/><line x1="280" y1="280" x2="450" y2="470"/>
+            </svg>
+            <div class="node" style="left:20%;top:16%">Viện nghiên cứu<small>AI, dữ liệu, công nghệ mới</small></div>
+            <div class="node" style="left:80%;top:16%">Doanh nghiệp<small>công ty thành viên CMC</small></div>
+            <div class="node" style="left:20%;top:84%">Dự án thật<small>đề bài từ thực tế</small></div>
+            <div class="node" style="left:80%;top:84%">Thực tập OJT<small>làm việc như kỹ sư</small></div>
+            <div class="node core" style="left:50%;top:50%"><span>ĐH CMC<small>sinh viên ở trung tâm</small></span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8 -->
+      <section class="slide" data-title="Ra trường 2030" data-dur="10"
+        data-narr="Lứa tuyển sinh năm 2027 sẽ ra trường khoảng năm 2030.">
+        <span class="kick a" style="--d:0"><span class="pr">07</span> // ra trường năm 2030</span>
+        <h2 class="h2 a" style="--d:100">Năm 2030, <span class="hl">bạn sẽ làm gì?</span></h2>
+        <div class="roles" id="roles"></div>
+        <div class="detail" id="roleDetail" aria-live="polite"></div>
+      </section>
+
+      <!-- 9 -->
+      <section class="slide" data-title="Học bổng" data-dur="9"
+        data-narr="Quỹ học bổng CMC, Vì bạn xứng đáng, trị giá chín mươi sáu tỷ đồng, với các mức ba mươi, năm mươi, bảy mươi và một trăm phần trăm học phí toàn khóa. Xét qua điểm thi, chứng chỉ IELTS hoặc giải học sinh giỏi.">
+        <span class="kick a" style="--d:0"><span class="pr">08</span> // học bổng</span>
+        <div class="row" style="align-items:flex-end">
+          <div style="display:flex;flex-direction:column;gap:20px">
+            <span class="a" style="--d:100;font:600 30px/1.2 var(--f-body);color:var(--muted)">Quỹ học bổng “CMC – Vì bạn xứng đáng”</span>
+            <div class="big a" style="--d:200">96<small>tỷ đồng</small></div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:26px">
+            <div class="rings" id="rings"></div>
+            <p class="lead a" style="--d:900;font-size:27px;max-width:36ch">học phí toàn khóa · xét qua điểm thi THPT, IELTS, giải HSG cấp tỉnh trở lên · duy trì khi GPA từ 3.0/4.0</p>
+          </div>
+        </div>
+        <p class="note a" style="--d:1100">* Theo chính sách mùa tuyển sinh 2026. Mùa 2026 còn tặng iPad cho tân sinh viên đặt CMC là NV1–3 và đạt điều kiện.</p>
+      </section>
+
+      <!-- 10 -->
+      <section class="slide" data-title="Cách xét tuyển" data-dur="10"
+        data-narr="Có bốn cách để vào ngành Kỹ thuật phần mềm: kỳ thi đánh giá năng lực CMC TEST, xét học bạ, xét điểm thi tốt nghiệp trung học phổ thông, hoặc xét tuyển thẳng, ví dụ với IELTS từ sáu chấm không. Tổ hợp là Toán nhân hai cộng hai môn bất kỳ.">
+        <span class="kick a" style="--d:0"><span class="pr">09</span> // 4 cửa vào</span>
+        <h2 class="h2 a" style="--d:100">Bốn cách để <span class="hl">vào ngành</span></h2>
+        <div class="doors" id="doors">
+          <button class="door a" style="--d:250" data-explore data-info="Kỳ thi đánh giá năng lực riêng của Trường Đại học CMC, đánh giá tư duy, ngoại ngữ và suy luận logic. Đăng ký tại thituyen.cmcu.edu.vn."><span class="code">CMC-TEST</span><b>Thi đánh giá năng lực</b><small>kỳ thi riêng của trường, thi nhiều đợt</small></button>
+          <button class="door a" style="--d:400" data-explore data-info="Điểm trung bình môn theo tổ hợp từ học bạ THPT, không cộng điểm ưu tiên, đảm bảo ngưỡng của Bộ GD&amp;ĐT. Đăng ký tại xettuyen.cmcu.edu.vn."><span class="code">HỌC BẠ</span><b>Xét học bạ THPT</b><small>điểm trung bình môn theo tổ hợp</small></button>
+          <button class="door a" style="--d:550" data-explore data-info="Dùng điểm thi tốt nghiệp THPT theo tổ hợp, cộng điểm ưu tiên nếu có. Đăng ký trên hệ thống chung của Bộ GD&amp;ĐT."><span class="code">THPT</span><b>Điểm thi tốt nghiệp</b><small>cộng điểm ưu tiên nếu có</small></button>
+          <button class="door a" style="--d:700" data-explore data-info="Theo quy chế của Bộ và đề án của Trường: IELTS từ 6.0 hoặc tương đương, học sinh THPT chuyên đạt học lực Tốt, thí sinh dự thi HSG/KHKT cấp tỉnh trở lên…"><span class="code">XÉT THẲNG</span><b>Tuyển thẳng</b><small>IELTS 6.0+, HSG, THPT chuyên…</small></button>
+        </div>
+        <div class="strip a" style="--d:900">
+          <span class="chip">Mã trường <b>CMC</b></span>
+          <span class="chip">Mã ngành <b>SE</b></span>
+          <span class="chip">Tổ hợp <b>Toán ×2</b> + 2 môn bất kỳ</span>
+        </div>
+        <div class="detail" id="doorDetail" aria-live="polite"></div>
+      </section>
+
+      <!-- 11 -->
+      <section class="slide" data-title="Bắt đầu" data-dur="10"
+        data-narr="Viết commit đầu tiên cho tương lai của bạn. Quét mã QR để đăng ký xét tuyển, hoặc gọi đường dây nóng tuyển sinh của Trường Đại học CMC.">
+        <span class="kick a" style="--d:0"><span class="pr">$</span> git commit -m "Chọn đúng ngành"</span>
+        <div class="cta-grid">
+          <div style="display:flex;flex-direction:column;gap:30px">
+            <h2 class="h a" style="--d:150">Commit đầu tiên<br>cho <span class="hl">tương lai</span>.</h2>
+            <div class="contacts a" style="--d:400">
+              <div><span>Hotline</span> <b id="ctaHotline">024 7102 9999</b></div>
+              <div><span>Web</span> <b id="ctaWeb">xettuyen.cmcu.edu.vn</b></div>
+            </div>
+            <div class="sbtns a" style="--d:600">
+              <a class="sbtn amb" id="ctaReg" href="https://xettuyen.cmcu.edu.vn">Đăng ký xét tuyển</a>
+              <button class="sbtn" data-explore data-go="tinh-diem">Tính điểm của tôi</button>
+              <button class="sbtn ghost" data-explore data-go="trac-nghiem">Tôi hợp vai trò nào?</button>
+            </div>
+          </div>
+          <div class="qrbox p" style="--d:500">
+            <div class="qr" id="qrSlide"></div>
+            <span>Quét để mở trang<br>trên điện thoại</span>
+          </div>
+        </div>
+      </section>
+
+      <button class="unmute" id="unmute" type="button"><svg viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4zM16 8.5a4.5 4.5 0 0 1 0 7M18.5 6a8 8 0 0 1 0 12" stroke="currentColor" stroke-width="1.8" fill="currentColor"/></svg><span id="unmuteTxt">Bấm để nghe lời dẫn</span></button>
+      <div class="cap" id="cap" aria-live="off"></div>
+      <button class="bigplay" id="bigplay" aria-label="Phát video"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4v16l13-8z"/></svg><b id="bigplayTxt">Xem video có lời dẫn</b></span></button>
+    </div>
+  </div>
+  </div>
+
+  <div class="ctrl" role="toolbar" aria-label="Điều khiển video">
+    <button class="ibtn" id="bPrev" title="Slide trước (←)" aria-label="Slide trước"><svg viewBox="0 0 24 24"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg></button>
+    <button class="ibtn main" id="bPlay" title="Phát / dừng (Space)" aria-label="Phát"><svg viewBox="0 0 24 24" id="icoPlay"><path d="M7 4v16l13-8z"/></svg></button>
+    <button class="ibtn" id="bNext" title="Slide sau (→)" aria-label="Slide sau"><svg viewBox="0 0 24 24"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg></button>
+    <span class="time" id="time">0:00 / 1:34</span>
+    <div class="segs" id="segs" aria-label="Thanh tiến trình theo chương"></div>
+    <button class="ibtn" id="bCC" aria-pressed="true" title="Phụ đề (C)">CC</button>
+    <button class="ibtn" id="bSound" aria-pressed="false" title="Bật/tắt lời dẫn (M)"><svg viewBox="0 0 24 24" id="icoSound"><path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M16 9l5 6M21 9l-5 6" stroke="currentColor" stroke-width="2" fill="none"/></svg><span class="opt-hide" id="soundTxt">Lời dẫn</span></button>
+    <label class="sr" for="selVoice">Chọn giọng đọc</label>
+    <select class="ibtn sel" id="selVoice" title="Chọn giọng đọc"></select>
+    <button class="ibtn" id="bLang" title="Đổi ngôn ngữ lời dẫn, phụ đề và chữ trên slide (L)"><b id="langVi">VI</b><span class="sl">/</span><b id="langEn">EN</b></button>
+    <button class="ibtn opt-hide" id="bMusic" aria-pressed="false" title="Nhạc nền">Nhạc</button>
+    <button class="ibtn opt-hide" id="bSpeed" title="Tốc độ">1×</button>
+    <button class="ibtn" id="bRatio" aria-pressed="false" title="Chuyển khung dọc 9:16 cho TikTok, Reels, Shorts (V)">9:16</button>
+    <button class="ibtn" id="bFull" title="Toàn màn hình (F)" aria-label="Toàn màn hình"><svg viewBox="0 0 24 24"><path d="M4 4h6v2H6v4H4zM14 4h6v6h-2V6h-4zM4 14h2v4h4v2H4zM18 14h2v6h-6v-2h4z"/></svg></button>
+    <button class="ibtn opt-hide" id="bRec" title="Ghi lại thành file video .webm (Chrome, khi trang chạy trên website trường)">Xuất video</button>
+  </div>
+  <div class="chapters" id="chapters" aria-label="Chương"></div>
+  <details class="studio" id="studio">
+    <summary><span class="mono">REC</span> Phòng thu · trình bày lại video bằng chính giọng của bạn</summary>
+    <div class="studio-tabs" role="tablist">
+      <button type="button" role="tab" aria-selected="true" data-tab="self">Tự thu từng chương</button>
+      <button type="button" role="tab" aria-selected="false" data-tab="clone">Nhân bản giọng bằng AI</button>
+    </div>
+    <div class="studio-pane" id="paneSelf">
+      <p class="sub">Đọc lời dẫn của từng chương (theo ngôn ngữ đang chọn). Chương chưa thu sẽ dùng giọng AI mặc định. Có thể thu bằng micro hoặc tải lên file ghi âm từ điện thoại.</p>
+      <div class="rec-list" id="recList"></div>
+      <div class="btnrow">
+        <button class="btn pri" type="button" id="useMine">Phát video bằng giọng của tôi</button>
+        <button class="btn" type="button" id="exportMine">Xuất file âm thanh (.wav)</button>
+        <button class="btn" type="button" id="clearMine">Xóa bản thu</button>
+      </div>
+      <p class="fine">Bản thu chỉ nằm trong trình duyệt của bạn, không gửi đi đâu. Để có video kèm giọng của bạn: bấm <b>Xuất video</b> và chọn chia sẻ âm thanh của tab.</p>
+    </div>
+    <div class="studio-pane" id="paneClone" hidden>
+      <p class="sub">Đọc một đoạn mẫu khoảng 20–30 giây; máy chủ AI của Trường sẽ học giọng của bạn và đọc toàn bộ lời dẫn bằng giọng đó, cả tiếng Việt lẫn tiếng Anh.</p>
+      <div class="sample-text" id="sampleText"></div>
+      <div class="btnrow">
+        <button class="btn" type="button" id="cloneRec">Thu đoạn mẫu</button>
+        <label class="btn" for="cloneFile">Tải file mẫu</label><input type="file" id="cloneFile" accept="audio/*" hidden>
+        <span class="fine" id="cloneStatus">Chưa có đoạn mẫu</span>
+      </div>
+      <label class="consent"><input type="checkbox" id="cloneConsent"> Tôi xác nhận đây là giọng của chính tôi và đồng ý cho máy chủ của Trường xử lý đoạn ghi âm này chỉ để tạo lời dẫn.</label>
+      <div class="btnrow"><button class="btn pri" type="button" id="cloneGo">Tạo lời dẫn bằng giọng AI của tôi</button></div>
+      <p class="fine" id="cloneNote"></p>
+    </div>
+  </details>
+</div>
+</section>
+
+<!-- BUG HUNT GAME -->
+<section id="san-bug">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">// thử thách có thưởng · mùa tuyển sinh 2027</span>
+      <h2>Săn Bug: tìm dòng code lỗi trước khi app bị sập</h2>
+      <p>8 màn, 3 mạng, mỗi màn một ứng dụng quen thuộc: trà sữa, điểm xét tuyển, đăng nhập… Chạm vào đúng dòng gây lỗi. Không cần biết lập trình, chỉ cần đọc kỹ và nghĩ như một kỹ sư kiểm thử.</p>
+    </div>
+    <div class="bh-grid">
+      <div class="bh" id="bh" aria-live="polite">
+        <div class="bh-top">
+          <span class="mono" id="bhLevel">SẴN SÀNG</span>
+          <span class="bh-lives" id="bhLives" aria-label="Số mạng"></span>
+          <span class="mono" id="bhCombo"></span>
+          <span class="mono bh-score">Điểm <b id="bhScore">0</b></span>
+        </div>
+        <div class="bh-timer"><i id="bhTimer"></i></div>
+        <div class="bh-body" id="bhBody"></div>
+        <canvas id="bhConfetti" aria-hidden="true"></canvas>
+      </div>
+      <aside class="card bh-side">
+        <h3>Giải thưởng chọn theo năng lực, không bốc thăm</h3>
+        <ol class="bh-steps">
+          <li><b>Vòng 1 · Săn Bug</b><span>Chơi trên trang này. Mỗi tuần, top điểm cao nhận quà.</span></li>
+          <li><b>Vòng 2 · Ship It</b><span>Top vòng 1 tự làm một sản phẩm nhỏ với AI và quay video 60 giây giới thiệu.</span></li>
+          <li><b>Chung kết tại CMC</b><span>20 bạn xuất sắc cùng phụ huynh đến trường, làm mini-hackathon 2 giờ với mentor. Giải lớn trao tại chỗ.</span></li>
+        </ol>
+        <p class="sub" style="margin:10px 0 0">Thêm: <b>Cúp trường THPT</b> cho trường có 10 bạn điểm cao nhất, và giải <b>Đại sứ lan tỏa</b> cho người mời được nhiều bạn chơi thật.</p>
+        <div class="btnrow"><a class="btn pri" href="#the-le">Xem thể lệ và giải thưởng</a></div>
+        <div class="bh-best" id="bhBest"></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- CONTEST RULES (static so search engines and chatbots can read) -->
+<section id="the-le">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">// CONTRIBUTING.md · thể lệ</span>
+      <h2>Thể lệ cuộc thi “Commit đầu tiên – Săn Bug cùng CMC”</h2>
+      <p>Bản dự thảo để Trường Đại học CMC hoàn thiện; cơ cấu giải, thời gian và hồ sơ pháp lý theo quyết định chính thức của Trường.</p>
+    </div>
+    <div class="rules">
+      <div class="rule"><h3>1. Ai được tham gia</h3><p>Mọi người đều chơi được Vòng 1. Giải thưởng dành cho học sinh THPT đang học lớp 11 hoặc lớp 12 (năm học 2026–2027) trên toàn quốc. Mỗi người một tài khoản, xác thực bằng số điện thoại. Cán bộ, giảng viên, sinh viên Trường Đại học CMC và người thân trực tiếp không nhận giải.</p></div>
+      <div class="rule"><h3>2. Ba vòng thi</h3><p><b>Vòng 1 – Săn Bug (online, theo tuần):</b> chơi tối đa 3 lượt mỗi ngày, tính lượt điểm cao nhất; màn chơi được máy chủ cấp ngẫu nhiên cho từng lượt. <b>Vòng 2 – Ship It (2 tuần):</b> 100 bạn điểm cao nhất tự làm một sản phẩm nhỏ (trang web, ứng dụng, trò chơi, công cụ cho trường mình), được phép dùng AI và nộp kèm nhật ký sử dụng AI, cùng video 60 giây khung dọc. <b>Chung kết (trực tiếp tại CMC):</b> 20 bạn có điểm Vòng 2 cao nhất làm mini-hackathon 2 giờ, trình bày trước hội đồng giảng viên và chuyên gia doanh nghiệp.</p></div>
+      <div class="rule"><h3>3. Cách chấm, để chọn đúng người</h3><p>Vòng 1 chấm tự động: đúng/sai, thời gian, chuỗi trả lời đúng. Vòng 2 chấm theo tiêu chí công khai: sản phẩm chạy được (30%), giải quyết vấn đề thật (25%), cách dùng và kiểm chứng AI (20%), trình bày (15%), lượt tương tác thật của video (tối đa 10%, để lượt xem không lấn át năng lực). Chung kết chấm trực tiếp, không mang bài làm sẵn. Kết quả và biên bản chấm được công bố.</p></div>
+      <div class="rule"><h3>4. Cơ cấu giải (đề xuất, Trường chọn hiện vật)</h3>
+        <table class="kb-like"><thead><tr><th>Giải</th><th>Số lượng</th><th>Phần thưởng đề xuất</th></tr></thead><tbody>
+          <tr><td>Giải tuần Vòng 1</td><td>10 giải/tuần</td><td>Quà công nghệ nhỏ (tai nghe, sạc dự phòng, áo CMC) và giấy chứng nhận số</td></tr>
+          <tr><td>Nhất chung kết</td><td>1</td><td>iPad hoặc laptop, kèm học bổng 100% học phí khi nhập học ngành Kỹ thuật phần mềm</td></tr>
+          <tr><td>Nhì chung kết</td><td>2</td><td>Điện thoại thông minh, kèm học bổng 70% khi nhập học</td></tr>
+          <tr><td>Ba chung kết</td><td>3</td><td>Máy tính bảng hoặc đồng hồ thông minh, kèm học bổng 50% khi nhập học</td></tr>
+          <tr><td>Khuyến khích chung kết</td><td>14</td><td>Quà công nghệ, kèm học bổng 30% khi nhập học</td></tr>
+          <tr><td>Cúp trường THPT</td><td>3 trường</td><td>Bộ thiết bị cho CLB Tin học của trường và chuyến tham quan phòng lab CMC</td></tr>
+          <tr><td>Đại sứ lan tỏa</td><td>5</td><td>Quà công nghệ cho người mời được nhiều bạn lớp 11–12 hoàn thành Vòng 1 nhất (đã xác thực)</td></tr>
+        </tbody></table>
+        <p class="fine">Học bổng chỉ áp dụng khi thí sinh trúng tuyển và nhập học, cộng dồn theo quy định của quỹ “CMC – Vì bạn xứng đáng”. Hạn chế thưởng tiền mặt cho học sinh chưa đủ 18 tuổi; nếu có, chuyển vào tài khoản của phụ huynh.</p></div>
+      <div class="rule"><h3>5. Chống gian lận</h3><p>Màn chơi và thời gian được máy chủ cấp và kiểm tra lại; lượt chơi có thời gian trả lời bất thường bị loại. Một số điện thoại một tài khoản. Lượt giới thiệu chỉ được tính khi người được mời là học sinh lớp 11–12 và hoàn thành Vòng 1. Người vào chung kết phải xuất trình căn cước và thẻ học sinh hoặc xác nhận của trường THPT; Ban tổ chức có quyền yêu cầu chơi lại trực tiếp.</p></div>
+      <div class="rule"><h3>6. Dữ liệu cá nhân</h3><p>Chỉ thu thông tin cần để trao giải: họ tên, số điện thoại, trường, lớp, năm sinh. Với thí sinh từ đủ 7 tuổi đến dưới 16 tuổi, cần sự đồng ý của cả thí sinh và cha mẹ hoặc người giám hộ theo Luật Bảo vệ dữ liệu cá nhân. Dữ liệu chỉ dùng cho cuộc thi và tư vấn tuyển sinh khi thí sinh đồng ý, và được xóa khi thí sinh yêu cầu.</p></div>
+      <div class="rule"><h3>7. Thuế và thủ tục</h3><p>Từ 01/7/2026, thu nhập từ trúng thưởng chỉ chịu thuế thu nhập cá nhân 10% với phần giá trị vượt 20 triệu đồng mỗi lần nhận thưởng; Trường khấu trừ và nộp thay nếu có. Cuộc thi xét giải theo năng lực, không có yếu tố may rủi và không gắn với việc mua hàng; Trường cần rà soát với bộ phận pháp chế về thủ tục thông báo theo quy định hiện hành về xúc tiến thương mại và tổ chức sự kiện.</p></div>
+      <div class="rule"><h3>8. Lịch dự kiến</h3><p>Tháng 12/2026 – tháng 2/2027: Vòng 1 theo tuần. Tháng 3/2027: Vòng 2. Cuối tháng 3 hoặc tháng 4/2027: Chung kết kết hợp Ngày hội tư vấn tuyển sinh tại CMC, trước các đợt đăng ký xét tuyển sớm. Lịch chính thức do Trường công bố.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAM -->
+<section id="chuong-trinh">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">// chương trình SE định hướng AI-native</span>
+      <h2>Vì sao chương trình phải đổi, và đổi như thế nào</h2>
+      <p>Ở CMC mỗi năm có 3 học kỳ, mỗi học kỳ 10 tuần, nên lứa tuyển sinh 2027 ra trường và đi làm vào khoảng năm 2030. Dưới đây là những gì dữ liệu ngành đang cho thấy, và cách chương trình Kỹ thuật phần mềm tại CMC chuẩn bị cho bạn.</p>
+    </div>
+    <p style="margin:0 0 22px"><a class="btn" href="ctdt/index.html" style="display:inline-flex;gap:8px;align-items:center;padding:10px 16px;border-radius:10px;background:#FFB547;color:#0A1433;font-weight:700;text-decoration:none">Xem chương trình đào tạo chi tiết: 43 học phần, 123 tín chỉ →</a></p>
+
+    <div class="evid">
+      <a class="ev" href="https://survey.stackoverflow.co/2025/ai"><b>84%</b><span>lập trình viên đang dùng hoặc sắp dùng AI; hơn một nửa lập trình viên chuyên nghiệp dùng hằng ngày.</span><i>Stack Overflow Developer Survey 2025</i></a>
+      <a class="ev" href="https://survey.stackoverflow.co/2025/ai"><b>46%</b><span>không tin độ chính xác của AI, chỉ 3% rất tin. Kỹ năng kiểm chứng trở thành cốt lõi.</span><i>Stack Overflow Developer Survey 2025</i></a>
+      <a class="ev" href="https://dora.dev/dora-report-2025/"><b>~90%</b><span>người làm phần mềm dùng AI, và AI là “bộ khuếch đại”: đội có quy trình tốt thì mạnh lên, đội yếu thì lộ điểm yếu.</span><i>DORA 2025, Google Cloud</i></a>
+      <a class="ev" href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/"><b>+19%</b><span>thời gian làm việc của lập trình viên giàu kinh nghiệm khi dùng AI đầu 2025, dù họ tưởng mình nhanh hơn. Dùng AI cần phương pháp.</span><i>METR, thử nghiệm ngẫu nhiên 2025</i></a>
+      <a class="ev" href="https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine/"><b class="neg">−16%</b><span>việc làm tương đối của người 22–25 tuổi ở nhóm nghề chịu tác động AI cao nhất tại Mỹ; lập trình viên trẻ bị ảnh hưởng rõ.</span><i>Stanford Digital Economy Lab</i></a>
+      <a class="ev" href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/"><b>Top 4</b><span>lập trình viên phần mềm trong các nghề tăng nhanh nhất đến 2030; AI và dữ liệu lớn là nhóm kỹ năng tăng nhanh nhất.</span><i>WEF Future of Jobs 2025</i></a>
+      <a class="ev" href="https://e.vnexpress.net/news/tech/tech-news/it-industry-suffers-from-lack-of-high-level-talent-surfeit-of-entry-level-coders-5067869.html"><b>VN</b><span>Thị trường thiếu nhân lực giỏi nhưng thừa người chỉ biết code cơ bản; vai trò junior chuyển sang điều phối AI với tư duy sản phẩm.</span><i>VnExpress · TopCV 2025–2026</i></a>
+      <a class="ev" href="https://www.cs.cmu.edu/~113/bestPractices.html"><b>Tuần 1–2</b><span>sinh viên CMU tự xây và đưa website lên mạng ngay bài lớn đầu tiên của môn Effective Coding with AI; Stanford CS146S dạy cả khóa quanh coding agent.</span><i>CMU 15-113 · Stanford CS146S</i></a>
+    </div>
+
+    <div class="principles">
+      <div class="pr-card"><span class="mono">01</span><b>Ship sớm</b><p>Mỗi học kỳ một sản phẩm chạy thật. Sau 3 năm, 9 học kỳ, bạn ra trường với hồ sơ 9 sản phẩm thay vì chỉ một bảng điểm.</p></div>
+      <div class="pr-card"><span class="mono">02</span><b>Nền tảng không lùi</b><p>Học cùng AI, thi cả không AI. Cấu trúc dữ liệu, thiết kế, cơ sở dữ liệu vẫn là gốc để hiểu và sửa mã AI sinh.</p></div>
+      <div class="pr-card"><span class="mono">03</span><b>Kiểm chứng là kỹ năng</b><p>Kiểm thử, review, bảo mật được dạy từ năm nhất, vì người chịu trách nhiệm là kỹ sư, không phải AI.</p></div>
+      <div class="pr-card"><span class="mono">04</span><b>Đề bài từ doanh nghiệp</b><p>Từ học kỳ 6 (năm 2), đề bài và người chấm đến từ các công ty thuộc Tập đoàn CMC; năm 3 là thực tập OJT.</p></div>
+    </div>
+
+    <div class="card sem" id="sem">
+      <div class="sem-head">
+        <div><h3>9 học kỳ, 9 sản phẩm: bạn làm ra gì ở từng học kỳ?</h3><p class="sub" style="margin:0" id="semNote"></p></div>
+        <div class="sem-tabs" role="tablist" aria-label="Học kỳ" id="semTabs"></div>
+      </div>
+      <div class="sem-body" id="semBody" role="tabpanel" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ + TERMINAL -->
+<section id="trac-nghiem">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">// khám phá bản thân</span>
+      <h2>Bạn hợp vai trò nào trong một đội phần mềm?</h2>
+      <p>Năm câu hỏi, chưa đến một phút. Không có đáp án sai: mỗi lựa chọn dẫn tới một vai trò có thật trong nghề.</p>
+    </div>
+    <div class="grid2">
+      <div class="card" id="quiz" aria-live="polite"></div>
+      <div class="cli" id="cli">
+        <div class="cli-out" id="cliOut" tabindex="0" aria-label="Kết quả dòng lệnh"></div>
+        <div class="cli-sug" id="cliSug"></div>
+        <form id="cliForm" autocomplete="off">
+          <span class="mono" style="color:var(--amber)">sv@cmc:~$</span>
+          <label class="sr" for="cliIn">Nhập lệnh</label>
+          <input id="cliIn" placeholder="gõ help rồi Enter" spellcheck="false">
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CALC -->
+<section id="tinh-diem">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">// tinhDiem(toan, mon2, mon3)</span>
+      <h2>Tự tính điểm xét tuyển ngành SE</h2>
+      <p>Tổ hợp của ngành: Toán nhân hệ số 2 cộng 2 môn bất kỳ, thang 40. So sánh với điểm trúng tuyển năm 2026 để biết mình đang ở đâu.</p>
+    </div>
+    <div class="calc card">
+      <div class="fields">
+        <div class="seg-tabs" role="group" aria-label="Phương thức">
+          <button type="button" id="mThpt" aria-pressed="true">Điểm thi tốt nghiệp THPT</button>
+          <button type="button" id="mHb" aria-pressed="false">Học bạ THPT</button>
+        </div>
+        <div class="field"><label for="iToan">Toán (×2)</label><input id="iToan" type="number" min="0" max="10" step="0.05" value="7.5" inputmode="decimal"></div>
+        <div class="field"><label for="iM2">Môn thứ 2 (tự chọn)</label><input id="iM2" type="number" min="0" max="10" step="0.05" value="7" inputmode="decimal"></div>
+        <div class="field"><label for="iM3">Môn thứ 3 (tự chọn)</label><input id="iM3" type="number" min="0" max="10" step="0.05" value="7" inputmode="decimal"></div>
+        <div class="field" id="fUt"><label for="iUt">Điểm ưu tiên (đã quy đổi thang 40)</label><input id="iUt" type="number" min="0" max="4" step="0.01" value="0" inputmode="decimal"></div>
+      </div>
+      <div class="score" aria-live="polite">
+        <div class="tot" id="oTot">29,00 <small>/ 40</small></div>
+        <div>
+          <div class="gauge"><i id="oBar"></i><b id="oMark"></b></div>
+          <div class="gauge-l" style="margin-top:8px"><span>0</span><span id="oRefL">Điểm trúng tuyển 2026: 25,30</span><span>40</span></div>
+        </div>
+        <span class="pill ok" id="oPill">Cao hơn điểm trúng tuyển 2026</span>
+        <p id="oMsg" style="margin:0"></p>
+        <p class="fine">Điểm trúng tuyển ngành SE năm 2026 (tham khảo): 25,3 theo điểm thi THPT, 28,36 theo học bạ. Điểm năm 2027 phụ thuộc phổ điểm và chỉ tiêu; hãy xem thông báo chính thức của Trường.</p>
+        <div class="btnrow"><a class="btn pri" id="calcReg" href="https://xettuyen.cmcu.edu.vn">Đăng ký xét tuyển</a><button class="btn" id="calcShare" type="button">Sao chép kết quả</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWLEDGE BASE (generated by build/kb.py) -->
+<!--KB-START-->
+<section id="ho-so"><div class="wrap">
+<div class="sec-head"><span class="eyebrow">// hồ sơ ngành</span><h2>Hỏi gì về ngành cũng có câu trả lời</h2>
+<p>Tuyển sinh, học bổng, học gì trong 3 năm, học với AI thế nào, ra trường làm gì và 25 câu hỏi hay gặp, gom trên một trang riêng dễ tra cứu.</p></div>
+<div class="hs-teaser">
+  <div>
+    <form class="hs-search" role="search" onsubmit="var v=this.q.value.trim();location.href='ho-so.html'+(v?'#q='+encodeURIComponent(v):'');return false">
+      <label for="hs-q" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Tìm trong hồ sơ ngành</label>
+      <input id="hs-q" name="q" type="search" placeholder="Gõ câu hỏi: học phí, điểm chuẩn, iPad…"><button type="submit">Tìm</button>
+    </form>
+    <div class="hs-chips"><a class="hs-chip" href="ho-so.html#faq-2">Điểm chuẩn</a><a class="hs-chip" href="ho-so.html#faq-1">Tổ hợp xét tuyển</a><a class="hs-chip" href="ho-so.html#faq-11">Học bổng</a><a class="hs-chip" href="ho-so.html#faq-12">Học phí</a><a class="hs-chip" href="ho-so.html#faq-13">Tặng iPad</a><a class="hs-chip" href="ho-so.html#faq-5">Học mấy năm</a><a class="hs-chip" href="ho-so.html#faq-14">Học những gì</a><a class="hs-chip" href="ho-so.html#faq-7">Học với AI có mất gốc</a></div>
+    <a class="hs-open" href="ho-so.html">Mở hồ sơ ngành đầy đủ →</a>
+  </div>
+  <ul class="hs-facts"><li><span>Mã xét tuyển</span><b>SE · mã ngành 7480103</b></li><li><span>Thời gian</span><b>3 năm · 9 học kỳ × 10 tuần · 123 tín chỉ</b></li><li><span>Tổ hợp (2026)</span><b>Toán ×2 + 2 môn bất kỳ, thang 40</b></li><li><span>Điểm trúng tuyển 2026</span><b>25,3 (THPT) · 28,36 (học bạ)</b></li><li><span>Học bổng (2026)</span><b>30% – 100% học phí toàn khóa</b></li><li><span>Hotline</span><b>024 7102 9999</b></li></ul>
+</div>
+<style>
+.hs-teaser{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:24px;align-items:start}
+@media (max-width:860px){.hs-teaser{grid-template-columns:1fr}}
+.hs-search{display:flex;gap:8px}
+.hs-search input{flex:1;min-width:0;padding:15px 16px;border-radius:12px;border:1px solid var(--line);background:var(--ink-2);color:var(--paper);font-size:17px}
+.hs-search input:focus{outline:none;border-color:var(--amber)}
+.hs-search button{padding:0 20px;border-radius:12px;border:0;background:var(--amber);color:var(--ink);font-weight:700;cursor:pointer}
+.hs-chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 18px}
+.hs-chip{padding:7px 12px;border-radius:999px;border:1px solid var(--line);color:var(--paper);text-decoration:none;font-size:14px}
+.hs-chip:hover{border-color:var(--amber);color:var(--amber)}
+.hs-open{display:inline-block;padding:12px 18px;border-radius:12px;background:var(--amber);color:var(--ink);font-weight:700;text-decoration:none}
+.hs-facts{list-style:none;margin:0;padding:6px 18px;border:1px solid var(--line);border-radius:14px;background:var(--ink-2)}
+.hs-facts li{display:flex;flex-direction:column;gap:2px;padding:10px 0;border-bottom:1px dashed var(--line)}
+.hs-facts li:last-child{border-bottom:0}
+.hs-facts span{font:500 12px/1.2 var(--f-mono);color:var(--muted)}
+.hs-facts b{font-weight:600;font-size:15.5px}
+</style>
+</div></section>
+<!--KB-END-->
+
+<!-- SHARE KIT -->
+<section id="chia-se">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">// git push --all-channels</span>
+      <h2>Đưa trang này đến mọi nơi học sinh đang có mặt</h2>
+      <p>Một trang, nhiều kênh: website trường, Fanpage, Zalo, TikTok, email, poster ở buổi tư vấn. Dán đúng địa chỉ trang để mọi liên kết, mã QR và mã nhúng bên dưới tự cập nhật.</p>
+    </div>
+    <div class="kit">
+      <div class="card">
+        <h3>Liên kết chia sẻ</h3>
+        <p class="sub">Địa chỉ công khai của trang (sau khi đăng lên website trường)</p>
+        <div class="urlrow">
+          <label class="sr" for="uUrl">Địa chỉ trang</label>
+          <input id="uUrl" type="url" spellcheck="false">
+          <button class="btn pri" id="uCopy" type="button">Sao chép</button>
+          <button class="btn" id="uNative" type="button">Chia sẻ…</button>
+        </div>
+        <div class="opts-inline">
+          <label for="uSrc">Gắn mã theo kênh (UTM):</label>
+          <select id="uSrc" class="btn" style="padding:6px 10px">
+            <option value="">Không gắn</option>
+            <option value="facebook">Facebook</option>
+            <option value="zalo">Zalo</option>
+            <option value="tiktok">TikTok</option>
+            <option value="youtube">YouTube</option>
+            <option value="email">Email</option>
+            <option value="poster">Poster / QR in</option>
+            <option value="website">Website trường</option>
+          </select>
+        </div>
+        <div class="shares" id="shares"></div>
+        <hr class="sep" style="margin:22px 0">
+        <h3>Nhúng vào website trường</h3>
+        <p class="sub">Dán mã này vào bài viết hoặc trang tuyển sinh. Khung nhúng chỉ hiện phần video, có đủ nút điều khiển.</p>
+        <div class="opts-inline">
+          <label><input type="radio" name="eR" value="16x9" checked> Ngang 16:9</label>
+          <label><input type="radio" name="eR" value="9x16"> Dọc 9:16</label>
+          <label><input type="checkbox" id="eAuto" checked> Tự phát</label>
+        </div>
+        <label class="sr" for="eCode">Mã nhúng</label>
+        <textarea class="code" id="eCode" readonly></textarea>
+        <div class="btnrow"><button class="btn" id="eCopy" type="button">Sao chép mã nhúng</button></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div class="qrcard">
+          <div class="qr" id="qrKit"></div>
+          <b>Quét để xem trên điện thoại</b>
+          <small id="qrUrl"></small>
+        </div>
+        <p class="fine">Dùng mã QR cho standee, tờ rơi, slide buổi tư vấn tại trường THPT. Chọn kênh “Poster / QR in” để đo được lượt quét.</p>
+      </div>
+    </div>
+    <div class="channels">
+      <div class="ch"><b>TikTok · Reels · Shorts</b><p>Bấm <code>9:16</code>, bật phụ đề, rồi <b>Xuất video</b> (Chrome) hoặc ghi màn hình ở chế độ toàn màn hình. Video dài chưa đến 2 phút.</p></div>
+      <div class="ch"><b>Website trường</b><p>Dùng mã nhúng phía trên, hoặc mở thẳng trang với <code>?embed=1&amp;ratio=9x16&amp;slide=8</code> để bắt đầu ở một chương cụ thể.</p></div>
+      <div class="ch"><b>Fanpage · Zalo OA</b><p>Dán liên kết có mã UTM của kênh. Liên kết tới từng chương: thêm <code>#slide-9</code> (cách xét tuyển) hoặc <code>#tinh-diem</code>.</p></div>
+      <div class="ch"><b>ChatGPT · Gemini · Copilot</b><p>Đăng kèm <code>/ky-thuat-phan-mem-cmc.md</code> và <code>/llms.txt</code> ở gốc website, khai báo trang trong sitemap. Mục “Hồ sơ ngành” và dữ liệu schema.org trong trang là văn bản tĩnh để chatbot đọc được.</p></div>
+      <div class="ch"><b>Tư vấn trực tiếp</b><p>Trình chiếu toàn màn hình, tạm dừng ở từng chương và cho học sinh tự chạm vào vai trò, cửa xét tuyển để hỏi thêm.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap cols">
+    <div>
+      <b>Trường Đại học CMC · Ngành Kỹ thuật phần mềm (SE)</b><br>
+      Hotline tuyển sinh: <b id="fHot">024 7102 9999</b><br>
+      Website: <a id="fSite" href="https://cmcu.edu.vn">cmcu.edu.vn</a> · Xét tuyển: <a id="fReg" href="https://xettuyen.cmcu.edu.vn">xettuyen.cmcu.edu.vn</a> · Thi CMC-TEST: <a id="fTest" href="https://thituyen.cmcu.edu.vn">thituyen.cmcu.edu.vn</a>
+    </div>
+    <div>Số liệu chỉ tiêu, điểm trúng tuyển, học bổng và quà tặng lấy theo thông tin tuyển sinh năm 2026 đã công bố. Thông tin chính thức năm 2027 theo đề án tuyển sinh của Trường Đại học CMC.</div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status"></div>
+
+<!--VD-START--><script type="application/json" id="voiceData">{"manifest":{"voices":[{"id":"vi-mai","lang":"vi","name":"Mai","desc":"Nữ · miền Bắc"},{"id":"vi-minh","lang":"vi","name":"Minh","desc":"Giọng trầm"},{"id":"en-heart","lang":"en","name":"Heart","desc":"Female · US"},{"id":"en-michael","lang":"en","name":"Michael","desc":"Male · US"},{"id":"en-emma","lang":"en","name":"Emma","desc":"Female · UK"}],"slides":{"vi-mai":[{"file":"audio/vi-mai/01.mp3","dur":10.46,"segs":[{"t":0.25,"text":"Đừng chỉ học viết code."},{"t":1.69,"text":"Hãy học cách xây những phần mềm mà hàng triệu người dùng mỗi ngày, và có sản phẩm chạy thật ngay từ năm nhất."},{"t":7.19,"text":"Đây là ngành Kỹ thuật phần mềm, Trường Đại học CMC."}]},{"file":"audio/vi-mai/02.mp3","dur":8.74,"segs":[{"t":0.25,"text":"Sáng nay bạn đã mở bao nhiêu ứng dụng?"},{"t":2.54,"text":"Chuyển khoản, gọi xe, học trực tuyến, đặt lịch khám."},{"t":5.73,"text":"Đằng sau mỗi ứng dụng là một đội kỹ sư phần mềm."}]},{"file":"audio/vi-mai/03.mp3","dur":13.39,"segs":[{"t":0.25,"text":"Nghề lập trình đang đổi luật chơi."},{"t":2.21,"text":"Tám mươi tư phần trăm lập trình viên đã hoặc sắp dùng AI, nhưng gần một nửa không tin vào độ chính xác của nó."},{"t":8.3,"text":"Doanh nghiệp cần người làm ra sản phẩm và chịu trách nhiệm về chất lượng, chứ không chỉ người gõ code."}]},{"file":"audio/vi-mai/04.mp3","dur":11.81,"segs":[{"t":0.25,"text":"Kỹ sư phần mềm thời AI làm việc cùng trợ lý AI ở mọi bước: phân tích yêu cầu, thiết kế, lập trình, kiểm tra chất lượng, triển khai và vận hành."},{"t":8.61,"text":"AI làm nhanh, còn kỹ sư quyết định và chịu trách nhiệm."}]},{"file":"audio/vi-mai/05.mp3","dur":21.07,"segs":[{"t":0.25,"text":"Vì vậy, chương trình Kỹ thuật phần mềm định hướng AI-native cho bạn làm ra sản phẩm thật ngay từ học kỳ một."},{"t":6.23,"text":"Mỗi năm ba học kỳ, mỗi học kỳ mười tuần, nên chỉ ba năm là bạn ra trường."},{"t":10.56,"text":"Năm nhất, ứng dụng của riêng bạn chạy trên Internet."},{"t":13.42,"text":"Năm hai, làm nhóm, làm cho người dùng thật và cho doanh nghiệp."},{"t":17.06,"text":"Năm ba, thực tập, chuyên sâu, và tốt nghiệp với hồ sơ chín sản phẩm."}]},{"file":"audio/vi-mai/06.mp3","dur":12.98,"segs":[{"t":0.25,"text":"Bạn học bốn năng lực mà kỹ sư thời AI cần: viết đặc tả rõ ràng, điều phối trợ lý và tác tử AI, kiểm chứng mọi dòng mã, và chịu trách nhiệm về sản phẩm."},{"t":9.2,"text":"Học cùng AI, nhưng vẫn thi cả không AI để chắc nền tảng."}]},{"file":"audio/vi-mai/07.mp3","dur":10.1,"segs":[{"t":0.25,"text":"Ở CMC, bạn học trong lòng một tập đoàn công nghệ."},{"t":3.38,"text":"Hệ sinh thái Viện, Trường, Doanh nghiệp giúp sinh viên học qua dự án thực tế và thực tập tại các công ty thành viên ngay khi còn đi học."}]},{"file":"audio/vi-mai/08.mp3","dur":17.4,"segs":[{"t":0.25,"text":"Lứa tuyển sinh năm 2027 sẽ ra trường khoảng năm 2030."},{"t":5.2,"text":"Những vai trò đang lớn lên gồm kỹ sư phần mềm làm việc cùng AI, kỹ sư ứng dụng AI, kỹ sư kiểm thử và đánh giá AI, kỹ sư nền tảng đám mây, và kỹ sư sản phẩm."},{"t":15.1,"text":"Chạm vào từng vai trò để khám phá."}]},{"file":"audio/vi-mai/09.mp3","dur":12.53,"segs":[{"t":0.25,"text":"Quỹ học bổng CMC, Vì bạn xứng đáng, trị giá chín mươi sáu tỷ đồng."},{"t":4.7,"text":"Các mức ba mươi, năm mươi, bảy mươi và một trăm phần trăm học phí toàn khóa."},{"t":9.16,"text":"Xét qua điểm thi, chứng chỉ IELTS hoặc giải học sinh giỏi."}]},{"file":"audio/vi-mai/10.mp3","dur":12.6,"segs":[{"t":0.25,"text":"Có bốn cách để vào ngành: kỳ thi đánh giá năng lực CMC-TEST, xét học bạ, xét điểm thi tốt nghiệp trung học phổ thông, hoặc xét tuyển thẳng, ví dụ với IELTS từ 6.0."},{"t":9.89,"text":"Tổ hợp là Toán nhân hai cộng hai môn bất kỳ."}]},{"file":"audio/vi-mai/11.mp3","dur":8.4,"segs":[{"t":0.25,"text":"Hãy viết dòng lệnh đầu tiên cho tương lai của bạn."},{"t":2.82,"text":"Quét mã trên màn hình để đăng ký xét tuyển, hoặc gọi đường dây nóng tuyển sinh của Trường Đại học CMC."}]}],"vi-minh":[{"file":"audio/vi-minh/01.mp3","dur":10.44,"segs":[{"t":0.25,"text":"Đừng chỉ học viết code."},{"t":1.67,"text":"Hãy học cách xây những phần mềm mà hàng triệu người dùng mỗi ngày, và có sản phẩm chạy thật ngay từ năm nhất."},{"t":7.2,"text":"Đây là ngành Kỹ thuật phần mềm, Trường Đại học CMC."}]},{"file":"audio/vi-minh/02.mp3","dur":8.78,"segs":[{"t":0.25,"text":"Sáng nay bạn đã mở bao nhiêu ứng dụng?"},{"t":2.59,"text":"Chuyển khoản, gọi xe, học trực tuyến, đặt lịch khám."},{"t":5.77,"text":"Đằng sau mỗi ứng dụng là một đội kỹ sư phần mềm."}]},{"file":"audio/vi-minh/03.mp3","dur":13.22,"segs":[{"t":0.25,"text":"Nghề lập trình đang đổi luật chơi."},{"t":2.11,"text":"Tám mươi tư phần trăm lập trình viên đã hoặc sắp dùng AI, nhưng gần một nửa không tin vào độ chính xác của nó."},{"t":8.17,"text":"Doanh nghiệp cần người làm ra sản phẩm và chịu trách nhiệm về chất lượng, chứ không chỉ người gõ code."}]},{"file":"audio/vi-minh/04.mp3","dur":11.66,"segs":[{"t":0.25,"text":"Kỹ sư phần mềm thời AI làm việc cùng trợ lý AI ở mọi bước: phân tích yêu cầu, thiết kế, lập trình, kiểm tra chất lượng, triển khai và vận hành."},{"t":8.48,"text":"AI làm nhanh, còn kỹ sư quyết định và chịu trách nhiệm."}]},{"file":"audio/vi-minh/05.mp3","dur":20.9,"segs":[{"t":0.25,"text":"Vì vậy, chương trình Kỹ thuật phần mềm định hướng AI-native cho bạn làm ra sản phẩm thật ngay từ học kỳ một."},{"t":6.1,"text":"Mỗi năm ba học kỳ, mỗi học kỳ mười tuần, nên chỉ ba năm là bạn ra trường."},{"t":10.54,"text":"Năm nhất, ứng dụng của riêng bạn chạy trên Internet."},{"t":13.33,"text":"Năm hai, làm nhóm, làm cho người dùng thật và cho doanh nghiệp."},{"t":16.87,"text":"Năm ba, thực tập, chuyên sâu, và tốt nghiệp với hồ sơ chín sản phẩm."}]},{"file":"audio/vi-minh/06.mp3","dur":12.94,"segs":[{"t":0.25,"text":"Bạn học bốn năng lực mà kỹ sư thời AI cần: viết đặc tả rõ ràng, điều phối trợ lý và tác tử AI, kiểm chứng mọi dòng mã, và chịu trách nhiệm về sản phẩm."},{"t":9.17,"text":"Học cùng AI, nhưng vẫn thi cả không AI để chắc nền tảng."}]},{"file":"audio/vi-minh/07.mp3","dur":10.06,"segs":[{"t":0.25,"text":"Ở CMC, bạn học trong lòng một tập đoàn công nghệ."},{"t":3.32,"text":"Hệ sinh thái Viện, Trường, Doanh nghiệp giúp sinh viên học qua dự án thực tế và thực tập tại các công ty thành viên ngay khi còn đi học."}]},{"file":"audio/vi-minh/08.mp3","dur":17.74,"segs":[{"t":0.25,"text":"Lứa tuyển sinh năm 2027 sẽ ra trường khoảng năm 2030."},{"t":5.26,"text":"Những vai trò đang lớn lên gồm kỹ sư phần mềm làm việc cùng AI, kỹ sư ứng dụng AI, kỹ sư đảm bảo chất lượng và đánh giá AI, kỹ sư nền tảng đám mây, và kỹ sư sản phẩm."},{"t":15.38,"text":"Chạm vào từng vai trò để khám phá."}]},{"file":"audio/vi-minh/09.mp3","dur":12.65,"segs":[{"t":0.25,"text":"Quỹ học bổng CMC, Vì bạn xứng đáng, trị giá chín mươi sáu tỷ đồng."},{"t":4.75,"text":"Các mức ba mươi, năm mươi, bảy mươi và một trăm phần trăm học phí toàn khóa."},{"t":9.18,"text":"Xét qua điểm thi, chứng chỉ IELTS hoặc giải học sinh giỏi."}]},{"file":"audio/vi-minh/10.mp3","dur":12.7,"segs":[{"t":0.25,"text":"Có bốn cách để vào ngành: kỳ thi đánh giá năng lực CMC-TEST, xét học bạ, xét điểm thi tốt nghiệp trung học phổ thông, hoặc xét tuyển thẳng, ví dụ với IELTS từ 6.0."},{"t":10.02,"text":"Tổ hợp là Toán nhân hai cộng hai môn bất kỳ."}]},{"file":"audio/vi-minh/11.mp3","dur":8.23,"segs":[{"t":0.25,"text":"Hãy viết dòng lệnh đầu tiên cho tương lai của bạn."},{"t":2.71,"text":"Quét mã trên màn hình để đăng ký xét tuyển, hoặc gọi đường dây nóng tuyển sinh của Trường Đại học CMC."}]}],"en-heart":[{"file":"audio/en-heart/01.mp3","dur":12.17,"segs":[{"t":0.25,"text":"Don't just learn to write code."},{"t":2.18,"text":"Learn to build software that millions of people use every day, and ship a real product in your very first year."},{"t":8.57,"text":"This is Software Engineering at CMC University."}]},{"file":"audio/en-heart/02.mp3","dur":9.84,"segs":[{"t":0.25,"text":"How many apps have you opened this morning?"},{"t":2.56,"text":"Banking, ride-hailing, online classes, booking a doctor."},{"t":6.43,"text":"Behind every app is a team of software engineers."}]},{"file":"audio/en-heart/03.mp3","dur":14.14,"segs":[{"t":0.25,"text":"The rules of programming are changing."},{"t":2.65,"text":"Eighty-four percent of developers use or plan to use AI, yet nearly half don't trust its accuracy."},{"t":8.77,"text":"Companies need people who ship products and own their quality, not just people who type code."}]},{"file":"audio/en-heart/04.mp3","dur":14.06,"segs":[{"t":0.25,"text":"In the age of AI, software engineers work with AI assistants at every step: requirements, design, coding, testing, deployment and operations."},{"t":9.6,"text":"AI moves fast. Engineers decide, and take responsibility."}]},{"file":"audio/en-heart/05.mp3","dur":23.18,"segs":[{"t":0.25,"text":"That's why our AI-native Software Engineering program has you shipping real products from your first semester."},{"t":6.5,"text":"With three ten-week semesters a year, you graduate in just three years."},{"t":10.53,"text":"Year one: your own apps, live on the internet."},{"t":13.39,"text":"Year two: team products for real users and for industry."},{"t":17.08,"text":"Year three: an internship, a specialization, and graduation with a portfolio of nine products."}]},{"file":"audio/en-heart/06.mp3","dur":15.55,"segs":[{"t":0.25,"text":"You'll build the four skills AI-era engineers need: writing clear specifications, orchestrating AI assistants and agents, verifying every line of code, and owning the product."},{"t":10.82,"text":"Learn with AI, but still pass exams without it, so your foundations are solid."}]},{"file":"audio/en-heart/07.mp3","dur":12.65,"segs":[{"t":0.25,"text":"At CMC, you study inside a technology group."},{"t":3.63,"text":"Our ecosystem of research institutes, university and member companies lets you learn through real projects and intern in industry while still in school."}]},{"file":"audio/en-heart/08.mp3","dur":17.28,"segs":[{"t":0.25,"text":"The class of 2027 will graduate around 2030."},{"t":4.7,"text":"Growing roles include AI-augmented software engineers, applied AI engineers, AI testing and evaluation engineers, cloud platform engineers, and product engineers."},{"t":15.21,"text":"Tap any role to explore."}]},{"file":"audio/en-heart/09.mp3","dur":15.24,"segs":[{"t":0.25,"text":"CMC's \"You Deserve It\" scholarship fund is worth ninety-six billion dong."},{"t":5.28,"text":"Awards cover thirty, fifty, seventy, or one hundred percent of tuition for the whole program."},{"t":10.65,"text":"They're based on exam scores, IELTS certificates, or academic awards."}]},{"file":"audio/en-heart/10.mp3","dur":16.56,"segs":[{"t":0.25,"text":"There are four ways in: the CMC-TEST aptitude exam, your high school transcript, your national graduation exam scores, or direct admission, for example with IELTS six point zero or higher."},{"t":11.91,"text":"The subject combination is Math counted twice, plus any two subjects."}]},{"file":"audio/en-heart/11.mp3","dur":7.8,"segs":[{"t":0.25,"text":"Make the first commit to your future."},{"t":2.38,"text":"Scan the QR code to apply, or call the CMC University admissions hotline."}]}],"en-michael":[{"file":"audio/en-michael/01.mp3","dur":13.25,"segs":[{"t":0.25,"text":"Don't just learn to write code."},{"t":2.41,"text":"Learn to build software that millions of people use every day, and ship a real product in your very first year."},{"t":9.28,"text":"This is Software Engineering at CMC University."}]},{"file":"audio/en-michael/02.mp3","dur":10.44,"segs":[{"t":0.25,"text":"How many apps have you opened this morning?"},{"t":3.02,"text":"Banking, ride-hailing, online classes, booking a doctor."},{"t":6.97,"text":"Behind every app is a team of software engineers."}]},{"file":"audio/en-michael/03.mp3","dur":15.6,"segs":[{"t":0.25,"text":"The rules of programming are changing."},{"t":2.81,"text":"Eighty-four percent of developers use or plan to use AI, yet nearly half don't trust its accuracy."},{"t":9.66,"text":"Companies need people who ship products and own their quality, not just people who type code."}]},{"file":"audio/en-michael/04.mp3","dur":14.81,"segs":[{"t":0.25,"text":"In the age of AI, software engineers work with AI assistants at every step: requirements, design, coding, testing, deployment and operations."},{"t":10.05,"text":"AI moves fast. Engineers decide, and take responsibility."}]},{"file":"audio/en-michael/05.mp3","dur":25.1,"segs":[{"t":0.25,"text":"That's why our AI-native Software Engineering program has you shipping real products from your first semester."},{"t":7.08,"text":"With three ten-week semesters a year, you graduate in just three years."},{"t":11.53,"text":"Year one: your own apps, live on the internet."},{"t":14.41,"text":"Year two: team products for real users and for industry."},{"t":18.37,"text":"Year three: an internship, a specialization, and graduation with a portfolio of nine products."}]},{"file":"audio/en-michael/06.mp3","dur":17.62,"segs":[{"t":0.25,"text":"You'll build the four skills AI-era engineers need: writing clear specifications, orchestrating AI assistants and agents, verifying every line of code, and owning the product."},{"t":12.26,"text":"Learn with AI, but still pass exams without it, so your foundations are solid."}]},{"file":"audio/en-michael/07.mp3","dur":14.14,"segs":[{"t":0.25,"text":"At CMC, you study inside a technology group."},{"t":4.03,"text":"Our ecosystem of research institutes, university and member companies lets you learn through real projects and intern in industry while still in school."}]},{"file":"audio/en-michael/08.mp3","dur":19.22,"segs":[{"t":0.25,"text":"The class of 2027 will graduate around 2030."},{"t":5.18,"text":"Growing roles include AI-augmented software engineers, applied AI engineers, AI testing and evaluation engineers, cloud platform engineers, and product engineers."},{"t":17.02,"text":"Tap any role to explore."}]},{"file":"audio/en-michael/09.mp3","dur":16.7,"segs":[{"t":0.25,"text":"CMC's \"You Deserve It\" scholarship fund is worth ninety-six billion dong."},{"t":5.68,"text":"Awards cover thirty, fifty, seventy, or one hundred percent of tuition for the whole program."},{"t":11.61,"text":"They're based on exam scores, IELTS certificates, or academic awards."}]},{"file":"audio/en-michael/10.mp3","dur":18.55,"segs":[{"t":0.25,"text":"There are four ways in: the CMC-TEST aptitude exam, your high school transcript, your national graduation exam scores, or direct admission, for example with IELTS six point zero or higher."},{"t":13.61,"text":"The subject combination is Math counted twice, plus any two subjects."}]},{"file":"audio/en-michael/11.mp3","dur":8.38,"segs":[{"t":0.25,"text":"Make the first commit to your future."},{"t":2.55,"text":"Scan the QR code to apply, or call the CMC University admissions hotline."}]}],"en-emma":[{"file":"audio/en-emma/01.mp3","dur":12.0,"segs":[{"t":0.25,"text":"Don't just learn to write code."},{"t":2.4,"text":"Learn to build software that millions of people use every day, and ship a real product in your very first year."},{"t":8.4,"text":"This is Software Engineering at CMC University."}]},{"file":"audio/en-emma/02.mp3","dur":9.62,"segs":[{"t":0.25,"text":"How many apps have you opened this morning?"},{"t":2.73,"text":"Banking, ride-hailing, online classes, booking a doctor."},{"t":6.3,"text":"Behind every app is a team of software engineers."}]},{"file":"audio/en-emma/03.mp3","dur":13.7,"segs":[{"t":0.25,"text":"The rules of programming are changing."},{"t":2.64,"text":"Eighty-four percent of developers use or plan to use AI, yet nearly half don't trust its accuracy."},{"t":8.42,"text":"Companies need people who ship products and own their quality, not just people who type code."}]},{"file":"audio/en-emma/04.mp3","dur":13.49,"segs":[{"t":0.25,"text":"In the age of AI, software engineers work with AI assistants at every step: requirements, design, coding, testing, deployment and operations."},{"t":8.85,"text":"AI moves fast. Engineers decide, and take responsibility."}]},{"file":"audio/en-emma/05.mp3","dur":22.58,"segs":[{"t":0.25,"text":"That's why our AI-native Software Engineering program has you shipping real products from your first semester."},{"t":6.12,"text":"With three ten-week semesters a year, you graduate in just three years."},{"t":10.2,"text":"Year one: your own apps, live on the internet."},{"t":13.03,"text":"Year two: team products for real users and for industry."},{"t":16.63,"text":"Year three: an internship, a specialization, and graduation with a portfolio of nine products."}]},{"file":"audio/en-emma/06.mp3","dur":15.19,"segs":[{"t":0.25,"text":"You'll build the four skills AI-era engineers need: writing clear specifications, orchestrating AI assistants and agents, verifying every line of code, and owning the product."},{"t":10.33,"text":"Learn with AI, but still pass exams without it, so your foundations are solid."}]},{"file":"audio/en-emma/07.mp3","dur":12.12,"segs":[{"t":0.25,"text":"At CMC, you study inside a technology group."},{"t":3.72,"text":"Our ecosystem of research institutes, university and member companies lets you learn through real projects and intern in industry while still in school."}]},{"file":"audio/en-emma/08.mp3","dur":16.92,"segs":[{"t":0.25,"text":"The class of 2027 will graduate around 2030."},{"t":4.71,"text":"Growing roles include AI-augmented software engineers, applied AI engineers, AI testing and evaluation engineers, cloud platform engineers, and product engineers."},{"t":14.7,"text":"Tap any role to explore."}]},{"file":"audio/en-emma/09.mp3","dur":15.07,"segs":[{"t":0.25,"text":"CMC's \"You Deserve It\" scholarship fund is worth ninety-six billion dong."},{"t":5.03,"text":"Awards cover thirty, fifty, seventy, or one hundred percent of tuition for the whole program."},{"t":10.63,"text":"They're based on exam scores, IELTS certificates, or academic awards."}]},{"file":"audio/en-emma/10.mp3","dur":15.58,"segs":[{"t":0.25,"text":"There are four ways in: the CMC-TEST aptitude exam, your high school transcript, your national graduation exam scores, or direct admission, for example with IELTS six point zero or higher."},{"t":10.97,"text":"The subject combination is Math counted twice, plus any two subjects."}]},{"file":"audio/en-emma/11.mp3","dur":7.73,"segs":[{"t":0.25,"text":"Make the first commit to your future."},{"t":2.56,"text":"Scan the QR code to apply, or call the CMC University admissions hotline."}]}]}},"en":{"Tuyển sinh 2027 · Mã ngành SE · AI-native":"Admissions 2027 · Program code SE · AI-native","Đừng chỉ học viết code.":"Don't just learn to code.","Hãy học xây phần mềm.":"Learn to build software.","Học cùng AI, có sản phẩm chạy thật từ học kỳ đầu tiên, tại trường đại học của Tập đoàn Công nghệ CMC.":"Learn with AI. Ship real products from semester one, at CMC Technology Group's university.","// phần mềm ở khắp nơi":"// software is everywhere","Sáng nay bạn đã mở":"How many apps have you","bao nhiêu ứng dụng?":"opened this morning?","Ngân hàng số":"Digital banking","Gọi xe, bản đồ":"Rides & maps","Học trực tuyến":"Online learning","Đặt lịch khám":"Doctor booking","Mua sắm":"Shopping","Nhắn tin, mạng xã hội":"Chat & social","Trò chơi":"Games","Dịch vụ công":"Public services","Đằng sau mỗi ứng dụng là một":"Behind every app is a","đội kỹ sư phần mềm":"team of software engineers","// nghề đang đổi luật chơi":"// the rules are changing","AI viết code nhanh.":"AI writes code fast.","Ai":"Who","chịu trách nhiệm":"owns","sản phẩm?":"the product?","lập trình viên đã hoặc sắp dùng AI khi làm phần mềm":"of developers use or plan to use AI in their work","không tin độ chính xác của kết quả AI tạo ra":"don't trust the accuracy of AI output","việc làm người 22–25 tuổi ở nhóm nghề chịu tác động AI cao nhất (Mỹ)":"employment for ages 22–25 in the most AI-exposed jobs (US)","lập trình viên phần mềm trong nhóm nghề tăng nhanh nhất đến 2030":"software developers among the fastest-growing jobs to 2030","Cần người":"Wanted:","làm ra sản phẩm và kiểm chứng được AI":"people who ship products and verify AI","// vòng đời phần mềm · bạn + AI":"// software lifecycle · you + AI","AI làm nhanh.":"AI moves fast.","Kỹ sư quyết định.":"Engineers decide.","Yêu cầu":"Requirements","AI tóm tắt · bạn chốt":"AI summarizes · you decide","Thiết kế":"Design","đặc tả cho người và agent":"specs for people and agents","Lập trình":"Coding","agent viết · bạn review":"agents write · you review","Kiểm thử":"Testing","kiểm chứng mọi dòng code":"verify every line","Triển khai":"Deploy","CI/CD, quét bảo mật":"CI/CD, security scans","Vận hành":"Operate","đo, học, cải tiến":"measure, learn, improve","// chương trình AI-native":"// the AI-native program","Có":"Ship","sản phẩm chạy thật":"real products","từ học kỳ đầu tiên":"from your first semester","App của riêng bạn":"Your own app","Portfolio và ứng dụng web có đăng nhập, cơ sở dữ liệu, đưa lên Internet":"A portfolio and a web app with login and a database, live on the internet","Người dùng thật":"Real users","Làm nhóm theo Scrum, app web/mobile cho sinh viên trong trường, CI/CD, test tự động":"Scrum teams, web/mobile apps for fellow students, CI/CD, automated tests","Đề bài doanh nghiệp":"Industry briefs","Dự án với công ty thuộc Tập đoàn CMC, thực tập OJT, bảo mật, điều phối nhiều AI agent":"Projects with CMC Group companies, OJT internship, security, multi-agent orchestration","Chuyên sâu AI Engineering, Product, QA & Security hoặc Cloud; đồ án là sản phẩm có người dùng":"Specialize in AI Engineering, Product, QA & Security or Cloud; your capstone has real users","* Định hướng chương trình đổi mới. Học phần cụ thể theo chương trình đào tạo được Trường phê duyệt.":"* Curriculum direction under renewal. Final courses follow the program approved by the University.","// học cùng AI, thi cả không AI":"// learn with AI, test without it","· agent đang làm":"· agent at work","Bốn năng lực":"Four skills","của":"of the","kỹ sư thời AI":"AI-era engineer","Đặc tả":"Specify","· viết yêu cầu đủ rõ cho người và AI":"· write requirements clear enough for people and AI","Điều phối":"Orchestrate","· chia việc cho trợ lý và AI agent":"· delegate to assistants and AI agents","Kiểm chứng":"Verify","· test, review, quét bảo mật":"· test, review, security scans","Trách nhiệm":"Own it","· hiểu và đứng tên mọi dòng code":"· understand and sign off every line","// vì sao chọn CMC":"// why CMC","Học trong lòng":"Study inside","một":"a","tập đoàn công nghệ":"technology group","Hệ sinh thái Viện – Trường – Doanh nghiệp của Tập đoàn Công nghệ CMC":"CMC Technology Group's institute–university–enterprise ecosystem","Học qua dự án thực tế, kết nối doanh nghiệp ngay trong quá trình học":"Learn through real projects, connected to industry while you study","Thực tập OJT tại các công ty thành viên của Tập đoàn":"OJT internships at the Group's member companies","Viện nghiên cứu":"Research institutes","AI, dữ liệu, công nghệ mới":"AI, data, emerging tech","Doanh nghiệp":"Companies","công ty thành viên CMC":"CMC member companies","Dự án thật":"Real projects","đề bài từ thực tế":"briefs from industry","Thực tập OJT":"OJT internship","làm việc như kỹ sư":"work like an engineer","ĐH CMC":"CMC Uni","sinh viên ở trung tâm":"students at the center","bạn sẽ làm gì?":"what will you do?","// học bổng":"// scholarships","Quỹ học bổng “CMC – Vì bạn xứng đáng”":"“CMC – You Deserve It” scholarship fund","tỷ đồng":"billion VND","học phí toàn khóa · xét qua điểm thi THPT, IELTS, giải HSG cấp tỉnh trở lên · duy trì khi GPA từ 3.0/4.0":"of full-program tuition · based on exam scores, IELTS, provincial awards or higher · kept with GPA 3.0/4.0+","* Theo chính sách mùa tuyển sinh 2026. Mùa 2026 còn tặng iPad cho tân sinh viên đặt CMC là NV1–3 và đạt điều kiện.":"* 2026 admissions policy. In 2026, eligible freshmen who ranked CMC as choice 1–3 also received an iPad.","// 4 cửa vào":"// 4 ways in","Bốn cách để":"Four ways","vào ngành":"to get in","Thi đánh giá năng lực":"Aptitude exam","kỳ thi riêng của trường, thi nhiều đợt":"the university's own exam, several rounds","HỌC BẠ":"TRANSCRIPT","Xét học bạ THPT":"High school transcript","điểm trung bình môn theo tổ hợp":"subject averages in your combination","THPT":"NATIONAL EXAM","Điểm thi tốt nghiệp":"Graduation exam scores","cộng điểm ưu tiên nếu có":"plus priority points if any","XÉT THẲNG":"DIRECT","Tuyển thẳng":"Direct admission","IELTS 6.0+, HSG, THPT chuyên…":"IELTS 6.0+, academic awards, gifted schools…","Mã trường":"School code","Mã ngành":"Program code","Tổ hợp":"Subjects","Toán ×2":"Math ×2","+ 2 môn bất kỳ":"+ any 2 subjects","git commit -m \"Chọn đúng ngành\"":"git commit -m \"Pick the right major\"","Commit đầu tiên":"Your first commit","cho":"to your","tương lai":"future","Đăng ký xét tuyển":"Apply now","Tính điểm của tôi":"Calculate my score","Tôi hợp vai trò nào?":"Which role fits me?","Quét để mở trang":"Scan to open","trên điện thoại":"on your phone","@Bạn gặp người dùng và chốt phần mềm cần làm gì. AI giúp tóm tắt phỏng vấn, gợi ý trường hợp bị bỏ sót; bạn quyết định yêu cầu nào là đúng.":"You meet users and pin down what the software must do. AI summarizes interviews and flags missed cases; you decide which requirements are right.","@Bạn chọn kiến trúc và viết đặc tả đủ rõ để cả người lẫn AI agent làm theo được. AI đưa phương án; bạn cân đánh đổi.":"You choose the architecture and write specs clear enough for both people and AI agents. AI proposes options; you weigh the trade-offs.","@Agent viết phần lớn code theo đặc tả; bạn chia việc, đọc và hiểu từng thay đổi trước khi chấp nhận.":"Agents write most of the code from your spec; you split the work and read and understand every change before accepting it.","@Kiểm thử tự động là hàng rào chặn code sai, kể cả code do AI sinh. Đây là kỹ năng được doanh nghiệp săn đón.":"Automated tests stop bad code, including AI-generated code. Employers are hunting for this skill.","@Đưa sản phẩm lên cloud, lên kho ứng dụng bằng CI/CD; quét bảo mật trước mỗi lần phát hành.":"Ship to the cloud and app stores with CI/CD, with a security scan before every release.","@Theo dõi hệ thống, đọc phản hồi người dùng, ra phiên bản tốt hơn. Sản phẩm là thứ sống, không phải bài tập nộp xong là thôi.":"Monitor the system, read user feedback, ship a better version. A product is alive; it's not homework you hand in and forget.","@Thiết kế hệ thống, viết đặc tả, điều phối AI agent và chịu trách nhiệm chất lượng từ đầu đến cuối.":"Design systems, write specs, orchestrate AI agents and own quality end to end.","@Đưa mô hình ngôn ngữ vào sản phẩm thật: trợ lý ảo tiếng Việt, tìm kiếm thông minh, tự động hóa nghiệp vụ.":"Bring language models into real products: Vietnamese virtual assistants, smart search, business automation.","@Xây tác tử AI biết dùng công cụ, kết nối dữ liệu doanh nghiệp và làm việc nhiều bước một cách an toàn.":"Build AI agents that use tools, connect to company data and work through many steps safely.","@Kiểm thử tự động, đo và chặn lỗi của cả phần mềm lẫn tính năng AI trước khi đến tay người dùng.":"Automate tests, and measure and block failures in both software and AI features before users see them.","@Đi từ vấn đề của người dùng đến giao diện web, mobile chạy thật; nhanh, đẹp, dễ dùng.":"Go from a user's problem to a working web or mobile interface: fast, polished, easy to use.","@Xây API, cơ sở dữ liệu và luồng dữ liệu chịu tải lớn, nền móng cho mọi ứng dụng AI.":"Build APIs, databases and high-load data pipelines, the foundation of every AI application.","@Tự động hóa build, triển khai, giám sát; dựng nền tảng để đội kỹ sư và AI agent làm việc nhanh mà an toàn.":"Automate builds, deployment and monitoring; build platforms where engineers and AI agents move fast and safely.","@Tìm và vá lỗ hổng, đặc biệt trong mã do AI sinh ra và trong các hệ thống AI agent.":"Find and fix vulnerabilities, especially in AI-generated code and AI agent systems.","@Hiểu nghiệp vụ, chốt yêu cầu, dẫn dắt đội người và AI làm đúng sản phẩm, đúng hạn.":"Understand the business, settle requirements, and lead teams of people and AI to build the right product on time.","@Kỳ thi đánh giá năng lực riêng của Trường Đại học CMC, đánh giá tư duy, ngoại ngữ và suy luận logic. Đăng ký tại thituyen.cmcu.edu.vn.":"CMC University's own aptitude exam, testing reasoning, English and logic. Register at thituyen.cmcu.edu.vn.","@Điểm trung bình môn theo tổ hợp từ học bạ THPT, không cộng điểm ưu tiên, đảm bảo ngưỡng của Bộ GD&ĐT. Đăng ký tại xettuyen.cmcu.edu.vn.":"Your high school subject averages for the combination, without priority points, meeting the Ministry's threshold. Apply at xettuyen.cmcu.edu.vn.","@Dùng điểm thi tốt nghiệp THPT theo tổ hợp, cộng điểm ưu tiên nếu có. Đăng ký trên hệ thống chung của Bộ GD&ĐT.":"Your national graduation exam scores for the combination, plus priority points if any. Register on the Ministry's national system.","@Theo quy chế của Bộ và đề án của Trường: IELTS từ 6.0 hoặc tương đương, học sinh THPT chuyên đạt học lực Tốt, thí sinh dự thi HSG/KHKT cấp tỉnh trở lên…":"Under Ministry rules and the University's plan: IELTS 6.0 or equivalent, gifted-school students rated Excellent, provincial-level competition participants and more.","Học cùng AI, có sản phẩm chạy thật từ học kỳ đầu tiên, ra trường sau 3 năm, tại trường đại học của Tập đoàn Công nghệ CMC.":"Learn with AI, ship real products from semester one and graduate in 3 years, at CMC Technology Group's university.","// chương trình AI-native · 3 học kỳ/năm":"// the AI-native program · 3 semesters a year","9 học kỳ, 9 sản phẩm,":"9 semesters, 9 products,","3 năm ra trường":"graduate in 3 years","v1 · Năm 1 · HK1–3 · Build":"v1 · Year 1 · Sem 1–3 · Build","Portfolio, ứng dụng có cơ sở dữ liệu, web có đăng nhập và người dùng thật":"A portfolio, a data app, and a web app with login and real users","v2 · Năm 2 · HK4–6 · Team":"v2 · Year 2 · Sem 4–6 · Team","Làm nhóm, làm cho doanh nghiệp":"Team up, build for industry","App di động, sản phẩm nhóm có CI/CD và test tự động, dự án đề bài từ Tập đoàn CMC":"A mobile app, team products with CI/CD and automated tests, a project briefed by CMC Group","v3 · Năm 3 · HK7–9 · Launch":"v3 · Year 3 · Sem 7–9 · Launch","Thực tập và tốt nghiệp":"Intern and graduate","Tính năng AI trong sản phẩm, thực tập OJT, hướng chuyên sâu, đồ án có người dùng thật":"AI features in a product, OJT internship, a specialization, a capstone with real users","Mỗi năm":"Each year:","3 học kỳ":"3 semesters","Mỗi học kỳ":"Each semester:","10 tuần":"10 weeks","1 sản phẩm":"1 product","// ra trường năm 2030":"// graduating in 2030","Năm 2030,":"In 2030,","· Kỹ thuật phần mềm":"· Software Engineering"},"rolesEn":["AI-augmented software engineer","Applied AI engineer","AI agent engineer","AI testing & evaluation","Product engineer","Backend & data","Cloud & platform","Application security","BA / product manager"],"ui":{"hint":"Exploring · press ▶ to continue","fee":"tuition","titles":["Hello","Everywhere","Rules change","The job","3 years, 9 products","4 new skills","Why CMC","Graduating 2030","Scholarships","Admissions","Get started"]}}</script><!--VD-END-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+/* =========================================================
+   CẤU HÌNH — Phòng Tuyển sinh / Truyền thông sửa tại đây
+   ========================================================= */
+const CONFIG = {
+  publicUrl: "",                              // địa chỉ trang khi đăng lên website trường, vd "https://cmcu.edu.vn/tuyen-sinh/ky-thuat-phan-mem"
+  siteUrl: "https://cmcu.edu.vn",
+  registerUrl: "https://xettuyen.cmcu.edu.vn",
+  testUrl: "https://thituyen.cmcu.edu.vn",
+  hotline: "024 7102 9999",
+  campaign: "tuyensinh2027_se",
+  refScore: { thpt: 25.30, hb: 28.36, year: 2026 }, // điểm trúng tuyển tham khảo ngành SE
+  ipadHbThreshold: 31,                         // ngưỡng học bạ chương trình tặng iPad (mùa 2026)
+  audioBase: "",                               // thư mục chứa audio/ (để trống nếu cùng thư mục với trang)
+  contestApi: "",                              // máy chủ nhận điểm dự thi Săn Bug (cấp màn chơi, kiểm tra lại điểm, xác thực OTP)
+  cloneApi: ""                                 // địa chỉ máy chủ nhân bản giọng nói, vd "https://ai.cmcu.edu.vn/clone" (xem clone_server.py)
+};
+
+const ROLES = [
+  ["SE","Kỹ sư phần mềm + AI","Thiết kế hệ thống, viết đặc tả, điều phối AI agent và chịu trách nhiệm chất lượng từ đầu đến cuối."],
+  ["AI","Kỹ sư ứng dụng AI","Đưa mô hình ngôn ngữ vào sản phẩm thật: trợ lý ảo tiếng Việt, tìm kiếm thông minh, tự động hóa nghiệp vụ."],
+  ["AG","Kỹ sư AI Agent","Xây tác tử AI biết dùng công cụ, kết nối dữ liệu doanh nghiệp và làm việc nhiều bước một cách an toàn."],
+  ["QA","Kiểm thử & đánh giá AI","Kiểm thử tự động, đo và chặn lỗi của cả phần mềm lẫn tính năng AI trước khi đến tay người dùng."],
+  ["PE","Kỹ sư sản phẩm","Đi từ vấn đề của người dùng đến giao diện web, mobile chạy thật; nhanh, đẹp, dễ dùng."],
+  ["BE","Backend & dữ liệu","Xây API, cơ sở dữ liệu và luồng dữ liệu chịu tải lớn, nền móng cho mọi ứng dụng AI."],
+  ["OP","Cloud & Platform","Tự động hóa build, triển khai, giám sát; dựng nền tảng để đội kỹ sư và AI agent làm việc nhanh mà an toàn."],
+  ["SC","Bảo mật ứng dụng","Tìm và vá lỗ hổng, đặc biệt trong mã do AI sinh ra và trong các hệ thống AI agent."],
+  ["PM","BA / Quản lý sản phẩm","Hiểu nghiệp vụ, chốt yêu cầu, dẫn dắt đội người và AI làm đúng sản phẩm, đúng hạn."]
+];
+const PROGRAM_NOTE = "Định hướng chương trình đổi mới. Học phần cụ thể theo chương trình đào tạo được Trường phê duyệt.";
+const SEMESTERS = [
+  {p:"Trang portfolio cá nhân và một ứng dụng web nhỏ, đưa lên Internet ngay trong các tuần đầu.",k:"Nhập môn KTPM AI-native, Python có trợ lý AI, toán rời rạc và logic cho lập trình, Studio 1.",ai:"AI là gia sư: giải thích và gợi ý; dòng code nào nộp cũng phải tự giải thích được.",e:"Sản phẩm chạy thật + bài thi lập trình không dùng AI."},
+  {p:"Ứng dụng quản lý dữ liệu nhỏ, ví dụ sổ điểm cá nhân hay thư viện sách của CLB.",k:"Cấu trúc dữ liệu và giải thuật, cơ sở dữ liệu, phát triển web full-stack, Studio 2.",ai:"Dùng AI sinh dữ liệu thử và tìm lỗi; so sánh lời giải của AI với lời giải của mình.",e:"Demo + nhật ký dùng AI + thi viết không AI."},
+  {p:"Ứng dụng web có đăng nhập và cơ sở dữ liệu, có bạn bè trong lớp dùng thật.",k:"Lập trình hướng đối tượng và mã sạch, toán cho AI, thiết kế trải nghiệm người dùng, tiếng Anh kỹ thuật, Studio 3; cuối kỳ là Cổng năng lực 1.",ai:"AI là trợ lý lập trình; viết kiểm thử đầu tiên để kiểm chứng mã AI gợi ý.",e:"Sản phẩm có người dùng + báo cáo phản tư."},
+  {p:"Bản đầu tiên của app di động làm theo nhóm, viết từ đặc tả.",k:"Đặc tả cho người và AI agent, kiến trúc phần mềm ra quyết định cùng AI, ứng dụng di động, hệ thống máy tính và mạng, Studio 4.",ai:"AI agent làm việc nhỏ theo đặc tả; con người review mọi pull request.",e:"Đặc tả, thiết kế và sản phẩm của nhóm."},
+  {p:"Sản phẩm nhóm cho người dùng trong trường, có kiểm thử tự động và triển khai tự động lên cloud.",k:"Công nghệ phần mềm và Agile, kiểm thử với AI, DevOps và cloud, Kỹ nghệ phần mềm với AI agent, Studio 5.",ai:"Viết ngữ cảnh và đặc tả cho agent (context engineering); đo chất lượng mã AI sinh.",e:"Chỉ số chất lượng + quy trình Scrum + phản tư."},
+  {p:"Dự án đầu tiên với đề bài thật từ doanh nghiệp thuộc Tập đoàn CMC.",k:"Học máy ứng dụng, bảo mật và an toàn mã AI sinh, học phần mở Chủ đề hiện đại (công nghệ mới của năm), Studio 6 với doanh nghiệp; cuối kỳ là Cổng năng lực 2.",ai:"Điều phối nhiều agent; quét bảo mật mã do AI tạo ra.",e:"Doanh nghiệp cùng giảng viên chấm sản phẩm."},
+  {p:"Tính năng AI (trợ lý, tìm kiếm thông minh, agent) được tích hợp vào một sản phẩm và đo độ tin cậy.",k:"Ứng dụng mô hình ngôn ngữ lớn (RAG, agent), hệ thống phân tán, vận hành hệ thống, đạo đức và pháp luật về AI, học phần mở Nghiên cứu và đổi mới.",ai:"Không chỉ dùng AI mà xây tính năng AI và đánh giá xem nó có đáng tin không.",e:"Báo cáo đánh giá AI + demo."},
+  {p:"Đóng góp vào hệ thống đang chạy thật khi thực tập OJT tại công ty thành viên Tập đoàn CMC.",k:"Quy trình doanh nghiệp, làm việc trong codebase lớn, học phần chuyên sâu đầu tiên.",ai:"Dùng công cụ AI theo chính sách bảo mật của doanh nghiệp.",e:"Đánh giá của người hướng dẫn tại doanh nghiệp."},
+  {p:"Đồ án tốt nghiệp là sản phẩm có người dùng thật, một hệ thống cho doanh nghiệp, hoặc dự án khởi nghiệp.",k:"Chuyên sâu một hướng: AI Engineering, Product, Quality & Security hoặc Cloud & Platform.",ai:"Toàn bộ vòng đời phần mềm với AI, có hồ sơ minh chứng từng quyết định.",e:"Hội đồng + doanh nghiệp; ra trường với hồ sơ 9 sản phẩm."}
+];
+
+/* ---------- helpers ---------- */
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const toastEl = $("#toast"); let toastT;
+function toast(msg){toastEl.textContent=msg;toastEl.classList.add("show");clearTimeout(toastT);toastT=setTimeout(()=>toastEl.classList.remove("show"),3200)}
+function fmt(n){return n.toFixed(2).replace(".",",")}
+async function copyText(txt){
+  try{await navigator.clipboard.writeText(txt);toast("Đã sao chép");}
+  catch(e){const ta=document.createElement("textarea");ta.value=txt;document.body.appendChild(ta);ta.select();
+    let ok=false;try{ok=document.execCommand("copy")}catch(_){}
+    ta.remove();toast(ok?"Đã sao chép":"Không sao chép được, hãy bôi đen và sao chép thủ công")}
+}
+function mmss(ms){const s=Math.max(0,Math.round(ms/1000));return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")}
+
+/* apply config to links */
+$$("#navReg,#ctaReg,#calcReg,#fReg").forEach(a=>a.href=CONFIG.registerUrl);
+$("#fSite").href=CONFIG.siteUrl; $("#fTest").href=CONFIG.testUrl;
+$("#ctaHotline").textContent=CONFIG.hotline; $("#fHot").textContent=CONFIG.hotline;
+$("#ctaWeb").textContent=CONFIG.registerUrl.replace(/^https?:\/\//,"");
+
+/* ---------- options from URL (query on school site, plain hash anywhere) ---------- */
+const Q = new URLSearchParams(location.search);
+const H = (location.hash||"").slice(1);
+const OPT = {
+  embed: Q.get("embed")==="1" || /(^|-)embed(-|$)/.test(H),
+  vert: Q.get("ratio")==="9x16" || /(^|-)doc(-|$)/.test(H),
+  autoplay: Q.get("autoplay")!=="0",
+  slide: +(Q.get("slide") || (H.match(/slide-(\d+)/)||[])[1] || 1) - 1
+};
+if(OPT.embed) document.body.classList.add("embed");
+
+/* ---------- PLAYER ---------- */
+const player=$("#player"), stage=$("#stage"), screen=$("#screen");
+const slides=$$(".slide");
+const VD=JSON.parse(document.getElementById("voiceData").textContent);
+const MAN=VD.manifest;
+const DEF={vi:"vi-mai",en:"en-heart"};
+let lang=(Q.get("lang")==="en"||/(^|-)en(-|$)/.test(H))?"en":"vi";
+let voiceId=Q.get("voice")||DEF[lang];
+let lastPlayAt=0, idx=0, t=0, playing=false, last=0, speed=1, cc=true, userTouched=false, sound=false, music=false, audioOK=true;
+const speeds=[1,1.25,1.5,.75];
+const MY={vi:[],en:[]}, CLONE={vi:[],en:[]};
+const audioEl=new Audio(); audioEl.preload="auto";
+const bedEl=new Audio(CONFIG.audioBase+"audio/bed.mp3"); bedEl.loop=true; bedEl.volume=0; bedEl.preload="none";
+const preloadEl=new Audio(); preloadEl.preload="auto";
+
+function narrSegs(l,i){return MAN.slides[DEF[l]][i].segs}
+function narrText(l,i){return narrSegs(l,i).map(s=>s.text).join(" ")}
+function vlang(id){if(id==="me"||id==="me-ai")return lang;const v=MAN.voices.find(x=>x.id===id);return v?v.lang:lang}
+function track(i){
+  const own=voiceId==="me"?MY[lang][i]:voiceId==="me-ai"?CLONE[lang][i]:null;
+  if(own){const base=MAN.slides[DEF[lang]][i];const k=own.dur/base.dur;return {src:own.src,dur:own.dur,segs:base.segs.map(s=>({t:s.t*k,text:s.text})),own:true}}
+  const id=(voiceId==="me"||voiceId==="me-ai")?DEF[lang]:voiceId;
+  const s=MAN.slides[id][i];return {src:CONFIG.audioBase+s.file,dur:s.dur,segs:s.segs};
+}
+function dur(i){return Math.max(4000,track(i).dur*1000+450)}
+function total(){let s=0;for(let i=0;i<slides.length;i++)s+=dur(i);return s}
+function elapsed(){let s=0;for(let i=0;i<idx;i++)s+=dur(i);return s+t}
+
+/* build segments + chapters */
+const segs=$("#segs"), chapters=$("#chapters");
+slides.forEach((s,i)=>{
+  const b=document.createElement("button");b.className="seg";b.innerHTML="<i></i>";
+  b.addEventListener("click",e=>{const r=b.getBoundingClientRect();const f=Math.min(.95,Math.max(0,(e.clientX-r.left)/r.width));userTouched=true;go(i);t=f*dur(i);if(playing)startAudio();render();});
+  segs.appendChild(b);
+  const c=document.createElement("button");c.className="chap";
+  c.addEventListener("click",()=>{userTouched=true;go(i);if(!playing)play();});
+  chapters.appendChild(c);
+});
+function chapterTitle(i){return lang==="en"?VD.ui.titles[i]:slides[i].dataset.title}
+function labelChapters(){
+  segs.querySelectorAll(".seg").forEach((b,i)=>{b.title=(i+1)+". "+chapterTitle(i);b.setAttribute("aria-label",(lang==="en"?"Go to chapter ":"Chuyển tới chương ")+(i+1)+": "+chapterTitle(i))});
+  chapters.querySelectorAll(".chap").forEach((c,i)=>{c.innerHTML="<b>"+String(i+1).padStart(2,"0")+"</b>"+chapterTitle(i)});
+}
+
+/* roles + rings content */
+const rolesEl=$("#roles");
+ROLES.forEach((r,i)=>{const b=document.createElement("button");b.className="role a";b.style.setProperty("--d",250+i*110);b.dataset.explore="";b.dataset.info=r[2];b.innerHTML="<i>"+r[0]+"</i>"+r[1];rolesEl.appendChild(b)});
+const ringsEl=$("#rings");
+[30,50,70,100].forEach((p,i)=>{const C=2*Math.PI*62;const off=C*(1-p/100);
+  const d=document.createElement("div");d.className="ringc a";d.style.setProperty("--d",350+i*150);
+  d.innerHTML='<svg viewBox="0 0 150 150"><circle class="bg" cx="75" cy="75" r="62"/><circle class="fg" cx="75" cy="75" r="62" style="--c:'+C+';--d:'+(400+i*150)+';stroke-dasharray:'+C+';stroke-dashoffset:'+off+'"/></svg><b>'+p+'%</b><span>học phí</span>';
+  ringsEl.appendChild(d)});
+
+/* program note + semester explorer */
+$("#progNote").textContent="* "+PROGRAM_NOTE;
+$("#semNote").textContent=PROGRAM_NOTE;
+const semTabs=$("#semTabs"), semBody=$("#semBody");
+function showSem(i){
+  const s=SEMESTERS[i];
+  semTabs.querySelectorAll("button").forEach((b,j)=>b.setAttribute("aria-selected",j===i));
+  semBody.innerHTML='<div><small>SẢN PHẨM · HỌC KỲ '+(i+1)+'</small><p>'+s.p+'</p></div><div><small>KỸ NĂNG</small><p>'+s.k+'</p></div><div><small>CÁCH DÙNG AI</small><p>'+s.ai+'</p></div><div><small>ĐÁNH GIÁ</small><p>'+s.e+'</p></div>';
+}
+SEMESTERS.forEach((s,i)=>{const b=document.createElement("button");b.type="button";b.setAttribute("role","tab");b.innerHTML="HK"+(i+1)+'<span class="y">Năm '+(Math.floor(i/3)+1)+'</span>';b.onclick=()=>showSem(i);semTabs.appendChild(b)});
+showSem(0);
+
+/* explore interactions inside slides */
+function bindDetail(selector, out){
+  $$(selector).forEach(b=>b.addEventListener("click",()=>{
+    $$(selector).forEach(x=>x.classList.remove("sel"));b.classList.add("sel");$(out).textContent=b.dataset.info;explore();
+  }));
+}
+bindDetail("#pipe .stagebtn","#pipeDetail");
+bindDetail("#roles .role","#roleDetail");
+bindDetail("#doors .door","#doorDetail");
+$$("[data-go]").forEach(b=>b.addEventListener("click",()=>{explore();document.getElementById(b.dataset.go).scrollIntoView({behavior:"smooth"})}));
+function explore(){userTouched=true;if(playing){pause();player.classList.add("exploring")}}
+
+/* language: on-screen text, roles, chapters */
+const ORIG=new Map();
+function applyLang(){
+  const w=document.createTreeWalker(stage,NodeFilter.SHOW_TEXT);let n;
+  while(n=w.nextNode()){
+    const pe=n.parentElement; if(!pe||pe.closest("#roles,#rings,pre,.term-body,.qr,#cap,#unmute,.bigplay,#stCount")) continue;
+    if(!ORIG.has(n)) ORIG.set(n,n.nodeValue);
+    const o=ORIG.get(n), k=o.trim(); if(!k) continue;
+    n.nodeValue=(lang==="en"&&VD.en[k])?o.replace(k,VD.en[k]):o;
+  }
+  $$("#stage [data-info]").forEach(e=>{if(!e.dataset.infoVi)e.dataset.infoVi=e.dataset.info;e.dataset.info=lang==="en"?(VD.en["@"+e.dataset.infoVi]||e.dataset.infoVi):e.dataset.infoVi});
+  $$("#roles .role").forEach((b,i)=>{b.lastChild.nodeValue=lang==="en"?VD.rolesEn[i]:ROLES[i][1]});
+  $$("#rings .ringc span").forEach(s=>s.textContent=lang==="en"?"tuition":"học phí");
+  ["#pipeDetail","#roleDetail","#doorDetail"].forEach(s=>$(s).textContent="");
+  $$(".sel").forEach(x=>x.classList.remove("sel"));
+  $("#hint").textContent=lang==="en"?VD.ui.hint:"Đang khám phá · bấm ▶ để xem tiếp";
+  $("#unmuteTxt").textContent=lang==="en"?"Tap to hear narration":"Bấm để nghe lời dẫn";
+  $("#bLang").dataset.lang=lang;
+  stage.setAttribute("lang",lang);
+  labelChapters(); buildVoiceSelect(); renderStudio();
+}
+
+/* voices */
+const selVoice=$("#selVoice");
+function buildVoiceSelect(){
+  const opts=MAN.voices.filter(v=>v.lang===lang).map(v=>'<option value="'+v.id+'">'+v.name+" · "+v.desc+"</option>");
+  const nMine=MY[lang].filter(Boolean).length, nClone=CLONE[lang].filter(Boolean).length;
+  opts.push('<option value="me">'+(lang==="en"?"My voice":"Giọng của tôi")+" ("+nMine+"/"+slides.length+")</option>");
+  if(nClone) opts.push('<option value="me-ai">'+(lang==="en"?"My AI voice":"Giọng AI của tôi")+"</option>");
+  selVoice.innerHTML=opts.join("");
+  if(vlang(voiceId)!==lang&&voiceId!=="me"&&voiceId!=="me-ai") voiceId=DEF[lang];
+  selVoice.value=voiceId;
+}
+selVoice.onchange=()=>{
+  voiceId=selVoice.value; userTouched=true;
+  if(voiceId==="me"&&!MY[lang].some(Boolean)){$("#studio").open=true;$("#studio").scrollIntoView({behavior:"smooth",block:"center"});toast(lang==="en"?"Record your voice in the studio first. Unrecorded chapters use the default AI voice.":"Hãy thu giọng trong Phòng thu. Chương chưa thu sẽ dùng giọng AI mặc định.")}
+  setSound(true); t=0; if(playing)startAudio(); else play(); render();
+};
+function setLang(l){
+  if(l===lang)return; lang=l;
+  if(voiceId!=="me"&&voiceId!=="me-ai") voiceId=DEF[lang];
+  applyLang(); t=0; if(playing&&sound)startAudio(); render();
+}
+$("#bLang").onclick=()=>{userTouched=true;setLang(lang==="vi"?"en":"vi")};
+
+/* audio engine */
+function startAudio(){
+  if(!sound)return;
+  const tr=track(idx); const off=t/1000;
+  if(off>=tr.dur){audioEl.pause();return}
+  const src=new URL(tr.src,location.href).href;
+  if(audioEl.src!==src){audioEl.src=tr.src}
+  try{audioEl.currentTime=off}catch(e){}
+  audioEl.playbackRate=speed;
+  const p=audioEl.play(); if(p&&p.catch)p.catch(err=>{if(!err||err.name!=="NotAllowedError")return;audioOK=false;setSound(false);toast(lang==="en"?"Your browser blocked audio. Tap the sound button to try again.":"Trình duyệt chặn phát âm thanh. Bấm nút Lời dẫn để thử lại.")});
+  audioOK=true;
+  if(idx<slides.length-1){preloadEl.src=track(idx+1).src}
+}
+audioEl.addEventListener("error",()=>{audioOK=false});
+function setSound(on){
+  sound=on; $("#bSound").setAttribute("aria-pressed",on);
+  $("#icoSound").innerHTML=on?'<path d="M4 9h4l5-4v14l-5-4H4zM16 8.5a4.5 4.5 0 0 1 0 7M18.5 6a8 8 0 0 1 0 12" stroke="currentColor" stroke-width="1.8" fill="currentColor"/>':'<path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M16 9l5 6M21 9l-5 6" stroke="currentColor" stroke-width="2" fill="none"/>';
+  player.classList.toggle("muted-hint",!on&&playing);
+  if(on){if(playing)startAudio()}else audioEl.pause();
+}
+$("#bSound").onclick=()=>{userTouched=true;setSound(!sound);if(sound&&!playing)play()};
+$("#unmute").onclick=e=>{e.stopPropagation();userTouched=true;setSound(true);if(!playing)play()};
+$("#bMusic").onclick=e=>{music=!music;e.currentTarget.setAttribute("aria-pressed",music);if(music){bedEl.preload="auto";bedEl.play().catch(()=>{})}};
+
+/* scaling */
+function fit(){
+  const w=screen.clientWidth, dw=player.classList.contains("vert")?900:1600;
+  stage.style.setProperty("--s",w/dw);
+}
+new ResizeObserver(fit).observe(screen);
+
+/* captions */
+const capEl=$("#cap");
+function updateCap(){
+  if(!cc){capEl.innerHTML="";return}
+  const sg=track(idx).segs; let cur=sg[0].text;
+  for(const s of sg){if(s.t*1000<=t+80)cur=s.text}
+  const html="<span>"+cur+"</span>";
+  if(capEl.innerHTML!==html) capEl.innerHTML=html;
+}
+
+/* navigation */
+function activate(){
+  slides.forEach((s,i)=>s.classList.toggle("on",i===idx));
+  const s=slides[idx]; s.querySelectorAll(".a,.p,.tile,.packet,.fg,line").forEach(el=>{el.style.animation="none";void el.offsetWidth;el.style.animation=""});
+  $$(".chap").forEach((c,i)=>c.classList.toggle("cur",i===idx));
+  $("#stCount").textContent=String(idx+1).padStart(2,"0")+" / "+String(slides.length).padStart(2,"0");
+}
+function go(i){
+  idx=Math.max(0,Math.min(slides.length-1,i)); t=0;
+  player.classList.remove("ended","first-frame","exploring","idle");
+  activate(); render(); if(playing) startAudio(); else audioEl.pause();
+}
+function play(){
+  if(player.classList.contains("ended")) go(0);
+  playing=true; player.classList.remove("idle","paused","ended","exploring","first-frame");
+  player.classList.toggle("muted-hint",!sound);
+  $("#bPlay").setAttribute("aria-label",lang==="en"?"Pause":"Tạm dừng");$("#icoPlay").innerHTML='<path d="M6 4h4v16H6zM14 4h4v16h-4z"/>';
+  last=performance.now(); lastPlayAt=last; startAudio(); if(music)bedEl.play().catch(()=>{});
+}
+function pause(){
+  playing=false; player.classList.add("paused"); player.classList.remove("muted-hint");
+  $("#bPlay").setAttribute("aria-label",lang==="en"?"Play":"Phát");$("#icoPlay").innerHTML='<path d="M7 4v16l13-8z"/>';
+  audioEl.pause(); bedEl.pause();
+}
+function ended(){
+  pause(); player.classList.add("ended"); $("#bigplayTxt").textContent=lang==="en"?"Watch again":"Xem lại";
+  if(recorder) stopRec();
+}
+function toggle(){playing?pause():play()}
+
+function render(){
+  const bars=segs.children;
+  for(let i=0;i<bars.length;i++){
+    bars[i].classList.toggle("done",i<idx);
+    bars[i].firstChild.style.width=i===idx?(Math.min(1,t/dur(i))*100)+"%":(i<idx?"100%":"0");
+  }
+  $("#time").textContent=mmss(elapsed())+" / "+mmss(total());
+  updateCap();
+}
+function loop(now){
+  const dt=Math.min(250,now-last);
+  if(playing){
+    const tr=track(idx);
+    if(sound&&audioOK&&!audioEl.paused&&!audioEl.ended&&audioEl.currentTime<tr.dur) t=audioEl.currentTime*1000;
+    else t+=dt*speed;
+    if(t>=dur(idx)){
+      if(idx<slides.length-1) go(idx+1);
+      else {t=dur(idx);render();ended()}
+    }
+    render();
+  }
+  const target=music&&playing?((sound&&!audioEl.paused)?0.10:0.30):0;
+  bedEl.volume=Math.max(0,Math.min(1,bedEl.volume+(target-bedEl.volume)*0.06));
+  if(!playing&&bedEl.volume<0.01&&!bedEl.paused)bedEl.pause();
+  last=now; requestAnimationFrame(loop);
+}
+
+/* controls */
+$("#bPlay").onclick=()=>{userTouched=true;toggle()};
+$("#bigplay").onclick=()=>{userTouched=true;setSound(true);play()};
+$("#bPrev").onclick=()=>{userTouched=true;go(t>1500?idx:idx-1)};
+$("#bNext").onclick=()=>{userTouched=true;if(idx<slides.length-1)go(idx+1)};
+$("#bCC").onclick=e=>{cc=!cc;e.currentTarget.setAttribute("aria-pressed",cc);player.classList.toggle("no-cc",!cc);updateCap()};
+$("#bSpeed").onclick=e=>{speed=speeds[(speeds.indexOf(speed)+1)%speeds.length];e.currentTarget.textContent=speed+"×";audioEl.playbackRate=speed};
+
+/* ---------- STUDIO: self recording ---------- */
+let mic=null, micRec=null, micChunks=[], recIdx=-1;
+let actx=null; function AC(){return actx||(actx=new (window.AudioContext||window.webkitAudioContext)())}
+async function blobDur(blob){try{const b=await AC().decodeAudioData(await blob.arrayBuffer());return b.duration}catch(e){return null}}
+function renderStudio(){
+  const L=lang==="en";
+  $("#recList").innerHTML=slides.map((s,i)=>{const m=MY[lang][i];
+    return '<div class="rec-row'+(recIdx===i?" on":"")+'"><span class="n">'+String(i+1).padStart(2,"0")+'</span><div class="txt"><b>'+chapterTitle(i)+'</b>'+narrText(lang,i)+'</div><div class="acts">'+
+    (m?'<span class="ok">✓ '+m.dur.toFixed(1)+'s</span><button type="button" data-a="play" data-i="'+i+'">'+(L?"Play":"Nghe")+'</button>':'')+
+    '<button type="button" class="r" data-a="rec" data-i="'+i+'">'+(recIdx===i?(L?"Stop":"Dừng"):(L?"Record":"Thu"))+'</button>'+
+    '<label>'+(L?"Upload":"Tải lên")+'<input type="file" accept="audio/*" hidden data-a="up" data-i="'+i+'"></label></div></div>'}).join("");
+  $("#sampleText").textContent=L?"Hello! I'm recording this short sample so the AI can learn my voice. I'm interested in Software Engineering at CMC University, where students learn with AI and ship real products from their first year.":
+    "Xin chào, tôi đang thu đoạn mẫu này để AI học giọng nói của tôi. Tôi quan tâm đến ngành Kỹ thuật phần mềm của Trường Đại học CMC, nơi sinh viên học cùng AI và làm ra sản phẩm thật ngay từ năm nhất. Hôm nay trời đẹp, và tôi rất háo hức được bắt đầu.";
+  $("#cloneNote").textContent=CONFIG.cloneApi?"":(L?"This feature needs the University's voice-cloning server (set CONFIG.cloneApi). Until then, use “Record each chapter”.":"Tính năng này cần máy chủ nhân bản giọng nói của Trường (cấu hình CONFIG.cloneApi). Trong lúc chờ, hãy dùng “Tự thu từng chương”.");
+}
+async function setMine(i,blob){
+  const d=await blobDur(blob); if(!d){toast("Không đọc được file âm thanh này.");return}
+  if(MY[lang][i]) URL.revokeObjectURL(MY[lang][i].src);
+  MY[lang][i]={src:URL.createObjectURL(blob),dur:d,blob}; buildVoiceSelect(); renderStudio();
+}
+$("#recList").addEventListener("click",async e=>{
+  const b=e.target.closest("button[data-a]"); if(!b)return; const i=+b.dataset.i;
+  if(b.dataset.a==="play"){pause();const a=new Audio(MY[lang][i].src);a.play().catch(()=>{});return}
+  if(b.dataset.a==="rec"){
+    if(recIdx===i&&micRec){micRec.stop();return}
+    if(micRec){micRec.stop()}
+    try{mic=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:true,autoGainControl:true}})}
+    catch(err){toast(lang==="en"?"Microphone unavailable here. Use Upload, or open the page on the school website.":"Không mở được micro trong khung xem này. Hãy dùng nút Tải lên, hoặc mở trang trên website trường.");return}
+    pause(); go(i); micChunks=[]; recIdx=i;
+    micRec=new MediaRecorder(mic); micRec.ondataavailable=ev=>ev.data.size&&micChunks.push(ev.data);
+    micRec.onstop=async()=>{mic.getTracks().forEach(x=>x.stop());const blob=new Blob(micChunks,{type:micRec.mimeType||"audio/webm"});const k=recIdx;recIdx=-1;micRec=null;await setMine(k,blob)};
+    micRec.start(); renderStudio();
+  }
+});
+$("#recList").addEventListener("change",async e=>{const f=e.target.files&&e.target.files[0];if(f)await setMine(+e.target.dataset.i,f)});
+$("#useMine").onclick=()=>{if(!MY[lang].some(Boolean)){toast(lang==="en"?"No recordings yet.":"Bạn chưa thu chương nào.");return}voiceId="me";buildVoiceSelect();setSound(true);document.getElementById("xem").scrollIntoView();go(0);play()};
+$("#clearMine").onclick=()=>{MY[lang].forEach(m=>m&&URL.revokeObjectURL(m.src));MY[lang]=[];if(voiceId==="me")voiceId=DEF[lang];buildVoiceSelect();renderStudio()};
+function wavBlob(buf){const ch=buf.getChannelData(0),n=ch.length,sr=buf.sampleRate,ab=new ArrayBuffer(44+n*2),v=new DataView(ab);
+  const w=(o,s)=>[...s].forEach((c,k)=>v.setUint8(o+k,c.charCodeAt(0)));w(0,"RIFF");v.setUint32(4,36+n*2,true);w(8,"WAVEfmt ");v.setUint32(16,16,true);v.setUint16(20,1,true);v.setUint16(22,1,true);v.setUint32(24,sr,true);v.setUint32(28,sr*2,true);v.setUint16(32,2,true);v.setUint16(34,16,true);w(36,"data");v.setUint32(40,n*2,true);
+  for(let k=0;k<n;k++)v.setInt16(44+k*2,Math.max(-1,Math.min(1,ch[k]))*32767,true);return new Blob([ab],{type:"audio/wav"})}
+$("#exportMine").onclick=async()=>{
+  const parts=MY[lang].filter(Boolean); if(!parts.length){toast(lang==="en"?"No recordings yet.":"Bạn chưa thu chương nào.");return}
+  const bufs=[];for(const m of parts)bufs.push(await AC().decodeAudioData(await m.blob.arrayBuffer()));
+  const sr=44100,gap=Math.round(.5*sr),n=bufs.reduce((a,b)=>a+Math.round(b.duration*sr)+gap,0);
+  const oc=new OfflineAudioContext(1,n,sr);let at=0;bufs.forEach(b=>{const s=oc.createBufferSource();s.buffer=b;s.connect(oc.destination);s.start(at/sr);at+=Math.round(b.duration*sr)+gap});
+  const out=await oc.startRendering();const a=document.createElement("a");a.href=URL.createObjectURL(wavBlob(out));a.download="loi-dan-giong-cua-toi-"+lang+".wav";document.body.appendChild(a);a.click();a.remove();
+  toast(lang==="en"?"If nothing downloads, open the page on the school website.":"Nếu không thấy file tải về, hãy mở trang trên website trường.");
+};
+$$(".studio-tabs button").forEach(b=>b.onclick=()=>{$$(".studio-tabs button").forEach(x=>x.setAttribute("aria-selected",x===b));$("#paneSelf").hidden=b.dataset.tab!=="self";$("#paneClone").hidden=b.dataset.tab!=="clone"});
+
+/* ---------- STUDIO: AI voice clone (needs CONFIG.cloneApi) ---------- */
+let cloneSample=null, cloneRecorder=null;
+$("#cloneFile").onchange=e=>{const f=e.target.files[0];if(f){cloneSample=f;$("#cloneStatus").textContent=(lang==="en"?"Sample ready: ":"Đã có đoạn mẫu: ")+f.name}};
+$("#cloneRec").onclick=async e=>{
+  if(cloneRecorder){cloneRecorder.stop();return}
+  let st;try{st=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:true}})}catch(err){toast(lang==="en"?"Microphone unavailable here. Upload a sample file instead.":"Không mở được micro. Hãy tải file mẫu lên.");return}
+  const ch=[];cloneRecorder=new MediaRecorder(st);cloneRecorder.ondataavailable=ev=>ev.data.size&&ch.push(ev.data);
+  cloneRecorder.onstop=async()=>{st.getTracks().forEach(x=>x.stop());cloneSample=new Blob(ch,{type:cloneRecorder.mimeType||"audio/webm"});cloneRecorder=null;const d=await blobDur(cloneSample);$("#cloneStatus").textContent=(lang==="en"?"Sample: ":"Đoạn mẫu: ")+(d?d.toFixed(1)+"s":"");e.target.textContent=lang==="en"?"Record sample":"Thu đoạn mẫu"};
+  cloneRecorder.start();e.target.textContent=lang==="en"?"Stop":"Dừng thu";
+};
+$("#cloneGo").onclick=async()=>{
+  if(!CONFIG.cloneApi){toast(lang==="en"?"The voice-cloning server is not configured yet.":"Máy chủ nhân bản giọng nói chưa được cấu hình.");return}
+  if(!cloneSample){toast(lang==="en"?"Record or upload a sample first.":"Hãy thu hoặc tải đoạn mẫu trước.");return}
+  if(!$("#cloneConsent").checked){toast(lang==="en"?"Please confirm consent first.":"Hãy xác nhận đồng ý trước.");return}
+  const L=lang;
+  for(let i=0;i<slides.length;i++){
+    $("#cloneStatus").textContent=(L==="en"?"Generating ":"Đang tạo ")+(i+1)+"/"+slides.length+"…";
+    const fd=new FormData();fd.append("text",narrText(L,i));fd.append("lang",L);fd.append("reference",cloneSample,"sample.webm");
+    try{const r=await fetch(CONFIG.cloneApi,{method:"POST",body:fd});if(!r.ok)throw new Error(r.status);const b=await r.blob();const d=await blobDur(b);CLONE[L][i]={src:URL.createObjectURL(b),dur:d||10}}
+    catch(err){$("#cloneStatus").textContent=(L==="en"?"Server error: ":"Lỗi máy chủ: ")+err.message;return}
+  }
+  $("#cloneStatus").textContent=L==="en"?"Done.":"Xong.";voiceId="me-ai";buildVoiceSelect();setSound(true);go(0);play();
+};
+
+function setVert(v){player.classList.toggle("vert",v);$("#bRatio").setAttribute("aria-pressed",v);$("#bRatio").textContent=v?"16:9":"9:16";$("#bRatio").title=v?"Chuyển về khung ngang 16:9":"Chuyển khung dọc 9:16 cho TikTok, Reels, Shorts";requestAnimationFrame(fit);bg.resize()}
+$("#bRatio").onclick=()=>setVert(!player.classList.contains("vert"));
+$("#bFull").onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await (screen.requestFullscreen?screen.requestFullscreen():screen.webkitRequestFullscreen())}catch(e){toast("Khung xem hiện tại không cho toàn màn hình. Mở trang trong tab riêng để dùng.")}};
+document.addEventListener("fullscreenchange",()=>setTimeout(fit,50));
+document.addEventListener("keydown",e=>{
+  if(/INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) return;
+  const inPlayer=e.target.closest&&(e.target.closest("#player")||e.target===document.body);
+  if(!inPlayer) return;
+  if(e.key===" "||e.key==="k"){e.preventDefault();toggle()}
+  else if(e.key==="ArrowRight"){if(idx<slides.length-1)go(idx+1)}
+  else if(e.key==="ArrowLeft"){go(idx-1)}
+  else if(e.key==="f"){$("#bFull").click()}
+  else if(e.key==="c"){$("#bCC").click()}
+  else if(e.key==="v"){$("#bRatio").click()}
+  else if(e.key==="m"){$("#bSound").click()}
+  else if(e.key==="l"){$("#bLang").click()}
+});
+/* swipe */
+let sx=null;
+screen.addEventListener("touchstart",e=>{sx=e.touches[0].clientX},{passive:true});
+screen.addEventListener("touchend",e=>{if(sx==null)return;const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50){dx<0?(idx<slides.length-1&&go(idx+1)):go(idx-1)}sx=null},{passive:true});
+
+/* record to .webm (works on the school's site in Chrome; sandboxed viewers refuse screen capture) */
+let recorder=null, chunks=[];
+$("#bRec").onclick=async()=>{
+  if(recorder){stopRec();return}
+  if(!navigator.mediaDevices||!navigator.mediaDevices.getDisplayMedia||!window.MediaRecorder){toast("Trình duyệt này không hỗ trợ xuất video. Dùng Chrome trên máy tính hoặc công cụ ghi màn hình.");return}
+  try{
+    const stream=await navigator.mediaDevices.getDisplayMedia({video:{frameRate:30},audio:true,preferCurrentTab:true,selfBrowserSurface:"include"});
+    chunks=[];const mime=MediaRecorder.isTypeSupported("video/webm;codecs=vp9")?"video/webm;codecs=vp9":"video/webm";
+    recorder=new MediaRecorder(stream,{mimeType:mime,videoBitsPerSecond:8e6});
+    recorder.ondataavailable=e=>e.data.size&&chunks.push(e.data);
+    recorder.onstop=()=>{stream.getTracks().forEach(tr=>tr.stop());const blob=new Blob(chunks,{type:"video/webm"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="ky-thuat-phan-mem-cmc"+(player.classList.contains("vert")?"-9x16":"-16x9")+".webm";document.body.appendChild(a);a.click();a.remove();recorder=null;document.body.classList.remove("rec");$("#bRec").textContent="Xuất video";toast("Đã tạo file video")};
+    document.body.classList.add("rec");$("#bRec").textContent="Dừng ghi";
+    try{await screen.requestFullscreen()}catch(_){}
+    go(0);recorder.start(250);play();
+  }catch(e){recorder=null;document.body.classList.remove("rec");toast("Khung xem này không cho quay màn hình. Đăng trang lên website trường rồi mở bằng Chrome để xuất video.")}
+};
+function stopRec(){try{recorder&&recorder.state!=="inactive"&&recorder.stop()}catch(e){}try{document.fullscreenElement&&document.exitFullscreen()}catch(e){}}
+
+/* ---------- background: slow git graph ---------- */
+const bg=(()=>{
+  const cv=$("#bg"), ctx=cv.getContext("2d"); let W,H,lanes=[],tm=0;
+  const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function resize(){const v=player.classList.contains("vert");W=v?900:1600;H=v?1600:900;cv.width=W;cv.height=H;
+    lanes=[];const n=v?5:7;for(let i=0;i<n;i++)lanes.push({x:(i+.5)*W/n+((i%2)?18:-18),sp:.12+.05*(i%3),off:i*137})}
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    ctx.lineWidth=2;
+    lanes.forEach((l,i)=>{
+      ctx.strokeStyle="rgba(111,214,255,0.10)";ctx.beginPath();ctx.moveTo(l.x,0);ctx.lineTo(l.x,H);ctx.stroke();
+      for(let k=0;k<6;k++){
+        const y=((tm*l.sp*60+l.off+k*H/5)%(H+80))-40;
+        ctx.fillStyle=k===2&&i%3===0?"rgba(255,181,71,0.55)":"rgba(111,214,255,0.28)";
+        ctx.beginPath();ctx.arc(l.x,y,5,0,7);ctx.fill();
+        if(k===3&&i<lanes.length-1){const nx=lanes[i+1].x;ctx.strokeStyle="rgba(111,214,255,0.12)";ctx.beginPath();ctx.moveTo(l.x,y);ctx.bezierCurveTo(l.x,y+60,nx,y+40,nx,y+110);ctx.stroke()}
+      }
+    });
+  }
+  function tick(){if(playing||tm===0){tm+=1/60;draw()}requestAnimationFrame(tick)}
+  resize(); if(reduce){draw()} else tick();
+  return {resize:()=>{resize();draw()}};
+})();
+
+/* ---------- QUIZ ---------- */
+const QUIZ=[
+  ["Cuối tuần rảnh rỗi, bạn thường…",[["Chỉnh ảnh, làm video cho thật đẹp","fe"],["Tháo một món đồ ra xem bên trong chạy thế nào","be"],["Soi ra chỗ vô lý trong một bộ phim, một bài viết","qa"],["Thử hết các ứng dụng AI mới ra","ai"],["Lên kế hoạch đi chơi cho cả nhóm","pm"]]],
+  ["Làm bài tập nhóm, bạn hay nhận phần…",[["Làm slide, trình bày cho đẹp","fe"],["Phần khó nhất, cần nghĩ nhiều nhất","be"],["Rà lại toàn bộ trước khi nộp","qa"],["Tìm công cụ để cả nhóm làm nhanh gấp đôi","ai"],["Chia việc và nhắc hạn nộp","pm"]]],
+  ["Môn học hoặc hoạt động bạn thấy “vào” nhất",[["Mỹ thuật, thiết kế","fe"],["Toán, Tin","be"],["Thí nghiệm, làm đi làm lại cho chắc","qa"],["Xác suất, thống kê, những con số biết nói","ai"],["Thuyết trình, hoạt động Đoàn – Đội","pm"]]],
+  ["Ứng dụng bạn muốn tự tay làm ra",[["Một app có giao diện ai dùng cũng mê","fe"],["Hệ thống chịu được hàng triệu người truy cập cùng lúc","be"],["Phần mềm ngân hàng không sai một đồng","qa"],["Trợ lý ảo hiểu tiếng Việt","ai"],["Một startup giải quyết chuyện của trường mình","pm"]]],
+  ["Câu nói hợp với bạn nhất",[["“Đẹp và dễ dùng là trên hết.”","fe"],["“Phải hiểu tận gốc.”","be"],["“Chắc chắn rồi mới làm tiếp.”","qa"],["“Việc gì lặp lại thì tự động hóa.”","ai"],["“Một mình đi nhanh, cùng nhau đi xa.”","pm"]]]
+];
+const PERSONA={
+  fe:["Kỹ sư Frontend / UX","Bạn nhạy với cái đẹp và trải nghiệm người dùng. Bạn sẽ là người biến bản thiết kế thành giao diện web, app mượt mà.","Ở CMC, hãy chú ý các học phần lập trình web, thiết kế giao diện và dự án nhóm có người dùng thật."],
+  be:["Kỹ sư Backend / Cloud","Bạn thích hiểu tận gốc vấn đề. Bạn hợp với việc xây máy chủ, API, cơ sở dữ liệu và hệ thống chịu tải lớn.","Ở CMC, hãy đầu tư vào cấu trúc dữ liệu, cơ sở dữ liệu, kiến trúc phần mềm và điện toán đám mây."],
+  qa:["Kỹ sư Kiểm thử & Chất lượng","Bạn kỹ lưỡng và không bỏ qua chi tiết. Đội phần mềm nào cũng cần người như bạn để sản phẩm không lỗi khi phát hành.","Ở CMC, hãy đi sâu vào kiểm thử phần mềm, kiểm thử tự động và dùng AI để sinh kịch bản kiểm thử."],
+  ai:["Kỹ sư AI ứng dụng","Bạn mê công nghệ mới và thích tự động hóa. Bạn hợp với việc đưa mô hình AI vào sản phẩm thật.","Ở CMC, hãy chắc nền toán và lập trình, rồi tận dụng định hướng AI University của trường."],
+  pm:["Business Analyst / Quản lý dự án","Bạn giỏi kết nối con người và giữ cả đội đi đúng hướng. Bạn hợp với vai trò phân tích nghiệp vụ, quản lý dự án.","Ở CMC, hãy chú ý phân tích yêu cầu, quản lý dự án phần mềm và kỹ năng làm việc với doanh nghiệp qua thực tập."]
+};
+const quizEl=$("#quiz"); let qi=0, qs={fe:0,be:0,qa:0,ai:0,pm:0};
+function renderQuiz(){
+  if(qi<QUIZ.length){
+    const [q,opts]=QUIZ[qi];
+    quizEl.innerHTML='<div class="qprog">'+QUIZ.map((_,i)=>'<i class="'+(i<=qi?"on":"")+'"></i>').join("")+'</div>'+
+      '<p class="eyebrow" style="margin:0 0 8px">Câu '+(qi+1)+' / '+QUIZ.length+'</p><p class="qtext">'+q+'</p><div class="opts">'+
+      opts.map((o,i)=>'<button class="opt" type="button" data-k="'+o[1]+'">'+o[0]+'</button>').join("")+'</div>';
+    quizEl.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{qs[b.dataset.k]++;qi++;renderQuiz()});
+  }else{
+    const top=Object.entries(qs).sort((a,b)=>b[1]-a[1])[0][0], p=PERSONA[top];
+    const names={fe:"Frontend / UX",be:"Backend / Cloud",qa:"Kiểm thử",ai:"AI ứng dụng",pm:"BA / Quản lý dự án"};
+    quizEl.innerHTML='<div class="result"><p class="eyebrow" style="margin:0">Vai trò hợp với bạn nhất</p><h4>'+p[0]+'</h4><p>'+p[1]+'</p><p style="color:var(--muted)">'+p[2]+'</p>'+
+      '<div class="bars">'+Object.entries(qs).map(([k,v])=>'<div class="bar"><span>'+names[k]+'</span><div><i style="width:'+(v/QUIZ.length*100)+'%"></i></div><span class="mono">'+v+'/5</span></div>').join("")+'</div>'+
+      '<div class="btnrow"><button class="btn pri" type="button" id="qShare">Rủ bạn cùng làm</button><button class="btn" type="button" id="qAgain">Làm lại</button><a class="btn" href="#tinh-diem">Tính điểm xét tuyển</a></div></div>';
+    $("#qShare").onclick=()=>copyText("Mình hợp vai trò "+p[0]+" trong ngành Kỹ thuật phần mềm. Còn bạn? Làm trắc nghiệm 1 phút: "+shareLink("zalo")+"#trac-nghiem");
+    $("#qAgain").onclick=()=>{qi=0;qs={fe:0,be:0,qa:0,ai:0,pm:0};renderQuiz()};
+  }
+}
+renderQuiz();
+
+/* ---------- TERMINAL ---------- */
+const cliOut=$("#cliOut");
+const CMDS={
+  help:()=>'<span class="g">Lệnh có sẵn:</span>\n  nganh      ngành Kỹ thuật phần mềm là gì\n  xuhuong    nghề đang thay đổi ra sao vì AI\n  hoc-gi     học gì, làm ra sản phẩm gì trong 4 năm\n  nghe       ra trường làm gì\n  hocbong    quỹ học bổng\n  xettuyen   4 phương thức xét tuyển\n  diem       điểm trúng tuyển tham khảo\n  lienhe     thông tin liên hệ\n  play       xem video\n  clear      xóa màn hình',
+  nganh:()=>'Kỹ thuật phần mềm (Software Engineering, mã SE) dạy cách xây phần mềm có quy trình:\nyêu cầu → thiết kế → lập trình → kiểm thử → triển khai → vận hành.\nKhông chỉ code giỏi, mà làm ra sản phẩm chạy đúng, bền và đúng hạn.',
+  "hoc-gi":()=>SEMESTERS.map((s,i)=>'<span class="c">HK'+(i+1)+'</span> '+s.p).join("\n")+'\n<span class="o">('+PROGRAM_NOTE+')</span>',
+  xuhuong:()=>'<span class="g">84%</span>  lập trình viên dùng/sắp dùng AI        <span class="o">Stack Overflow 2025</span>\n<span class="g">46%</span>  không tin độ chính xác của AI          <span class="o">Stack Overflow 2025</span>\n<span class="g">~90%</span> dùng AI; AI khuếch đại quy trình tốt/xấu <span class="o">DORA 2025</span>\n<span class="g">−16%</span> việc làm 22–25 tuổi, nghề phơi nhiễm AI cao <span class="o">Stanford DEL</span>\n=> cần: làm ra sản phẩm sớm + kiểm chứng AI + nền tảng vững',
+  chuongtrinh:()=>CMDS["hoc-gi"](),
+  nghe:()=>ROLES.map(r=>'  <span class="c">'+r[0]+'</span>  '+r[1]).join("\n"),
+  hocbong:()=>'Quỹ “CMC – Vì bạn xứng đáng”: <span class="g">96 tỷ đồng</span> (mùa 2026)\nMức: 30% · 50% · 70% · 100% học phí toàn khóa\nXét: điểm thi THPT, IELTS/TOPIK/HSK, giải HSG cấp tỉnh trở lên\nDuy trì: GPA từ 3.0/4.0',
+  xettuyen:()=>'1. CMC-TEST   kỳ thi đánh giá năng lực của trường\n2. Học bạ     điểm TB môn theo tổ hợp\n3. Thi THPT   điểm thi tốt nghiệp + ưu tiên\n4. Xét thẳng  IELTS 6.0+, THPT chuyên, HSG…\nTổ hợp SE: <span class="g">Toán ×2 + 2 môn bất kỳ</span> (thang 40)',
+  diem:()=>'Điểm trúng tuyển ngành SE năm '+CONFIG.refScore.year+' (tham khảo):\n  thi THPT  <span class="g">'+fmt(CONFIG.refScore.thpt)+'</span> / 40\n  học bạ    <span class="g">'+fmt(CONFIG.refScore.hb)+'</span> / 40\nGõ lệnh, rồi kéo xuống mục “Tính điểm” để thử với điểm của bạn.',
+  lienhe:()=>'Hotline: <span class="g">'+CONFIG.hotline+'</span>\nXét tuyển: '+CONFIG.registerUrl+'\nThi CMC-TEST: '+CONFIG.testUrl+'\nWebsite: '+CONFIG.siteUrl,
+  play:()=>{document.getElementById("xem").scrollIntoView({behavior:"smooth"});go(0);play();return '<span class="g">▶ Đang phát video…</span>'},
+  clear:()=>{cliOut.innerHTML="";return null}
+};
+function cliPrint(cmd){
+  const c=cmd.trim().toLowerCase(); if(!c) return;
+  const line=document.createElement("div");line.innerHTML='<span class="pr">sv@cmc:~$</span> '+c.replace(/[<>&]/g,"");cliOut.appendChild(line);
+  const fn=CMDS[c]; const out=fn?fn():'<span class="o">Không có lệnh “'+c.replace(/[<>&]/g,"")+'”. Gõ help để xem danh sách.</span>';
+  if(out!==null&&cliOut.isConnected){const o=document.createElement("div");o.style.margin="2px 0 12px";o.innerHTML=out;cliOut.appendChild(o)}
+  cliOut.scrollTop=cliOut.scrollHeight;
+}
+$("#cliForm").addEventListener("submit",e=>{e.preventDefault();cliPrint($("#cliIn").value);$("#cliIn").value=""});
+["help","xuhuong","hoc-gi","nghe","hocbong","xettuyen","diem","lienhe"].forEach(c=>{const b=document.createElement("button");b.type="button";b.textContent=c;b.onclick=()=>cliPrint(c);$("#cliSug").appendChild(b)});
+cliOut.innerHTML='<div class="o">CMC University · Software Engineering shell v2027</div><div class="o" style="margin-bottom:12px">Gõ <span class="c">help</span> hoặc bấm một lệnh gợi ý bên dưới.</div>';
+cliPrint("nganh");
+
+/* ---------- CALC ---------- */
+let method="thpt";
+function clamp(v,a,b){v=parseFloat(String(v).replace(",","."));return isNaN(v)?0:Math.min(b,Math.max(a,v))}
+function calc(){
+  const toan=clamp($("#iToan").value,0,10), m2=clamp($("#iM2").value,0,10), m3=clamp($("#iM3").value,0,10), ut=method==="thpt"?clamp($("#iUt").value,0,4):0;
+  const tot=Math.min(40,toan*2+m2+m3+ut), ref=CONFIG.refScore[method==="thpt"?"thpt":"hb"];
+  $("#oTot").innerHTML=fmt(tot)+' <small>/ 40</small>';
+  $("#oBar").style.width=(tot/40*100)+"%"; $("#oMark").style.left=(ref/40*100)+"%";
+  $("#oRefL").textContent="Điểm trúng tuyển "+CONFIG.refScore.year+": "+fmt(ref);
+  const d=tot-ref, pill=$("#oPill"); let cls,txt,msg;
+  if(d>=2){cls="ok";txt="Cao hơn rõ rệt so với năm "+CONFIG.refScore.year;msg="Bạn đang ở vùng an toàn so với mức năm trước. Hãy đăng ký sớm và xem điều kiện học bổng 30–100% học phí."}
+  else if(d>=0){cls="ok";txt="Bằng hoặc cao hơn năm "+CONFIG.refScore.year;msg="Bạn đang ngang hoặc nhỉnh hơn mức năm trước. Nên đăng ký thêm CMC-TEST để có thêm một cơ hội."}
+  else if(d>-2){cls="warn";txt="Sát nút, thấp hơn "+fmt(-d)+" điểm";msg="Khoảng cách nhỏ. Kết hợp thêm phương thức CMC-TEST hoặc xét học bạ để tăng cơ hội."}
+  else {cls="bad";txt="Thấp hơn "+fmt(-d)+" điểm so với năm "+CONFIG.refScore.year;msg="Đừng vội bỏ cuộc: thử kỳ thi CMC-TEST, kiểm tra diện xét tuyển thẳng (IELTS 6.0+) hoặc gọi hotline để được tư vấn lộ trình."}
+  if(method==="hb"&&tot>=CONFIG.ipadHbThreshold) msg+=" Tổng học bạ từ "+CONFIG.ipadHbThreshold+"/40 cũng là một điều kiện của chương trình tặng iPad mùa 2026 (khi đặt CMC là NV1–3).";
+  pill.className="pill "+cls; pill.textContent=txt; $("#oMsg").textContent=msg;
+  return {tot,ref,txt};
+}
+["#iToan","#iM2","#iM3","#iUt"].forEach(s=>$(s).addEventListener("input",calc));
+function setMethod(m){method=m;$("#mThpt").setAttribute("aria-pressed",m==="thpt");$("#mHb").setAttribute("aria-pressed",m==="hb");$("#fUt").style.display=m==="thpt"?"":"none";calc()}
+$("#mThpt").onclick=()=>setMethod("thpt"); $("#mHb").onclick=()=>setMethod("hb");
+$("#calcShare").onclick=()=>{const r=calc();copyText("Điểm xét tuyển ngành Kỹ thuật phần mềm CMC của mình: "+fmt(r.tot)+"/40 ("+r.txt+"). Tự tính tại: "+shareLink("zalo")+"#tinh-diem")};
+calc();
+
+/* ---------- SHARE KIT ---------- */
+function defaultUrl(){
+  if(CONFIG.publicUrl) return CONFIG.publicUrl;
+  const h=location.hostname;
+  if(!/^https?:$/.test(location.protocol)||/claude|anthropic|usercontent/.test(h)) return CONFIG.siteUrl;
+  return location.origin+location.pathname;
+}
+const uUrl=$("#uUrl"); uUrl.value=defaultUrl();
+function baseUrl(){return (uUrl.value||defaultUrl()).trim().split("#")[0]}
+function shareLink(src){
+  const u=baseUrl(); if(!src) return u;
+  const med={facebook:"social",zalo:"social",tiktok:"social",youtube:"video",email:"email",poster:"qr",website:"referral"}[src]||"social";
+  return u+(u.includes("?")?"&":"?")+"utm_source="+src+"&utm_medium="+med+"&utm_campaign="+CONFIG.campaign;
+}
+let qrA=null,qrB=null;
+function makeQR(el,text){
+  el.innerHTML="";
+  if(window.QRCode){try{new QRCode(el,{text,width:440,height:440,colorDark:"#0A1433",colorLight:"#F2EFE6",correctLevel:QRCode.CorrectLevel.M});return}catch(e){}}
+  el.innerHTML='<span class="mono" style="font-size:12px;word-break:break-all;color:#0A1433">'+text+'</span>';
+}
+function updateKit(){
+  const src=$("#uSrc").value, link=shareLink(src), txt="Ngành Kỹ thuật phần mềm – Trường Đại học CMC: xem video 1 phút, trắc nghiệm hướng nghiệp, tự tính điểm xét tuyển";
+  const enc=encodeURIComponent(link), et=encodeURIComponent(txt);
+  $("#shares").innerHTML=[
+    ["Facebook","https://www.facebook.com/sharer/sharer.php?u="+encodeURIComponent(shareLink(src||"facebook"))],
+    ["Messenger / Zalo","#copy-zalo"],
+    ["X","https://twitter.com/intent/tweet?url="+enc+"&text="+et],
+    ["LinkedIn","https://www.linkedin.com/sharing/share-offsite/?url="+enc],
+    ["Telegram","https://t.me/share/url?url="+enc+"&text="+et],
+    ["Email","mailto:?subject="+encodeURIComponent("Ngành Kỹ thuật phần mềm – ĐH CMC")+"&body="+et+"%0A"+encodeURIComponent(shareLink(src||"email"))]
+  ].map(([n,h])=>h.startsWith("#")?'<button class="btn" type="button" data-copy="'+shareLink(src||"zalo")+'">'+n+': sao chép link</button>':'<a class="btn" href="'+h+'" target="_blank" rel="noopener">'+n+'</a>').join("");
+  $$("#shares [data-copy]").forEach(b=>b.onclick=()=>copyText(b.dataset.copy));
+  const qrLink=shareLink(src||"poster");
+  makeQR($("#qrKit"),qrLink); makeQR($("#qrSlide"),shareLink("poster")); $("#qrUrl").textContent=qrLink.replace(/^https?:\/\//,"");
+  const r=document.querySelector('input[name="eR"]:checked').value, auto=$("#eAuto").checked;
+  const u=baseUrl(), src2=u+(u.includes("?")?"&":"?")+"embed=1&ratio="+r+"&autoplay="+(auto?1:0)+"&utm_source=website&utm_medium=embed&utm_campaign="+CONFIG.campaign;
+  const ar=r==="9x16"?"9 / 17":"16 / 10";
+  $("#eCode").value='<iframe src="'+src2+'" title="Ngành Kỹ thuật phần mềm – Trường Đại học CMC" style="width:100%;'+(r==="9x16"?"max-width:420px;":"")+'aspect-ratio:'+ar+';border:0;border-radius:12px" allow="fullscreen; autoplay; display-capture" allowfullscreen loading="lazy"></iframe>';
+}
+uUrl.addEventListener("input",updateKit); $("#uSrc").addEventListener("change",updateKit);
+$$('input[name="eR"]').forEach(i=>i.addEventListener("change",updateKit)); $("#eAuto").addEventListener("change",updateKit);
+$("#uCopy").onclick=()=>copyText(shareLink($("#uSrc").value));
+$("#eCopy").onclick=()=>copyText($("#eCode").value);
+$("#uNative").onclick=async()=>{
+  const data={title:"Kỹ thuật phần mềm – ĐH CMC",text:"Xem video 1 phút về ngành Kỹ thuật phần mềm, Trường Đại học CMC",url:shareLink($("#uSrc").value||"zalo")};
+  try{if(navigator.share){await navigator.share(data)}else throw 0}catch(e){if(e&&e.name==="AbortError")return;copyText(data.url);toast("Đã sao chép link. Dán vào Zalo, Messenger hoặc bất kỳ ứng dụng nào.")}
+};
+updateKit();
+
+/* ---------- BUG HUNT ---------- */
+const BH_LEVELS=[
+ {tier:1,app:"App trà sữa",task:"Tính tổng tiền giỏ hàng",lines:["function tongTien(gioHang) {","  let tong = 0;","  for (const mon of gioHang) {","    tong = mon.gia * mon.soLuong;","  }","  return tong;","}"],bug:[3],why:"Dấu “=” ghi đè tổng mỗi vòng lặp, nên chỉ còn tiền của món cuối. Phải cộng dồn: tong += mon.gia * mon.soLuong."},
+ {tier:1,app:"Cổng xét tuyển CMC",task:"Tính điểm ngành SE: Toán ×2 + 2 môn bất kỳ",lines:["// Tổ hợp ngành SE, thang 40","function diemXetTuyen(toan, mon2, mon3) {","  return toan + mon2 + mon3;","}"],bug:[2],why:"Quên nhân hệ số 2 cho môn Toán. Đúng phải là toan * 2 + mon2 + mon3. Lỗi “đúng cú pháp, sai yêu cầu” là loại lỗi kiểm thử viên hay bắt được nhất."},
+ {tier:1,app:"Mạng xã hội học tập",task:"Cho đăng ký khi đủ 16 tuổi trở lên",lines:["function duTuoi(tuoi) {","  if (tuoi > 16) return true;","  return false;","}"],bug:[1],why:"Bạn vừa tròn 16 tuổi bị từ chối. “Từ 16 tuổi trở lên” phải viết tuoi >= 16. Đây là lỗi giá trị biên, kiểm thử viên luôn thử đúng giá trị 16."},
+ {tier:1,app:"Đồng hồ đếm ngược ngày thi",task:"Hiện các số 10, 9, …, 1",lines:["for (let i = 10; i > 0; i++) {","  hienThi(i);","}"],bug:[0],why:"i++ làm i tăng mãi nên vòng lặp không bao giờ dừng, app bị treo. Đếm ngược phải dùng i--."},
+ {tier:1,app:"Trang đăng nhập",task:"Mở tài khoản khi mật khẩu nhập đúng",lines:["function dangNhap(matKhauNhap, matKhauDung) {","  if (matKhauNhap = matKhauDung) {","    moTaiKhoan();","  }","}"],bug:[1],why:"Một dấu “=” là phép gán, không phải phép so sánh: ai gõ gì cũng vào được. Phải dùng “===”. Lỗi một ký tự có thể thành lỗ hổng bảo mật."},
+ {tier:1,app:"Shop phụ kiện",task:"Giảm 20% cho đơn từ 100.000đ",lines:["function giaSauGiam(gia) {","  if (gia >= 100000) {","    return gia * 0.2;","  }","  return gia;","}"],bug:[2],why:"gia * 0.2 là số tiền được giảm, không phải giá sau giảm. Khách chỉ phải trả 20%! Đúng là gia * 0.8."},
+ {tier:2,app:"Bảng vàng của lớp",task:"Lấy 3 bạn điểm cao nhất",lines:["function top3(dsDiem) {","  dsDiem.sort((a, b) => a - b);","  return dsDiem.slice(0, 3);","}"],bug:[1],why:"a - b sắp xếp tăng dần, nên 3 phần tử đầu là 3 điểm thấp nhất. Muốn giảm dần phải dùng b - a."},
+ {tier:2,app:"Sổ liên lạc điện tử",task:"Tính điểm trung bình",lines:["function trungBinh(ds) {","  let tong = 0;","  for (let i = 1; i < ds.length; i++) {","    tong += ds[i];","  }","  return tong / ds.length;","}"],bug:[2],why:"Mảng bắt đầu từ vị trí 0. Bắt đầu từ i = 1 là bỏ sót điểm đầu tiên, trung bình bị thấp đi."},
+ {tier:2,app:"App nghe nhạc",task:"Chọn ngẫu nhiên một bài trong danh sách",lines:["function baiNgauNhien(ds) {","  const i = Math.floor(Math.random() * (ds.length + 1));","  return ds[i];","}"],bug:[1],why:"Chỉ số hợp lệ từ 0 đến ds.length - 1. Nhân với ds.length + 1 thỉnh thoảng sinh ra chỉ số vượt danh sách và trả về undefined: lỗi lúc có lúc không, rất khó bắt nếu không kiểm thử kỹ."},
+ {tier:2,app:"Form đăng ký",task:"Email hợp lệ phải có cả “@” và “.”",lines:["function emailHopLe(e) {","  return e.includes(\"@\") || e.includes(\".\");","}"],bug:[1],why:"“||” nghĩa là “hoặc”: chỉ cần có dấu chấm là qua. Yêu cầu là có cả hai, phải dùng “&&”."},
+ {tier:2,app:"Lịch học nhóm",task:"Đổi số phút ra dạng giờ:phút (135 → 2:15)",lines:["function dinhDang(phut) {","  const gio = phut / 60;","  const du = phut % 60;","  return gio + \":\" + du;","}"],bug:[1],why:"135 / 60 = 2.25, nên kết quả hiện “2.25:15”. Cần lấy phần nguyên: Math.floor(phut / 60)."},
+ {tier:2,app:"Bài tập lập trình đầu tiên",task:"Đổi chỗ giá trị của a và b",lines:["function doiCho(a, b) {","  a = b;","  b = a;","  return [a, b];","}"],bug:[1,2],why:"Sau dòng a = b, giá trị cũ của a đã mất, nên cả hai cùng bằng b. Cần một biến tạm: const tam = a; a = b; b = tam;"},
+ {tier:3,app:"Lịch thi",task:"Kiểm tra năm nhuận",lines:["function laNamNhuan(n) {","  return n % 4 === 0 && n % 100 !== 0;","}"],bug:[1],why:"Thiếu trường hợp chia hết cho 400: năm 2000 là năm nhuận nhưng hàm trả về false. Đúng: (n % 4 === 0 && n % 100 !== 0) || n % 400 === 0."},
+ {tier:3,app:"Hệ thống tài khoản",task:"Lưu tài khoản người dùng mới",lines:["function luuTaiKhoan(ten, matKhau) {","  const banGhi = { ten: ten, matKhau: matKhau };","  csdl.luu(banGhi);","}"],bug:[1],why:"Mật khẩu bị lưu nguyên văn. Nếu cơ sở dữ liệu bị lộ, mọi mật khẩu lộ theo. Phải lưu bản băm (hash) bằng thuật toán chuyên dụng như bcrypt hoặc Argon2."},
+ {tier:3,app:"Cửa hàng online",task:"Tìm sản phẩm theo tên khách gõ vào",lines:["function timSanPham(tuKhoa) {","  const sql = \"SELECT * FROM sp WHERE ten = '\" + tuKhoa + \"'\";","  return csdl.query(sql);","}"],bug:[1],why:"Ghép thẳng chữ người dùng gõ vào câu SQL là lỗ hổng SQL injection: gõ ' OR '1'='1 là lấy được mọi dữ liệu. Phải dùng truy vấn tham số hóa."},
+ {tier:3,app:"Tra cứu điểm thi",task:"Tìm nhị phân trong danh sách đã sắp xếp",lines:["function tim(ds, x) {","  let trai = 0, phai = ds.length - 1;","  while (trai < phai) {","    const giua = Math.floor((trai + phai) / 2);","    if (ds[giua] === x) return giua;","    if (ds[giua] < x) trai = giua + 1; else phai = giua - 1;","  }","  return -1;","}"],bug:[2],why:"Khi trai bằng phai vẫn còn đúng một phần tử chưa xét. Với “<”, danh sách 1 phần tử luôn trả về -1. Điều kiện đúng là trai <= phai."},
+ {tier:3,app:"Bình luận dưới video",task:"Không cho gửi bình luận rỗng",lines:["function binhLuanHopLe(bl) {","  return bl.length > 0;","}"],bug:[1],why:"Bình luận toàn dấu cách vẫn có độ dài lớn hơn 0 nên lọt qua. Phải bỏ khoảng trắng trước khi kiểm tra: bl.trim().length > 0."}
+];
+const BH_TIME={1:25,2:30,3:40};
+const BH_RANKS=[[0,"Tân binh QA"],[800,"Thực tập sinh kiểm thử"],[1500,"Kỹ sư kiểm thử"],[2200,"Thợ săn bug"],[2800,"Huyền thoại debug"]];
+const bhEl=$("#bh"), bhBody=$("#bhBody");
+let BH=null, bhTick=null;
+function bhPick(){
+  const by=k=>BH_LEVELS.filter(l=>l.tier===k).sort(()=>Math.random()-.5);
+  return [...by(1).slice(0,3),...by(2).slice(0,3),...by(3).slice(0,2)];
+}
+function bhLoad(){try{return JSON.parse(localStorage.getItem("bh-best")||"null")}catch(e){return null}}
+function bhSave(v){try{localStorage.setItem("bh-best",JSON.stringify(v))}catch(e){}}
+function bhRef(){let r=null;try{r=localStorage.getItem("bh-ref")}catch(e){}if(!r){r=Math.random().toString(36).slice(2,8).toUpperCase();try{localStorage.setItem("bh-ref",r)}catch(e){}}return r}
+const bhInviter=(Q.get("ref")||(H.match(/ref-([A-Za-z0-9]{4,10})/)||[])[1]||"");
+function bhHearts(n){$("#bhLives").innerHTML=[0,1,2].map(i=>'<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.5-9.2C1 8.3 3.3 5 6.6 5c2 0 3.6 1.1 5.4 3 1.8-1.9 3.4-3 5.4-3C20.7 5 23 8.3 21.5 11.8 19.5 16.4 12 21 12 21z" fill="'+(i<n?"var(--bad)":"var(--line)")+'"/></svg>').join("")}
+let bhAC=null;
+function bhBeep(ok){try{bhAC=bhAC||new (window.AudioContext||window.webkitAudioContext)();const o=bhAC.createOscillator(),g=bhAC.createGain();o.type=ok?"triangle":"sawtooth";o.frequency.setValueAtTime(ok?660:180,bhAC.currentTime);if(ok)o.frequency.exponentialRampToValueAtTime(990,bhAC.currentTime+.12);g.gain.setValueAtTime(.08,bhAC.currentTime);g.gain.exponentialRampToValueAtTime(.0001,bhAC.currentTime+(ok?.25:.3));o.connect(g).connect(bhAC.destination);o.start();o.stop(bhAC.currentTime+.3)}catch(e){}}
+function bhStartScreen(){
+  bhHearts(3);$("#bhLevel").textContent="SẴN SÀNG";$("#bhScore").textContent="0";$("#bhCombo").textContent="";$("#bhTimer").style.width="100%";
+  bhBody.innerHTML='<div class="bh-start"><h3>Bạn có mắt của một kỹ sư kiểm thử?</h3><ul><li>8 màn: dễ, vừa, khó. Mỗi màn có giới hạn thời gian.</li><li>Chạm vào dòng code gây lỗi. Sai mất 1 mạng, hết 3 mạng là kết thúc.</li><li>Trả lời nhanh và đúng liên tiếp để nhân điểm.</li><li>Sau mỗi màn, đọc giải thích để hiểu lỗi đó vì sao nguy hiểm.</li></ul>'+(bhInviter?'<p class="fine">Bạn được bạn có mã <b>'+bhInviter+'</b> mời chơi.</p>':'')+'<button class="btn pri" type="button" id="bhGo">Bắt đầu săn bug</button></div>';
+  $("#bhGo").onclick=bhStart;
+  const b=bhLoad(); $("#bhBest").textContent=b?"Kỷ lục của bạn trên máy này: "+b.score+" điểm · "+b.rank:"";
+}
+function bhStart(){BH={levels:bhPick(),i:0,score:0,lives:3,streak:0,found:0,log:[],started:Date.now()};bhHearts(3);bhShow()}
+function bhShow(){
+  const L=BH.levels[BH.i]; BH.t0=performance.now(); BH.limit=BH_TIME[L.tier]*1000; BH.done=false;
+  $("#bhLevel").textContent="MÀN "+(BH.i+1)+"/8 · "+["","DỄ","VỪA","KHÓ"][L.tier];
+  bhBody.innerHTML='<div class="bh-ctx"><small>'+L.app+'</small><b>'+L.task+'</b><span>Dòng nào làm app chạy sai?</span></div><div class="bh-code">'+
+    L.lines.map((ln,k)=>'<button class="bh-line" type="button" data-k="'+k+'"><span class="ln">'+(k+1)+'</span><span>'+ln.replace(/&/g,"&amp;").replace(/</g,"&lt;")+'</span></button>').join("")+'</div><div id="bhFb"></div>';
+  bhBody.querySelectorAll(".bh-line").forEach(b=>b.onclick=()=>bhAnswer(+b.dataset.k));
+  clearInterval(bhTick); bhTick=setInterval(bhTimerTick,100); bhTimerTick();
+}
+function bhTimerTick(){
+  if(!BH||BH.done)return; const left=Math.max(0,BH.limit-(performance.now()-BH.t0)); const el=$("#bhTimer");
+  el.style.width=(left/BH.limit*100)+"%"; el.classList.toggle("low",left<5000);
+  if(left<=0) bhAnswer(-1);
+}
+function bhAnswer(k){
+  if(BH.done)return; BH.done=true; clearInterval(bhTick);
+  const L=BH.levels[BH.i], ms=performance.now()-BH.t0, ok=L.bug.includes(k), left=Math.max(0,BH.limit-ms)/1000;
+  const lines=bhBody.querySelectorAll(".bh-line"); lines.forEach(b=>b.disabled=true);
+  L.bug.forEach(j=>lines[j].classList.add(ok&&j===k?"hit":"ans")); if(!ok&&k>=0) lines[k].classList.add("miss");
+  let gain=0;
+  if(ok){BH.streak++;BH.found++;const mult=Math.min(2,1+0.2*(BH.streak-1));gain=Math.round((100*L.tier+left*4)*mult);BH.score+=gain}
+  else{BH.streak=0;BH.lives--;bhHearts(BH.lives)}
+  BH.log.push({lv:BH_LEVELS.indexOf(L),k,ms:Math.round(ms)}); bhBeep(ok);
+  $("#bhScore").textContent=BH.score; $("#bhCombo").textContent=BH.streak>1?"Chuỗi ×"+Math.min(2,1+0.2*(BH.streak-1)).toFixed(1):"";
+  const last=BH.lives<=0||BH.i>=BH.levels.length-1;
+  $("#bhFb").innerHTML='<div class="bh-fb '+(ok?"ok":"bad")+'"><b>'+(ok?"Chuẩn! +"+gain+" điểm":k<0?"Hết giờ!":"Chưa đúng, dòng lỗi được đánh dấu xanh.")+'</b>'+L.why+'</div><div class="btnrow"><button class="btn pri" type="button" id="bhNext">'+(last?"Xem kết quả":"Màn tiếp")+'</button></div>';
+  $("#bhNext").onclick=()=>{if(last)bhEnd();else{BH.i++;bhShow()}}; $("#bhNext").focus({preventScroll:true});
+}
+function bhRank(s){let r=BH_RANKS[0][1];for(const [m,n] of BH_RANKS)if(s>=m)r=n;return r}
+function bhEnd(){
+  const rank=bhRank(BH.score), best=bhLoad(); if(!best||BH.score>best.score) bhSave({score:BH.score,rank});
+  $("#bhLevel").textContent="KẾT QUẢ"; $("#bhTimer").style.width="0";
+  const ref=bhRef();
+  bhBody.innerHTML='<div class="bh-end"><div class="bh-end-grid"><div style="display:flex;flex-direction:column;gap:10px">'+
+    '<span class="eyebrow">Bạn săn được '+BH.found+'/8 bug</span><div class="bh-big">'+BH.score+'</div><div class="bh-rank">'+rank+'</div>'+
+    '<p class="sub" style="margin:0">Mã giới thiệu của bạn: <b class="mono" style="color:var(--amber)">'+ref+'</b>. Bạn bè chơi qua link của bạn sẽ được tính cho giải Đại sứ lan tỏa.</p>'+
+    '<div class="btnrow"><button class="btn pri" type="button" id="bhInvite">Thách đấu bạn bè</button><button class="btn" type="button" id="bhCardDl">Tải thẻ kết quả</button><button class="btn" type="button" id="bhAgain">Chơi lại</button></div></div>'+
+    '<canvas class="bh-card" id="bhCard" width="1080" height="1350" aria-label="Thẻ kết quả"></canvas></div>'+
+    '<details style="width:100%"><summary class="btn" style="display:inline-flex;list-style:none">Đăng ký dự thi chính thức để giữ điểm</summary>'+
+    '<form class="bh-form" id="bhForm" autocomplete="on"><label class="full">Họ và tên<input id="fName" required autocomplete="name"></label>'+
+    '<label>Số điện thoại<input id="fPhone" required inputmode="tel" autocomplete="tel" pattern="0[0-9]{9}"></label><label>Năm sinh<input id="fYob" required inputmode="numeric" pattern="20[0-9]{2}"></label>'+
+    '<label>Trường THPT<input id="fSchool" required></label><label>Lớp<select id="fGrade"><option>12</option><option>11</option><option>10</option><option>Khác</option></select></label>'+
+    '<label class="chk full"><input type="checkbox" id="fConsent" required> Tôi đồng ý cho Trường Đại học CMC dùng các thông tin trên để tổ chức cuộc thi và liên hệ trao giải.</label>'+
+    '<label class="chk full" id="fParentWrap" hidden><input type="checkbox" id="fParent"> Cha mẹ hoặc người giám hộ của tôi đã đồng ý (bắt buộc với thí sinh dưới 16 tuổi).</label>'+
+    '<div class="full btnrow"><button class="btn pri" type="submit">Gửi điểm '+BH.score+'</button></div></form></details></div>';
+  $("#bhAgain").onclick=bhStart;
+  bhDrawCard(rank,ref);
+  $("#bhInvite").onclick=async()=>{const base=shareLink("zalo"),url=base+(base.includes("?")?"&":"?")+"ref="+ref+"#san-bug";
+    const text="Mình vừa săn được "+BH.found+"/8 bug, đạt "+BH.score+" điểm ("+rank+") trong thử thách Săn Bug của ngành Kỹ thuật phần mềm CMC. Bạn có vượt được không?";
+    try{if(navigator.share){await navigator.share({title:"Săn Bug cùng CMC",text,url});return}}catch(e){if(e&&e.name==="AbortError")return}
+    copyText(text+" "+url)};
+  $("#bhCardDl").onclick=()=>{const c=$("#bhCard");c.toBlob(b=>{const a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="san-bug-cmc-"+BH.score+".png";document.body.appendChild(a);a.click();a.remove();toast("Nếu không thấy ảnh tải về, hãy chụp màn hình thẻ hoặc mở trang trên website trường.")})};
+  $("#fYob").oninput=e=>{const y=+e.target.value;$("#fParentWrap").hidden=!(y&&new Date().getFullYear()-y<16)};
+  $("#bhForm").onsubmit=async e=>{e.preventDefault();
+    const y=+$("#fYob").value; if(new Date().getFullYear()-y<16&&!$("#fParent").checked){toast("Thí sinh dưới 16 tuổi cần cha mẹ hoặc người giám hộ đồng ý.");return}
+    const payload={name:$("#fName").value.trim(),phone:$("#fPhone").value.trim(),yob:y,school:$("#fSchool").value.trim(),grade:$("#fGrade").value,score:BH.score,found:BH.found,log:BH.log,ref,inviter:bhInviter,startedAt:BH.started};
+    if(!CONFIG.contestApi){toast("Bản thử nghiệm: cổng nhận bài dự thi sẽ mở khi Trường công bố thể lệ chính thức.");return}
+    try{const r=await fetch(CONFIG.contestApi,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)});if(!r.ok)throw 0;toast("Đã ghi nhận điểm. Ban tổ chức sẽ gửi mã xác thực qua số điện thoại của bạn.")}catch(err){toast("Chưa gửi được, hãy thử lại sau.")}};
+  bhConfetti(BH.found);
+}
+function bhDrawCard(rank,ref){
+  const c=$("#bhCard"),x=c.getContext("2d"),W=1080,H2=1350;
+  x.fillStyle="#0A1433";x.fillRect(0,0,W,H2);
+  const g=x.createRadialGradient(900,100,50,900,100,900);g.addColorStop(0,"#1B2B66");g.addColorStop(1,"rgba(10,20,51,0)");x.fillStyle=g;x.fillRect(0,0,W,H2);
+  x.strokeStyle="rgba(111,214,255,.12)";x.lineWidth=2;for(let i=0;i<7;i++){const lx=80+i*150;x.beginPath();x.moveTo(lx,0);x.lineTo(lx,H2);x.stroke()}
+  x.fillStyle="#6FD6FF";x.font="500 34px 'JetBrains Mono', monospace";x.fillText("$ git commit -m \"săn bug\"",80,140);
+  x.fillStyle="#F2EFE6";x.font="800 76px 'Bricolage Grotesque', sans-serif";x.fillText("Mình săn được",80,280);
+  x.fillStyle="#FFB547";x.font="800 220px 'Bricolage Grotesque', sans-serif";x.fillText(BH.found+"/8",70,500);
+  x.fillStyle="#F2EFE6";x.font="800 76px 'Bricolage Grotesque', sans-serif";x.fillText("bug · "+BH.score+" điểm",80,610);
+  x.fillStyle="#9DA8CB";x.font="600 48px 'Be Vietnam Pro', sans-serif";x.fillText(rank,80,700);
+  x.fillStyle="#F2EFE6";x.font="600 40px 'Be Vietnam Pro', sans-serif";x.fillText("Bạn có vượt được không?",80,840);
+  x.fillStyle="#9DA8CB";x.font="400 34px 'Be Vietnam Pro', sans-serif";x.fillText("Ngành Kỹ thuật phần mềm · Trường Đại học CMC",80,1200);
+  x.fillStyle="#FFB547";x.font="700 36px 'JetBrains Mono', monospace";x.fillText("Mã mời: "+ref,80,1260);
+  const box=document.createElement("div");box.style.cssText="position:absolute;left:-9999px";document.body.appendChild(box);
+  const url=shareLink("zalo")+(shareLink("zalo").includes("?")?"&":"?")+"ref="+ref+"#san-bug";
+  x.fillStyle="#F2EFE6";x.fillRect(720,900,280,280);
+  if(window.QRCode){try{new QRCode(box,{text:url,width:240,height:240,colorDark:"#0A1433",colorLight:"#F2EFE6",correctLevel:QRCode.CorrectLevel.M});const cv=box.querySelector("canvas");if(cv)x.drawImage(cv,740,920,240,240)}catch(e){}}
+  box.remove();
+}
+function bhConfetti(n){
+  const cv=$("#bhConfetti"); if(matchMedia("(prefers-reduced-motion: reduce)").matches||n<5)return;
+  const r=cv.getBoundingClientRect();cv.width=r.width;cv.height=r.height;const x=cv.getContext("2d");
+  const P=Array.from({length:110},()=>({x:Math.random()*r.width,y:-20-Math.random()*r.height*.5,vx:(Math.random()-.5)*2,vy:2+Math.random()*3,s:4+Math.random()*6,c:["#FFB547","#6FD6FF","#5EE0A0","#F2EFE6"][Math.floor(Math.random()*4)],a:Math.random()*6}));
+  let f=0;(function step(){x.clearRect(0,0,cv.width,cv.height);P.forEach(p=>{p.x+=p.vx;p.y+=p.vy;p.a+=.1;x.save();x.translate(p.x,p.y);x.rotate(p.a);x.fillStyle=p.c;x.fillRect(-p.s/2,-p.s/2,p.s,p.s*.5);x.restore()});if(++f<160)requestAnimationFrame(step);else x.clearRect(0,0,cv.width,cv.height)})();
+}
+bhStartScreen();
+
+/* ---------- boot ---------- */
+if(OPT.vert) setVert(true);
+applyLang();
+fit(); go(Math.max(0,Math.min(slides.length-1,OPT.slide||0)));
+player.classList.add("first-frame","idle");
+$("#bigplayTxt").textContent=(lang==="en"?"Watch with narration · ":"Xem video có lời dẫn · ")+mmss(total());
+render();
+requestAnimationFrame(t0=>{last=t0;requestAnimationFrame(loop)});
+const reduceMotion=matchMedia("(prefers-reduced-motion: reduce)").matches;
+if(OPT.autoplay && !reduceMotion){
+  setTimeout(()=>{if(!userTouched&&!playing){player.classList.remove("first-frame");play()}},1400);
+}
+/* hash navigation for sections / chapters */
+window.addEventListener("hashchange",()=>{const m=location.hash.match(/slide-(\d+)/);if(m){go(+m[1]-1);document.getElementById("xem").scrollIntoView()}});
+/* pause when the player scrolls out of view (saves attention + battery) */
+new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting&&playing&&!recorder&&performance.now()-lastPlayAt>2000){pause()}}),{threshold:.25}).observe(screen);
+</script>
+</body>
+</html>

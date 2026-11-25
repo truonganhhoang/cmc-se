@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang="vi" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bộ lab EduReg · SOFT4003 · Kiểm thử và đảm bảo chất lượng phần mềm với AI</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Be+Vietnam+Pro:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap&subset=vietnamese" rel="stylesheet"><link rel="stylesheet" href="../assets/theme.css"><link rel="stylesheet" href="../assets/book.css">
+<script>try{var t=localStorage.getItem("s4003:theme-book");if(t)document.documentElement.dataset.theme=JSON.parse(t)}catch(e){}</script></head>
+<body><header class="top"><div class="in"><a class="brand" href="../index.html" style="color:inherit;text-decoration:none;font-weight:700">● SOFT4003 · Kiểm thử và đảm bảo chất lượng phần mềm với AI · Bộ lab</a><nav><a href="../index.html">Trang học phần</a><a class="cta" href="edureg/index.html">Mở EduReg ↗</a></nav></div></header>
+<main class="readme" style="max-width:860px;margin:32px auto 80px;padding:0 22px"><div class="content"><h2>Bộ lab SOFT4003 — EduReg</h2>
+<p>Bộ lab dùng xuyên suốt 10 chương của học phần Kiểm thử phần mềm (Trường Đại học CMC).</p>
+<p>EduReg là cổng đăng ký học phần <b>mô phỏng</b>, dữ liệu hư cấu.</p>
+<h3>Cần có</h3>
+<ul><li>Node.js 22 trở lên, VS Code, Git.</li><li>Tùy chọn: GitHub Copilot hoặc Claude Code (theo chính sách AI của học phần).</li></ul>
+<h3>Cài đặt</h3>
+<div class="codewrap"><pre class="code"><code>npm install
+npx playwright install chromium   # cho kiểm thử E2E (Chương 8)</code></pre></div>
+<h3>Lệnh</h3>
+<div class="tbl"><table><tr><th>Lệnh</th><th>Việc</th><th>Chương</th></tr><tr><td><code>npm test</code></td><td>Chạy kiểm thử đơn vị, tích hợp (Vitest)</td><td>1, 7</td></tr><tr><td><code>npm run coverage</code></td><td>Đo bao phủ, kiểm tra ngưỡng (90% câu lệnh, 85% nhánh)</td><td>6</td></tr><tr><td><code>npm run lint</code></td><td>Phân tích tĩnh (ESLint)</td><td>4</td></tr><tr><td><code>npm run app</code></td><td>Chạy EduReg tại http://localhost:5173</td><td>1, 6, 8</td></tr><tr><td><code>npm run e2e</code></td><td>Chạy kiểm thử E2E (Playwright)</td><td>8</td></tr><tr><td><code>npm run mutate</code></td><td>Kiểm thử đột biến (StrykerJS) — cần mọi kiểm thử đang xanh</td><td>8</td></tr></table></div>
+<p>EduReg cũng mở trực tiếp được bằng trình duyệt: <code>edureg/index.html</code>.</p>
+<p>Tài khoản: <code>BIT230001 / 123456</code>, <code>BIT230002 / 654321</code>.</p>
+<p>Mặc định EduReg <b>có lỗi cài sẵn</b> để luyện tập; thêm <code>?bugs=0</code> vào địa chỉ để chạy bản đúng.</p>
+<h3>Cấu trúc</h3>
+<div class="codewrap"><pre class="code"><code>docs/yeu-cau.md        Đặc tả R1–R7 (cố ý còn chỗ mơ hồ — Chương 4)
+src/grading.js         xepLoai, kiemTraSoTinChi, tinhHocPhi, xetHocBong, tinhGPA (TDD)
+src/dangky.js          Dịch vụ đăng ký + kho giả (kiểm thử tích hợp)
+src/notify.js          Thông báo học bổng (test double)
+tests/                 Kiểm thử Vitest (bộ ban đầu cố ý yếu; ai-sinh.test.js có ca sai)
+e2e/                   Kiểm thử Playwright + Page Object
+edureg/index.html      Ứng dụng mô phỏng
+.github/workflows/     CI: lint → đơn vị + bao phủ → E2E → đột biến
+CLAUDE.md              Quy tắc cho trợ lý AI, agent
+NHAT-KY-AI.md          Mẫu nhật ký sử dụng AI (bắt buộc nộp)</code></pre></div>
+<h3>Lưu ý</h3>
+<ul><li>Lần đầu <code>npm test</code> sẽ có <b>một ca không đạt</b> (<code>tests/ai-sinh.test.js</code>). Đó là câu hỏi của Lab 1.</li><li><code>npm run coverage</code> ban đầu <b>không đạt ngưỡng</b>. Đó là bài tập Lab 6.</li><li><code>npm run mutate</code> cần mọi kiểm thử đang xanh; điểm ban đầu thấp. Đó là bài tập Lab 8.</li></ul>
+<h3>Tải bộ lab</h3><p>Bộ lab nằm trong thư mục <code>lab/</code> của gói giáo trình (tệp zip giảng viên phát). Các tệp trong thư mục này:</p>
+<ul><li><a href="edureg/index.html">edureg/index.html</a> — ứng dụng mô phỏng (mở ngay trên trình duyệt)</li><li><a href="docs/yeu-cau.md">docs/yeu-cau.md</a> — đặc tả</li><li><a href="src/grading.js">src/grading.js</a>, <a href="src/dangky.js">src/dangky.js</a>, <a href="src/notify.js">src/notify.js</a></li><li><a href="tests/grading.test.js">tests/</a>, <a href="e2e/dang-ky.spec.js">e2e/</a>, <a href="package.json">package.json</a>, <a href="CLAUDE.md">CLAUDE.md</a>, <a href="NHAT-KY-AI.md">NHAT-KY-AI.md</a></li></ul>
+</div></main></body></html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOFT4003 · Giáo trình tương tác Kiểm thử và ĐBCL phần mềm với AI</title>
+<meta name="description" content="Giáo trình HTML tương tác và slide bài giảng 10 chương học phần SOFT4003, ngành Kỹ thuật phần mềm, Trường Đại học CMC."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Be+Vietnam+Pro:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap&subset=vietnamese" rel="stylesheet">
+<link rel="stylesheet" href="assets/theme.css"><link rel="stylesheet" href="assets/book.css">
+<style>
+.hub-hero{max-width:1240px;margin:0 auto;padding:56px 20px 24px}
+.hub-hero .kick{font:500 15px/1.3 var(--f-mono);color:var(--cyan)}
+.hub-hero h1{font:800 clamp(42px,6.5vw,92px)/.95 var(--f-display);letter-spacing:-.04em;margin:12px 0 16px;max-width:15ch}
+.hub-hero h1 em{font-style:normal;color:var(--amber)}
+.hub-hero p{font-size:19px;color:var(--muted);max-width:66ch;margin:0}
+.figs{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:26px}
+@media (max-width:800px){.figs{grid-template-columns:repeat(2,1fr)}}
+.fig{background:var(--ink-2);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.fig b{display:block;font:800 34px/1 var(--f-display);color:var(--amber)}
+.fig span{font-size:13px;color:var(--muted)}
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px}
+.sect{padding:30px 0;border-top:1px solid var(--line)}
+.sect h2{font:800 30px/1.1 var(--f-display);margin-bottom:6px}
+.sect>p{color:var(--muted);margin:0 0 18px;max-width:70ch}
+.chs{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px}
+.chc{background:var(--ink-2);border:1px solid var(--line);border-radius:16px;padding:16px 18px;display:flex;flex-direction:column;gap:8px}
+.chc .top{display:flex;justify-content:space-between;align-items:baseline}
+.chc .no{font:800 36px/1 var(--f-display);color:var(--amber)}
+.chc .wk{font:600 12px/1 var(--f-mono);color:var(--muted)}
+.chc h3{font:700 19px/1.25 var(--f-display)}
+.chc p{font-size:14px;color:var(--muted);margin:0;flex:1}
+.chc .pg{display:flex;align-items:center;gap:8px;font:500 12px/1 var(--f-mono);color:var(--muted)}
+.chc .pg i{flex:1;height:6px;border-radius:3px;background:var(--line);overflow:hidden;position:relative}
+.chc .pg i::after{content:"";position:absolute;inset:0;width:var(--p,0%);background:var(--ok)}
+.chc .act{display:flex;gap:8px;flex-wrap:wrap}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media (max-width:860px){.g3{grid-template-columns:1fr}}
+.box{background:var(--ink-2);border:1px solid var(--line);border-radius:14px;padding:16px 18px;font-size:15px}
+.box h3{font:700 18px/1.2 var(--f-display);margin-bottom:8px}
+.box ul{margin:0;padding-left:20px}
+.box .k{font:600 12px/1 var(--f-mono);color:var(--amber);display:block;margin-bottom:8px}
+kbd{font:600 12px/1 var(--f-mono);border:1px solid var(--line);border-bottom-width:3px;border-radius:5px;padding:2px 6px;background:var(--ink)}
+</style></head>
+<body data-ch="hub">
+<header class="top"><div class="in"><a class="brand" href="index.html"><i>QA</i><span>SOFT4003 · Giáo trình tương tác<small>Kỹ thuật phần mềm · Trường Đại học CMC</small></span></a>
+<nav><a href="#chuong">10 chương</a><a href="#cach-dung">Cách dùng</a><a href="lab/README.html">Bộ lab</a><button type="button" data-theme-toggle>◐ Sáng/tối</button></nav></div></header>
+<section class="hub-hero"><span class="kick">SOFT4003 · 3 tín chỉ · Học kỳ 5 · 10 tuần</span>
+<h1>Kiểm thử phần mềm <em>khi AI viết mã</em></h1>
+<p>Giáo trình HTML tương tác và slide bài giảng cho học phần Kiểm thử và đảm bảo chất lượng phần mềm với AI. Nền tảng bám ISTQB CTFL v4.0, phần AI bám ISTQB CT-GenAI; thực hành với Vitest, Playwright, kiểm thử đột biến và trợ lý AI trên một hệ thống xuyên suốt: EduReg.</p>
+<div class="figs"><div class="fig"><b>10</b><span>chương · 1 chương/tuần</span></div><div class="fig"><b>117</b><span>slide có hoạt động</span></div><div class="fig"><b>71</b><span>hoạt động tương tác</span></div><div class="fig"><b>83</b><span>câu kiểm tra cuối chương</span></div><div class="fig"><b id="tot">0%</b><span>tiến độ của bạn</span></div></div></section>
+<main class="wrap">
+<section class="sect" id="chuong"><h2>10 chương, 10 tuần</h2><p>Mỗi chương có một giáo trình để đọc và làm bài trên trang, và một bộ slide để học trên lớp. Tiến độ lưu trên trình duyệt của bạn.</p><div class="chs"><article class="chc" data-ch="c01"><div class="top"><span class="no">01</span><span class="wk">Tuần 1</span></div>
+<h3>Kiểm thử là gì, và vì sao quan trọng hơn khi có AI</h3><p>Phần mềm hỏng như thế nào, kiểm thử làm gì và không làm được gì, bảy nguyên lý kiểm thử, và vai trò mới của người kiểm thử khi AI viết mã nhanh hơn con người.</p>
+<div class="pg"><i></i><span>Chưa bắt đầu</span></div>
+<div class="act"><a class="btn sm" href="c01/giao-trinh.html">Giáo trình</a><a class="btn sm ghost" href="c01/slides.html">▶ Slide (15)</a></div></article><article class="chc" data-ch="c02"><div class="top"><span class="no">02</span><span class="wk">Tuần 2</span></div>
+<h3>Quy trình kiểm thử và tài liệu kiểm thử</h3><p>Bảy nhóm hoạt động kiểm thử, từ lập kế hoạch tới hoàn tất; phân biệt điều kiện kiểm thử, ca kiểm thử, thủ tục kiểm thử; truy vết hai chiều; và chỗ AI tạo sinh giúp được trong từng hoạt động.</p>
+<div class="pg"><i></i><span>Chưa bắt đầu</span></div>
+<div class="act"><a class="btn sm" href="c02/giao-trinh.html">Giáo trình</a><a class="btn sm ghost" href="c02/slides.html">▶ Slide (13)</a></div></article><article class="chc" data-ch="c03"><div class="top"><span class="no">03</span><span class="wk">Tuần 3</span></div>
+<h3>Kiểm thử trong vòng đời phát triển: mức và loại kiểm thử</h3><p>Kiểm thử gắn với từng giai đoạn phát triển thế nào; TDD, BDD và dịch trái (shift-left); năm mức kiểm thử; kiểm thử chức năng và phi chức năng; kim tự tháp và bốn góc phần tư; kiểm thử hồi quy khi AI thay đổi mã liên tục.</p>
+<div class="pg"><i></i><span>Chưa bắt đầu</span></div>
+<div class="act"><a class="btn sm" href="c03/giao-trinh.html">Giáo trình</a><a class="btn sm ghost" href="c03/slides.html">▶ Slide (13)</a></div></article><article class="chc" data-ch="c04"><div class="top"><span class="no">04</span><span class="wk">Tuần 4</span></div>
+<h3>Kiểm thử tĩnh, review và AI hỗ trợ review</h3><p>Tìm khiếm khuyết trước khi chạy phần mềm: giá trị của kiểm thử tĩnh, quy trình và các loại review, phân tích tĩnh bằng công cụ, và cách dùng AI làm người review thứ hai mà không giao phó trách nhiệm.</p>
+<div class="pg"><i></i><span>Chưa bắt đầu</span></div>
+<div class="act"><a class="btn sm" href="c04/giao-trinh.html">Giáo trình</a><a class="btn sm ghost" href="c04/slides.html">▶ Slide (10)</a></div></article><article class="chc" data-ch="c05"><div class="top"><span class="no">05</span><span class="wk">Tuần 5</span></div>
+<h3>Kỹ thuật kiểm thử hộp đen</h3><p>Bốn kỹ thuật thiết kế ca kiểm thử từ đặc tả, có mục bao phủ đo được: phân vùng tương đương, phân tích giá trị biên, bảng quyết định, chuyển trạng thái. Kèm cách giao kỹ thuật cho AI và kiểm chứng kết quả.</p>
+<div class="pg"><i></i><span>Chưa bắt đầu</span></div>
+<div class="act"><a class="btn sm" href="c05/giao-trinh.html">Giáo trình</a><a class="btn sm ghost" href="c05/slides.html">▶ Slide (12)</a></div></article><article class="chc" data-ch="c06"><div class="top"><span class="no">06</span><span class="wk">Tuần 6</span></div>
+<h3>Kỹ thuật hộp trắng, độ bao phủ và kỹ thuật dựa trên kinh nghiệm</h3><p>Nhìn vào mã để biết bộ kiểm thử đã chạm tới đâu: bao phủ câu lệnh, bao phủ nhánh, công cụ đo trong CI; vì sao bao phủ cao không có nghĩa là kiểm thử tốt; và các kỹ thuật dựa trên kinh nghiệm: đoán lỗi, kiểm thử thăm dò, danh mục kiểm tra.</p>
+<div class="pg"><i></i><span>Chưa bắt đầu</span></div>
+<div class="act"><a class="btn sm" href="c06/giao-trinh.html">Giáo trình</a><a class="btn sm ghost" href="c06/slides.html">▶ Slide (10)</a></div></article><article class="chc" data-ch="c07"><div class="top"><span class="no">07</span><span class="wk">Tuần 7</span></div>
+<h3>Tự động hóa kiểm thử đơn vị, tích hợp và kỹ thuật prompt cho kiểm thử</h3><p>Viết kiểm thử đơn vị đáng tin cậy với Vitest, dùng test double đúng chỗ, kiểm thử tích hợp và hợp đồng; viết prompt theo cấu trúc của ISTQB CT-GenAI để sinh kiểm thử, rồi đánh giá đầu ra của AI bằng số liệu thay vì cảm giác.</p>
+<div class="pg"><i></i><span>Chưa bắt đầu</span></div>
+<div class="act"><a class="btn sm" href="c07/giao-trinh.html">Giáo trình</a><a class="btn sm ghost" href="c07/slides.html">▶ Slide (12)</a></div></article><article class="chc" data-ch="c08"><div class="top"><span class="no">08</span><span class="wk">Tuần 8</span></div>
+<h3>Kiểm thử đầu cuối với Playwright, agent kiểm thử và kiểm thử đột biến</h3><p>Viết kiểm thử E2E ổn định bằng locator hướng người dùng, auto-wait và khẳng định web-first; dùng codegen, trace viewer, Playwright MCP và bộ Test Agents (planner, generator, healer) có kiểm soát; rồi đo chất lượng thật của bộ kiểm thử bằng kiểm thử đột biến.</p>
+<div class="pg"><i></i><span>Chưa bắt đầu</span></div>
+<div class="act"><a class="btn sm" href="c08/giao-trinh.html">Giáo trình</a><a class="btn sm ghost" href="c08/slides.html">▶ Slide (12)</a></div></article><article class="chc" data-ch="c09"><div class="top"><span class="no">09</span><span class="wk">Tuần 9</span></div>
+<h3>Quản lý kiểm thử, rủi ro và rủi ro khi dùng AI tạo sinh</h3><p>Lập kế hoạch và ước lượng kiểm thử, kiểm thử dựa trên rủi ro, theo dõi và báo cáo, quản lý cấu hình và báo cáo khiếm khuyết; nhận diện và giảm thiểu rủi ro riêng của AI tạo sinh trong kiểm thử: ảo giác, thiên lệch, không tất định, bảo mật dữ liệu, tuân thủ pháp luật.</p>
+<div class="pg"><i></i><span>Chưa bắt đầu</span></div>
+<div class="act"><a class="btn sm" href="c09/giao-trinh.html">Giáo trình</a><a class="btn sm ghost" href="c09/slides.html">▶ Slide (10)</a></div></article><article class="chc" data-ch="c10"><div class="top"><span class="no">10</span><span class="wk">Tuần 10</span></div>
+<h3>Công cụ, hạ tầng kiểm thử dựa trên LLM và bảo vệ sản phẩm cuối kỳ</h3><p>Ghép mọi thứ thành một hệ thống: các nhóm công cụ kiểm thử, đường ống CI có cổng chất lượng; RAG, agent, fine-tuning, LLMOps cho kiểm thử; lộ trình đưa AI tạo sinh vào một tổ chức kiểm thử; và chuẩn bị bảo vệ sản phẩm cuối kỳ.</p>
+<div class="pg"><i></i><span>Chưa bắt đầu</span></div>
+<div class="act"><a class="btn sm" href="c10/giao-trinh.html">Giáo trình</a><a class="btn sm ghost" href="c10/slides.html">▶ Slide (10)</a></div></article></div></section>
+<section class="sect" id="cach-dung"><h2>Cách dùng</h2><div class="g3">
+<div class="box"><span class="k">SINH VIÊN</span><h3>Trước, trong và sau buổi học</h3><ul><li>Trước buổi: đọc mục 1–2 của chương, làm hoạt động trong bài.</li><li>Trên lớp: theo slide, làm hoạt động cùng lớp.</li><li>Sau buổi: làm bài kiểm tra cuối chương (mục tiêu ≥ 80%) và bài lab.</li><li>Ôn tập: mở slide ở chế độ <b>Tự học</b> (phím <kbd>S</kbd>) để xem lời giảng.</li></ul></div>
+<div class="box"><span class="k">GIẢNG VIÊN</span><h3>Trình chiếu tương tác</h3><ul><li><kbd>→</kbd> hiện từng ý, <kbd>N</kbd> ghi chú giảng, <kbd>O</kbd> tổng quan.</li><li><kbd>D</kbd> vẽ lên slide, <kbd>L</kbd> bút laser, <kbd>B</kbd> màn đen, <kbd>T</kbd> bấm giờ.</li><li>Slide bình chọn: bấm phương án để cộng phiếu theo số tay giơ, rồi hiện đáp án.</li><li>Slide hoạt động có đồng hồ đếm ngược.</li></ul></div>
+<div class="box"><span class="k">QUY TẮC AI</span><h3>Mức dùng AI M1–M5</h3><ul><li><b>M1</b> không AI: thi thiết kế ca kiểm thử, vấn đáp.</li><li><b>M2</b> AI hỗ trợ học: hỏi khái niệm.</li><li><b>M3</b> AI cộng tác, nộp nhật ký: bài lab tuần.</li><li><b>M4</b> AI toàn phần, có kiểm chứng: dự án cuối kỳ.</li><li>Kết quả mong đợi luôn lấy từ đặc tả, không từ mã.</li></ul></div>
+</div></section>
+<section class="sect"><h2>Đánh giá học phần</h2><div class="g3">
+<div class="box"><span class="k">5% · M2</span><h3>Tự học với Trợ giảng AI</h3><p>Hoàn thành bài kiểm tra cuối chương và hoạt động trên giáo trình.</p></div>
+<div class="box"><span class="k">20% · M3</span><h3>Bài thực hành hằng tuần</h3><p>10 bài lab trên EduReg, nộp kèm nhật ký AI.</p></div>
+<div class="box"><span class="k">25% · M1 + M4 &nbsp;/&nbsp; 50% · M4 + M1</span><h3>Giữa kỳ và cuối kỳ</h3><p>Giữa kỳ (tuần 5): thiết kế ca kiểm thử hộp đen tại lớp không AI (M1), rồi hiện thực thành kiểm thử tự động có AI hỗ trợ (M4). Cuối kỳ: bộ kiểm thử tự động cho EduReg kèm số liệu bao phủ, điểm đột biến, và vấn đáp không AI.</p></div>
+</div></section>
+<section class="sect"><h2>Tài liệu</h2><div class="box"><ul>
+<li>Giáo trình chính: Graham, van Veenendaal, Black, <i>Foundations of Software Testing: ISTQB Certification</i> (CTFL 4.0), 2024; ISTQB CT-GenAI Syllabus.</li>
+<li>Tài liệu tham khảo: tài liệu Playwright chính thức; Addy Osmani, <i>Beyond Vibe Coding</i>, O'Reilly 2025 (chương 8); ISTQB CT-AI.</li>
+<li>Bộ lab: <a href="lab/README.html">EduReg và mã khởi đầu</a> (Vitest, Playwright, Stryker).</li></ul></div></section>
+</main>
+<footer class="ft"><div class="in">SOFT4003 · Khoa CNTT&amp;TT, Trường Đại học CMC · Bản thử nghiệm v2027.2 · Học liệu dùng nội bộ. EduReg là hệ thống mô phỏng phục vụ giảng dạy.</div></footer>
+<script src="assets/widgets.js"></script><script src="assets/book.js"></script>
+<script>
+(function(){var t=0,n=0;document.querySelectorAll('.chc').forEach(function(c){var p=W.LS.get('prog:'+c.dataset.ch,null);n++;var i=c.querySelector('.pg');if(p){t+=p.p;i.style.setProperty('--p',p.p+'%');i.querySelector('i').style.setProperty('--p',p.p+'%');i.querySelector('span').textContent=p.p+'% · '+p.d+'/'+p.n+' mục'+(p.q?' · KT '+p.q:'');}});document.getElementById('tot').textContent=Math.round(t/(n||1))+'%';})();
+</script>
+</body></html>

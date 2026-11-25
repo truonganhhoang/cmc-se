@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EduReg · Cổng đăng ký học phần (mô phỏng)</title>
+<style>
+:root{--bg:#f5f7fb;--card:#fff;--ink:#0a1433;--mut:#5a6478;--line:#dfe4ee;--pri:#1f4fd1;--ok:#137a3d;--bad:#b42318;--warn:#a15c00}
+*{box-sizing:border-box}body{margin:0;font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+header{background:var(--ink);color:#fff;padding:.7rem 1.2rem;display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}
+header b{font-size:1.05rem;margin-right:auto}header a{color:#cfe0ff;text-decoration:none}header a[aria-current]{color:#ffb547;font-weight:600}
+main{max-width:920px;margin:1.5rem auto;padding:0 1rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.3rem 1.5rem;margin-bottom:1rem}
+h1{font-size:1.5rem;margin:.2rem 0 .8rem}h2{font-size:1.15rem;margin:0 0 .6rem}
+label{display:block;font-weight:600;margin:.7rem 0 .25rem}
+input[type=text],input[type=password]{width:100%;padding:.55rem .7rem;border:1px solid var(--line);border-radius:8px;font:inherit}
+.row{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;margin-top:1rem}
+button{font:inherit;padding:.5rem 1rem;border-radius:8px;border:1px solid var(--pri);background:var(--pri);color:#fff;cursor:pointer}
+button.sec{background:#fff;color:var(--pri)}button.link{border:0;background:none;color:var(--pri);text-decoration:underline;padding:.5rem .2rem}
+button:disabled{opacity:.5;cursor:not-allowed}
+table{border-collapse:collapse;width:100%}th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--line)}th{color:var(--mut);font-size:.85rem}
+.alert{padding:.6rem .8rem;border-radius:8px;margin-top:.8rem}.alert.err{background:#fdecea;color:var(--bad)}.alert.ok{background:#e7f6ec;color:var(--ok)}.alert.info{background:#eef3ff;color:var(--pri)}
+.tag{display:inline-block;padding:.1rem .5rem;border-radius:99px;background:#eef3ff;color:var(--pri);font-size:.8rem;font-weight:600}
+.big{font-size:1.6rem;font-weight:700}.mut{color:var(--mut)}
+footer{max-width:920px;margin:0 auto 2rem;padding:0 1rem;color:var(--mut);font-size:.8rem}
+</style>
+</head>
+<body>
+<header id="hdr" hidden>
+  <b>EduReg</b>
+  <nav aria-label="Chức năng" style="display:flex;gap:1rem;flex-wrap:wrap">
+    <a href="#/diem">Tra cứu điểm</a>
+    <a href="#/dang-ky">Đăng ký học phần</a>
+    <a href="#/hoc-phi">Học phí</a>
+    <a href="#/hoc-bong">Học bổng</a>
+    <a href="#/dang-xuat">Đăng xuất</a>
+  </nav>
+</header>
+<main id="app"></main>
+<footer id="ft"></footer>
+<script>
+/* EduReg — ứng dụng mô phỏng cho học phần SOFT4003. Dữ liệu hư cấu.
+   Mặc định CÓ lỗi cài sẵn để luyện tập; thêm ?bugs=0 vào URL để chạy bản đúng.
+   Giảng viên: danh sách lỗi trong GIANG-VIEN.md. */
+(function () {
+  var q = new URLSearchParams(location.search);
+  var BUGS = q.get('bugs') !== '0';
+  var DON_GIA = 500000;
+  var SV = {
+    BIT230001: { mk: '123456', ten: 'Nguyễn Văn A', chinhSach: false, renLuyen: 90,
+      diem: [['SOFT2001', 'Lập trình hướng đối tượng', 3, 8.5], ['MATH1001', 'Toán rời rạc', 3, 9.0], ['INFO2005', 'Công nghệ phần mềm', 3, 9.2],
+             ['ENGL1001', 'Tiếng Anh 1', 2, 8.6], ['SOFT2010', 'Cơ sở dữ liệu', 3, 8.8]],
+      hocLai: ['MATH1002'] },
+    BIT230002: { mk: '654321', ten: 'Trần Thị B', chinhSach: true, renLuyen: 80,
+      diem: [['SOFT2001', 'Lập trình hướng đối tượng', 3, 7.0], ['MATH1001', 'Toán rời rạc', 3, 8.5], ['INFO2005', 'Công nghệ phần mềm', 3, 7.4],
+             ['ENGL1001', 'Tiếng Anh 1', 2, 8.0], ['SOFT2010', 'Cơ sở dữ liệu', 3, 7.2]],
+      hocLai: [] }
+  };
+  var HP = [['SOFT4003', 'Kiểm thử phần mềm', 3], ['SOFT3001', 'Kiến trúc phần mềm', 3], ['INFO2005', 'Công nghệ phần mềm', 3],
+            ['MATH1001', 'Toán rời rạc', 3], ['MATH1002', 'Xác suất thống kê', 3], ['SOFT3010', 'Phát triển ứng dụng web', 4],
+            ['ENGL2001', 'Tiếng Anh 2', 2], ['PHYS1001', 'Vật lý đại cương', 2], ['PE1001', 'Giáo dục thể chất', 1]];
+  var S = { msv: null, chon: {}, phieu: null };
+  var app = document.getElementById('app');
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function tien(n) { return Math.round(n).toLocaleString('vi-VN').replace(/,/g, '.') + ' đ'; }
+
+  /* ---------- nghiệp vụ (bản sao của src/grading.js, có thể bị "cài lỗi") ---------- */
+  function xepLoai(d) {
+    if (typeof d !== 'number' || isNaN(d)) throw new Error('Điểm không hợp lệ');
+    if (d < 0 || d > 10) throw new Error('Điểm ngoài thang 0–10');
+    if (BUGS ? d > 8.5 : d >= 8.5) return 'A';                 // B3
+    if (d >= 7.0) return 'B'; if (d >= 5.5) return 'C'; if (d >= 4.0) return 'D'; return 'F';
+  }
+  function heSo4(l) { return { A: 4, B: 3, C: 2, D: 1, F: 0 }[l]; }
+  function gpa(sv) { var t = 0, n = 0; sv.diem.forEach(function (r) { t += heSo4(xepLoai(r[3])) * r[2]; n += r[2]; }); return Math.round(t / n * 100) / 100; }
+  function tinhHocPhi(tc, dg, cs, lai) {
+    if (tc <= 0) throw new Error('Số tín chỉ phải dương');
+    var tong = tc * dg; if (lai > 0) tong += lai * dg * (BUGS ? 1.0 : 1.2);   // B2
+    if (cs) tong *= 0.5; if (tong > 30000000) tong = 30000000; return Math.round(tong);
+  }
+  function xetHocBong(g, rl, coF) {
+    if (g >= 3.2 && rl >= 80 && !coF) { if (g >= 3.6 && (BUGS ? rl > 90 : rl >= 90)) return 'Xuất sắc'; return 'Khá'; }   // B6
+    return 'Không';
+  }
+  function tongTC() { var t = 0, lai = 0, sv = SV[S.msv]; HP.forEach(function (h) { if (S.chon[h[0]]) { t += h[2]; if (sv.hocLai.indexOf(h[0]) >= 0) lai += h[2]; } }); return { tong: t, lai: lai, moi: t - lai }; }
+  function kiemTraTC(t) { if (t < 10) return 'Tối thiểu 10 tín chỉ'; if (t > (BUGS ? 16 : 15)) return 'Tối đa 15 tín chỉ'; return ''; }   // B1
+
+  /* ---------- màn hình ---------- */
+  function dangNhap(msg) {
+    document.getElementById('hdr').hidden = true;
+    app.innerHTML = '<div class="card" style="max-width:420px;margin:2rem auto">' +
+      '<h1>Đăng nhập EduReg</h1><div class="mut" style="font-size:.9em">Học kỳ 1 · năm học 2027–2028</div>' +
+      '<form id="f" novalidate><label for="msv">Mã sinh viên</label><input id="msv" type="text" placeholder="VD: BIT230001" data-testid="msv" autocomplete="username">' +
+      '<label for="pw">Mật khẩu</label><input id="pw" type="password" data-testid="pw" autocomplete="current-password">' +
+      '<div class="row" style="margin-top:.6rem"><input id="rem" type="checkbox"><label for="rem" style="display:inline;font-weight:400;margin:0">Ghi nhớ đăng nhập</label></div>' +
+      '<div class="row"><button type="submit" data-testid="login">Đăng nhập</button><button type="button" class="link" id="ms">Đăng nhập bằng Microsoft</button></div>' +
+      '<p><a href="#/quen-mat-khau">Quên mật khẩu?</a></p>' + (msg ? '<div class="alert err" role="alert">' + esc(msg) + '</div>' : '') + '</form></div>';
+    document.getElementById('f').onsubmit = function (e) {
+      e.preventDefault();
+      var m = document.getElementById('msv').value.trim().toUpperCase(), p = document.getElementById('pw').value;
+      if (!m || !p) return dangNhap('Vui lòng nhập mã sinh viên và mật khẩu');
+      if (!SV[m] || SV[m].mk !== p) return dangNhap('Mã sinh viên hoặc mật khẩu không đúng');
+      S.msv = m; S.chon = {}; S.phieu = null; location.hash = '#/trang-chu'; render();
+    };
+    document.getElementById('ms').onclick = function () { dangNhap('Đăng nhập Microsoft chưa được cấu hình trong bản mô phỏng'); };
+  }
+  function trangChu() {
+    var sv = SV[S.msv];
+    app.innerHTML = '<div class="card"><h1>Xin chào, ' + esc(sv.ten) + '</h1><p class="mut">Mã sinh viên ' + S.msv + (sv.chinhSach ? ' · <span class="tag">Diện chính sách</span>' : '') + '</p>' +
+      '<p>Chọn một chức năng ở thanh trên: tra cứu điểm, đăng ký học phần, xem học phí, xét học bổng.</p></div>';
+  }
+  function diem(params) {
+    var m = params.get('msv') || S.msv;
+    if (m !== S.msv && !BUGS) { app.innerHTML = '<div class="card"><h1>Tra cứu điểm</h1><div class="alert err" role="alert">Bạn không có quyền xem điểm của sinh viên khác</div></div>'; return; }   // B5
+    var sv = SV[m]; if (!sv) { app.innerHTML = '<div class="card"><h1>Tra cứu điểm</h1><div class="alert err" role="alert">Không tìm thấy sinh viên</div></div>'; return; }
+    var rows = sv.diem.map(function (r) { return '<tr><td>' + r[0] + '</td><td>' + esc(r[1]) + '</td><td>' + r[2] + '</td><td>' + String(r[3]).replace('.', ',') + '</td><td data-testid="loai-' + r[0] + '">' + xepLoai(r[3]) + '</td></tr>'; }).join('');
+    app.innerHTML = '<div class="card"><h1>Tra cứu điểm</h1><p class="mut">Sinh viên: ' + esc(sv.ten) + ' (' + m + ')</p><table><thead><tr><th>Mã</th><th>Học phần</th><th>TC</th><th>Điểm</th><th>Xếp loại</th></tr></thead><tbody>' + rows + '</tbody></table>' +
+      '<p>GPA (thang 4): <b data-testid="gpa">' + gpa(sv).toFixed(2).replace('.', ',') + '</b> · Điểm rèn luyện: <b>' + sv.renLuyen + '</b></p></div>';
+  }
+  function dangKy() {
+    var sv = SV[S.msv], khoa = S.phieu && S.phieu.tt !== 'Nháp';
+    var rows = HP.map(function (h) {
+      var lai = sv.hocLai.indexOf(h[0]) >= 0;
+      return '<tr><td><input type="checkbox" id="c-' + h[0] + '" aria-label="Chọn ' + h[0] + '"' + (S.chon[h[0]] ? ' checked' : '') + (khoa ? ' disabled' : '') + '></td><td>' + h[0] + '</td><td>' + esc(h[1]) + '</td><td>' + h[2] + '</td><td>' + (lai ? '<span class="tag">Học lại</span>' : '') + '</td></tr>';
+    }).join('');
+    app.innerHTML = '<div class="card"><h1>Đăng ký học phần</h1><p class="mut">Mỗi học kỳ đăng ký từ 10 đến 15 tín chỉ.</p>' +
+      '<table><thead><tr><th></th><th>Mã</th><th>Học phần</th><th>TC</th><th>Ghi chú</th></tr></thead><tbody>' + rows + '</tbody></table>' +
+      '<div class="row"><span>Tổng tín chỉ: <b data-testid="tong-tc" id="ttc">0</b></span><span>Học phí dự kiến: <b data-testid="hoc-phi" id="hp">0 đ</b></span></div>' +
+      '<div id="msg"></div><div class="row" id="act"></div><div id="ph"></div></div>';
+    HP.forEach(function (h) { document.getElementById('c-' + h[0]).onchange = function (e) { S.chon[h[0]] = e.target.checked; capNhat(); }; });
+    capNhat(); veNut();
+  }
+  function capNhat() {
+    var t = tongTC(), sv = SV[S.msv]; document.getElementById('ttc').textContent = t.tong;
+    document.getElementById('hp').textContent = t.moi > 0 ? tien(tinhHocPhi(t.moi, DON_GIA, sv.chinhSach, t.lai)) : '0 đ';
+  }
+  function veNut() {
+    var a = document.getElementById('act'), p = S.phieu, tt = p ? p.tt : 'Nháp', html = '';
+    document.getElementById('ph').innerHTML = '<p>Trạng thái phiếu: <span class="tag" data-testid="trang-thai">' + tt + '</span></p>';
+    if (tt === 'Nháp') html += '<button id="gui">Gửi phiếu</button>';
+    if (tt === 'Đã gửi') html += '<button id="duyet" class="sec">Phòng Đào tạo: Duyệt</button><button id="tuchoi" class="sec">Phòng Đào tạo: Từ chối</button>';
+    if (tt === 'Bị từ chối') html += '<button id="sua">Sửa phiếu</button>';
+    if (tt === 'Đã duyệt') html += '<button id="dong">Đóng phí</button>';
+    var huyDuoc = tt === 'Nháp' || tt === 'Đã gửi' || tt === 'Đã duyệt' || (BUGS && tt === 'Đã đóng phí');   // B4
+    if (huyDuoc) html += '<button id="huy" class="sec">Hủy phiếu</button>';
+    a.innerHTML = html;
+    function on(id, f) { var b = document.getElementById(id); if (b) b.onclick = f; }
+    on('gui', function () { var t = tongTC(), loi = kiemTraTC(t.tong), m = document.getElementById('msg');
+      if (loi) { m.innerHTML = '<div class="alert err" role="alert">' + loi + '</div>'; return; }
+      S.phieu = { tt: 'Đã gửi', hocPhi: tinhHocPhi(t.moi, DON_GIA, SV[S.msv].chinhSach, t.lai) }; dangKy(); document.getElementById('msg').innerHTML = '<div class="alert ok" role="status">Đã gửi phiếu đăng ký</div>'; });
+    on('duyet', function () { S.phieu.tt = 'Đã duyệt'; dangKy(); });
+    on('tuchoi', function () { S.phieu.tt = 'Bị từ chối'; dangKy(); });
+    on('sua', function () { S.phieu.tt = 'Nháp'; dangKy(); });
+    on('dong', function () { S.phieu.tt = 'Đã đóng phí'; dangKy(); });
+    on('huy', function () { S.phieu = { tt: 'Đã hủy' }; S.chon = {}; app.innerHTML = '<div class="card"><h1>Đăng ký học phần</h1><div class="alert info" role="status">Phiếu đã hủy</div><p><a href="#/dang-ky" id="moi">Tạo phiếu mới</a></p></div>'; document.getElementById('moi').onclick = function () { S.phieu = null; }; });
+  }
+  function hocPhi() {
+    var p = S.phieu, sv = SV[S.msv];
+    var body = p && p.hocPhi != null ? '<p class="big" data-testid="hoc-phi-ky">' + tien(p.hocPhi) + '</p><p class="mut">Trạng thái phiếu: ' + p.tt + (sv.chinhSach ? ' · đã giảm 50% (diện chính sách)' : '') + '</p>'
+      : '<div class="alert info" role="status">Chưa có phiếu đăng ký đã gửi</div>';
+    app.innerHTML = '<div class="card"><h1>Học phí</h1><p class="mut">Đơn giá ' + tien(DON_GIA) + '/tín chỉ · tín chỉ học lại tính 120% · tối đa 30.000.000 đ/học kỳ</p>' + body + '</div>';
+  }
+  function hocBong() {
+    var sv = SV[S.msv], g = gpa(sv), coF = sv.diem.some(function (r) { return xepLoai(r[3]) === 'F'; }), kq = xetHocBong(g, sv.renLuyen, coF);
+    app.innerHTML = '<div class="card"><h1>Học bổng</h1><table><tbody><tr><td>GPA</td><td>' + g.toFixed(2).replace('.', ',') + '</td></tr><tr><td>Điểm rèn luyện</td><td>' + sv.renLuyen + '</td></tr><tr><td>Có học phần F</td><td>' + (coF ? 'Có' : 'Không') + '</td></tr></tbody></table>' +
+      '<p>Kết quả xét: <b data-testid="hoc-bong">' + kq + '</b></p></div>';
+  }
+  function render() {
+    var hs = location.hash.replace(/^#/, '') || '/dang-nhap', path = hs.split('?')[0], params = new URLSearchParams(hs.split('?')[1] || '');
+    if (path === '/quen-mat-khau') { document.getElementById('hdr').hidden = true; app.innerHTML = '<div class="card" style="max-width:420px;margin:2rem auto"><h1>Quên mật khẩu</h1><p>Liên hệ Phòng Đào tạo để cấp lại mật khẩu (bản mô phỏng).</p><p><a href="#/dang-nhap">Quay lại đăng nhập</a></p></div>'; return; }
+    if (path === '/dang-xuat') { S.msv = null; location.hash = '#/dang-nhap'; return; }
+    if (!S.msv) return dangNhap();
+    document.getElementById('hdr').hidden = false;
+    document.querySelectorAll('header a').forEach(function (a) { if (a.getAttribute('href') === '#' + path) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
+    ({ '/trang-chu': trangChu, '/diem': diem, '/dang-ky': dangKy, '/hoc-phi': hocPhi, '/hoc-bong': hocBong }[path] || trangChu)(params);
+  }
+  document.getElementById('ft').textContent = 'EduReg mô phỏng · dữ liệu hư cấu · ' + (BUGS ? 'có lỗi cài sẵn (thêm ?bugs=0 vào địa chỉ để chạy bản đúng)' : 'bản đúng (?bugs=0)');
+  window.addEventListener('hashchange', render); render();
+})();
+</script>
+</body>
+</html>

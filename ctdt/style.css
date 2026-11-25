@@ -33,6 +33,14 @@ h1,h2,h3,h4{font-family:var(--f-display);letter-spacing:-.02em;text-wrap:balance
 .nav a{color:#C6CCE2;text-decoration:none;font-size:13.5px;padding:6px 10px;border-radius:7px}
 .nav a:hover{background:#1A2858;color:#fff}
 .nav a[aria-current="page"]{background:#FFB547;color:#0A1433;font-weight:600}
+.nav-dropdown{position:relative}
+.nav-dropdown>summary{list-style:none;cursor:pointer;color:#C6CCE2;font-size:13.5px;padding:6px 10px;border-radius:7px}
+.nav-dropdown>summary::-webkit-details-marker{display:none}
+.nav-dropdown>summary::after{content:" ▾";font-size:11px}
+.nav-dropdown>summary:hover,.nav-dropdown[open]>summary{background:#1A2858;color:#fff}
+.nav-submenu{position:absolute;top:100%;left:0;z-index:20;display:flex;flex-direction:column;min-width:220px;padding:6px;background:var(--navy);border:1px solid #26366A;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.24)}
+.nav-dropdown:not([open])>.nav-submenu{display:none}
+.nav-submenu a{white-space:nowrap}
 .crumbs{font:500 12.5px/1 var(--f-mono);color:var(--muted);padding:18px 0 0}
 .crumbs a{color:var(--muted)}
 
